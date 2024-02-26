@@ -1,13 +1,26 @@
-import { useState } from 'react'
+
 
 import './App.css'
+
 import About from './components/About'
 
+import Home from './Home/Home'
+
+
+
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
+
     
+      
+    
+
+    <>
+  
+      <Home />
       <div className='w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 '>
          <div class="cube-container">
            <div class="cube">
@@ -22,7 +35,9 @@ function App() {
         <About />
       </div>
      
-    
+
+    </>
+
   )
 }
 
