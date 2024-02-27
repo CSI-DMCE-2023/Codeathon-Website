@@ -39,16 +39,9 @@ function AboutDetail() {
 
   return (
 
-    <div className="w-full h-full   flex  justify-center items-center p-8 ">
-      <div className=" w-1/2 h-1/3  p-20 ">
-        {/* <img className=" w-full " src={Hackthon} ></img> */}
-
-
-        {/* <video  controls autoplay loop  >
-             <source src={CSI_video}/>
-           </video> */}
-
-        <div class="mob-video">
+    <div className="w-full h-full  max-md:flex-col-reverse flex  justify-center items-center md:p-8 p-2 ">
+      <div className=" w-full mx-auto md:w-1/2 h-1/3  md:p-20 max-md:py-16 ">
+        <div class="mob-video max-md:mx-auto">
           <div class="btn1"></div>
           <div class="btn2"></div>
           <div class="btn3"></div>
@@ -74,19 +67,15 @@ function AboutDetail() {
           </div>
         </div>
 
-        {/* <div>
-    <video controls autoplay loop muted>
-        <source src={CSI_video} type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
-</div> */}
+   
+
       </div>
 
-      <div className="w-1/2 ">
-        <h1 className="text-sky-400 text-5xl font-extrabold mb-10 text-center">What is Code-a-thon?</h1>
+      <div className="md:w-1/2 w-full ">
+        <h1 className="text-sky-400 text-5xl max-md:text-3xl font-extrabold mb-10 text-center">What is Code-a-thon?</h1>
 
-        <div class="About-card">
-          <p  >Codeathon is a 24-hour hackathon taking place in Datta Meghe  College of Engineering, Airoli, on the 09 and 10 of march 2024.
+        <div class="About-card h-auto">
+          <p  className="max-sm:text-sm md:font-bold" >Codeathon is a 24-hour hackathon taking place in Datta Meghe  College of Engineering, Airoli, on the 09 and 10 of march 2024.
             Our hackathon brings talented and ambitious students from all over India together to collaborate and create innovative solutions to real-world problems.
             Students can register in groups of 2-4 people. The hackathon is going to be conducted in 2 rounds.
             First, all the registered participants will submit their resumes, which will be screened by a qualified team on our end and shortlisted. The teams that move on to round 2 will be invited to the offline hackathon happening on campus, where they will have 24 hours to build a prototype for their chosen problem statement.

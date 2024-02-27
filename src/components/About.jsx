@@ -6,7 +6,7 @@ import React from 'react'
 const About = () => {
     return (  
         <div className="w-full  bg-slate-900 flex flex-col justify-start items-center gap-4">
-             <Cuboid/>
+             {/* <Cuboid/> */}
             <AboutDetail/>
             <Domain/>
         </div>

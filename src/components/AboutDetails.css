@@ -1,8 +1,7 @@
 .About-card {
   width: 100%;
-  height: 35rem;
-  /* border:1px solid blue; */
-  background: #07182e;
+
+ 
   position: relative;
   display: flex;
   place-content: center;
@@ -13,10 +12,9 @@
 .About-card p {
   z-index: 1;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 1rem;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
   text-align: justify;
 
 }
