@@ -11,6 +11,7 @@ import Navbar from './Navbar/Navbar'
 
 import { TimeLine } from './TimeLine/TimeLine'
 import { Gallery } from './Gallery/Gallery'
+import Footer from './footer/Footer'
 
 
 
@@ -37,6 +38,7 @@ function App() {
       <Gallery />
       <Sponcers />
       <GoToTopBtn />
+      <Footer />
     </>
 
   )
