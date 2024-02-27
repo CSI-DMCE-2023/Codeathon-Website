@@ -66,7 +66,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="w-full p-4 bg-black  h-[80px] flex items-center justify-between">
+            <div className="w-screen p-4 bg-black  h-[80px] flex items-center justify-between">
                 <div className="w-[20vw] h-full flex gap-4 items-center">
 
                     <img className="img-fluid w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={dmcelogo} alt="dmceLOGO" />
