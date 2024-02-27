@@ -2,9 +2,11 @@
 
 import './App.css'
 
-import About from './components/About'
+ import About from './components/About'
 
-import Home from './Home/Home'
+import { Home } from './Home/Home'
+
+import { TimeLine } from './TimeLine/TimeLine'
 
 
 
@@ -14,14 +16,15 @@ function App() {
 
   return (
 
-    
-      
-    
+
+
+
 
     <>
-  
+
       <Home />
-      <div className='w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 '>
+
+    <div className='w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 '>
          <div class="cube-container">
            <div class="cube">
               <div class="face front"></div>
@@ -33,8 +36,10 @@ function App() {
            </div>
          </div>          
         <About />
-      </div>
-     
+      </div> 
+
+      <TimeLine />
+
 
     </>
 

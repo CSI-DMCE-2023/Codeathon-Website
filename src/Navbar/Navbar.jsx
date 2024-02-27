@@ -4,7 +4,7 @@ import csi from "../assets/logo.png";
 import './navbar.css'
 const Navbar = () => {
     return (
-        <div className="w-full border  h-[80px] flex items-center justify-between">
+        <div className="w-full  h-[80px] flex items-center justify-between">
             <div className="w-[20vw] h-full flex gap-4 items-center">
 
                 <img className="img-fluid w-16 h-16" src={dmcelogo} alt="dmceLOGO" />
