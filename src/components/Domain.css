@@ -1,3 +1,6 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Trispace:wght@100..800&display=swap') */
+
 .container
 {
   max-width: 1000px;
@@ -59,4 +62,10 @@
   box-sizing: border-box;
   padding: 20px;
   z-index: -1;
+  font-family: "Anton", sans-serif;
+  font-weight:bold;
+  font-style: normal;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
 }
