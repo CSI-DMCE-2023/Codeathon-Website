@@ -61,7 +61,7 @@ function GoToTopBtn() {
 
             
             <img
-                className='z-50'
+                className='z-40'
                 src={isClicked ? rocketWithFire : rocket}
                 alt="Rocket"
                 onClick={scrollToTop}
