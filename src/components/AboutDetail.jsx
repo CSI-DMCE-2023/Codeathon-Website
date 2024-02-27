@@ -1,6 +1,42 @@
 import CSI_video from "../assets/csi.mp4"
 import "./AboutDetails.css"
+import React, { useRef, useEffect, useState } from 'react';
 function AboutDetail() {
+
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    // Function to check if an element is in the viewport
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+
+    // Function to handle scroll event
+    const handleScroll = () => {
+      if (isInViewport(videoElement) && !isPlaying) {
+        setIsPlaying(true);
+        videoElement.play();
+      }
+    };
+
+    // Event listener for scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up function
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isPlaying]);
+
   return (
 
     <div className="w-full h-full   flex  justify-center items-center p-8 ">
@@ -18,7 +54,14 @@ function AboutDetail() {
           <div class="btn3"></div>
           <div class="btn4"></div>
           <div class="mob-int relative border">
-            <video class="CSI_Video absolute border object-cover" controls autoplay loop muted >
+            <video
+              ref={videoRef}
+              className="CSI_Video absolute border object-cover"
+              controls
+              autoPlay
+              loop
+              muted
+            >
               <source src={CSI_video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
