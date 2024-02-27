@@ -2,10 +2,31 @@
 import { useEffect } from "react";
 import { MaskContainer } from "../components/ui/svg-mask-effect";
 import GLOBE from 'vanta/src/vanta.globe'
+// import NET from 'vanta/src/vanta.net'
 import Navbar from '../Navbar/Navbar'
 import './home.css'
+import { gsap, Power3 } from 'gsap';
 
 export function Home() {
+
+  // useEffect(() => {
+  //   NET({
+  //     el: '.vanta',
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     gyroControls: false,
+  //     minHeight: 200.00,
+  //     minWidth: 200.00,
+  //     scale: 1.00,
+  //     scaleMobile: 1.00,
+  //     color: 0x3f84ff,
+  //     backgroundColor: 0x0,
+  //     points: 12.00,
+  //     maxDistance: 13.00
+  //   })
+  // }, [])
+
+
   useEffect(() => {
     GLOBE({
       el: '#vanta2',
@@ -20,15 +41,59 @@ export function Home() {
       color2: 0xb93ea,
       backgroundColor: 0x0
     })
+
+
+    const tl = gsap.timeline();
+    gsap.set('.homeContent', {
+      opacity: 0,
+      scale: 0
+
+
+    })
+    gsap.set('.sparkle-button', {
+
+      opacity: 0,
+
+
+    })
+    gsap.set('#vanta2', {
+
+      opacity: 0,
+      scale: 5
+
+    })
+
+    tl.to('#vanta2', {
+      opacity: 1,
+      scale: 1,
+      duration: 2,
+      delay: 1
+    }).to('.homeContent', {
+      duration: 1,
+      scale: 1,
+      opacity: 1,
+      ease: Power3.easeInOut,
+
+    }).to('.sparkle-button', {
+
+      opacity: 1,
+
+      duration: 2,
+    })
+
   }, [])
+
+
+
+
   return (
-    <div className="h-screen bg w-full flex items-center justify-center  overflow-hidden flex-col" id="vanta2">
+    <div className="h-screen bg-black bg w-full flex items-center justify-center  overflow-hidden flex-col vanta" id="vanta2">
 
       <Navbar />
       <MaskContainer
         revealText={
           <div className="flex flex-col items-center gap-6">
-            <p className=" w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold p-20 ">
+            <p className=" homeContent w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold p-20 ">
               CODE-A-THON
             </p>
             <div class="sp">

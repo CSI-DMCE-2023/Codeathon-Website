@@ -95,25 +95,27 @@ export function TimeLine() {
     const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
     return (
-        <div
-            className="h-[200vh] bg-black w-full dark:border dark:border-white/[0.1] relative overflow-clip"
-            ref={ref}
-        >
-            <div className="flex items-center flex-col py-8"> <h1 className="text-white mx-auto text-4xl font-bold ">SCHEDULE</h1>
 
-                <div className="w-full flex items-center justify-center mt-4 gap-4 flex-wrap ">
+        <div className="h-auto w-full relative">
+
+
+            <div className="flex items-center flex-col py-8 z-50 bg-black">
+
+          <h1 className="text-white text-4xl font-bold ">SCHEDULE</h1>
+
+                <div className="w-full grid grid-col-1 p-4 md:grid-cols-2 lg:grid-cols-3 gap-2  m-2 h-full z-40  ">
                     {
                         schedule.length && schedule.map((item, i) => {
-                            return <div class="card1 text-white">
-                                <div class="card2 p-2">
-                                    <div className="flex gap-4 p-2">
+                            return <div class="card1 text-white border-b border-gray-700">
+                                <div class="card2 p-1 h-full">
+                                    <div className="flex gap-4 p-1">
                                         <CalendarTodayIcon /> : {item.day}
                                     </div>
-                                    <div className="flex gap-4 p-2">
+                                    <div className="flex gap-4 p-1">
                                         <AccessTimeIcon /> : {item.time}
                                     </div>
-                                    <div className="flex gap-4 p-2">
-                                        <EventIcon /> : {item.day}
+                                    <div className="flex gap-4 p-1">
+                                        <EventIcon /> : {item.event}
                                     </div>
 
                                 </div>
@@ -123,18 +125,27 @@ export function TimeLine() {
 
                 </div>
             </div>
-            <div>
+
+            <div
+                className="h-full  top-0 bg-black w-full dark:border dark:border-white/[0.1] absolute overflow-clip z-0 "
+                ref={ref}
+            >
+
+
+
+                <GoogleGeminiEffect
+                    pathLengths={[
+                        pathLengthFirst,
+                        pathLengthSecond,
+                        pathLengthThird,
+                        pathLengthFourth,
+                        pathLengthFifth,
+                    ]}
+                />
 
             </div>
-            <GoogleGeminiEffect
-                pathLengths={[
-                    pathLengthFirst,
-                    pathLengthSecond,
-                    pathLengthThird,
-                    pathLengthFourth,
-                    pathLengthFifth,
-                ]}
-            />
         </div>
+
+
     );
 }
