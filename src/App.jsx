@@ -6,7 +6,8 @@ import About from './components/About'
 import GoToTopBtn from './goToTopBtn/GoToTopBtn'
 
 import { Home } from './Home/Home'
-import Sponcers from './sponcers/Sponcers'
+import { Sponcers } from './sponcers/Sponcers.jsx'
+
 import Navbar from './Navbar/Navbar'
 
 import { TimeLine } from './TimeLine/TimeLine'

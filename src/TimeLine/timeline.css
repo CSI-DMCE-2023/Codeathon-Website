@@ -33,8 +33,10 @@
    .card2:hover {
 	transform: scale(0.98);
 	border-radius: 20px;
+	border:  1px solid rgb(14, 171, 255);
+
    }
    
-   .card1:hover {
+   /* .card1:hover {
 	box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-   }
+   } */
