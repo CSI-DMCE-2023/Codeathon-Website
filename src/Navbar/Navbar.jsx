@@ -22,15 +22,15 @@ const Navbar = () => {
 
     }, [])
     return (
-        <div className="w-full p-4  h-[80px] flex items-center justify-between">
+        <div className="w-full p-4 bg-black  h-[80px] flex items-center justify-between">
             <div className="w-[20vw] h-full flex gap-4 items-center">
 
-                <img className="img-fluid w-16 h-16 navcontent" src={dmcelogo} alt="dmceLOGO" />
+                <img className="img-fluid w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={dmcelogo} alt="dmceLOGO" />
 
-                <img className="img-fluid w-16 h-16 navcontent" src={csi} alt="csi logo" />
+                <img className="img-fluid  w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={csi} alt="csi logo" />
 
             </div>
-            <div className="m-4 text-white navcontent">
+            <div className="m-4 w-[3rem] h-[3rem] md:w-16 md:h-16 text-white navcontent">
                 <input id="checkbox" type="checkbox" />
                 <label class="toggle" for="checkbox">
                     <div id="bar1" class="bars"></div>

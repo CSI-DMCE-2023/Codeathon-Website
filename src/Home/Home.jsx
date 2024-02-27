@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { MaskContainer } from "../components/ui/svg-mask-effect";
 import GLOBE from 'vanta/src/vanta.globe'
 // import NET from 'vanta/src/vanta.net'
-import Navbar from '../Navbar/Navbar'
 import './home.css'
 import { gsap, Power3 } from 'gsap';
 
@@ -66,8 +65,8 @@ export function Home() {
     tl.to('#vanta2', {
       opacity: 1,
       scale: 1,
-      duration: 2,
-      delay: 1
+      // duration: 2,
+      // delay: 1
     }).to('.homeContent', {
       duration: 1,
       scale: 1,
@@ -87,13 +86,13 @@ export function Home() {
 
 
   return (
-    <div className="h-screen bg-black bg w-full flex items-center justify-center  overflow-hidden flex-col vanta" id="vanta2">
+    <div className="h-screen bg-black bg w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden" id="vanta2">
 
-      <Navbar />
+     
       <MaskContainer
         revealText={
-          <div className="flex flex-col items-center gap-6">
-            <p className=" homeContent w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold p-20 ">
+          <div className="flex flex-col items-center gap-6 ">
+            <p className=" homeContent w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold m-20 ">
               CODE-A-THON
             </p>
             <div class="sp">
@@ -168,7 +167,7 @@ export function Home() {
         }
         className="h-[40rem]   w-full rounded-md"
       >
-        <p className="text-6xl p-20">CSI-DMCE</p>
+        <p className="md:text-6xl  text-3xl z-30 mt-12 p-12">CSI-DMCE</p>
       </MaskContainer>
 
     </div>

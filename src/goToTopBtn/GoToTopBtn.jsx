@@ -59,7 +59,7 @@ function GoToTopBtn() {
     return (
         <div className='z-50'>
 
-            (
+            
             <img
                 className='z-50'
                 src={isClicked ? rocketWithFire : rocket}
@@ -68,7 +68,7 @@ function GoToTopBtn() {
                 ref={rocketRef}
                 style={{ width: '50px', height: '50px', position: 'fixed', bottom: '20px', right: '20px', cursor: 'pointer' }}
             />
-            )
+            
         </div>
     );
 }
