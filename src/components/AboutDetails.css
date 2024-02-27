@@ -77,16 +77,12 @@
     background-position: 0% 0%;
     height: 100%;
     border-radius: 25px;
-    position: relative;
     z-index: 10;
     overflow: hidden;
   }
   .CSI_Video{
     width:100%;
     height:100%;
-    position: absolute;
-    top:0;
-    left: 0;
     
     /* background-position: center; */
     border-radius: 2rem;
