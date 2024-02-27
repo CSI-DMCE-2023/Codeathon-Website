@@ -10,6 +10,7 @@ import Sponcers from './sponcers/Sponcers'
 import Navbar from './Navbar/Navbar'
 
 import { TimeLine } from './TimeLine/TimeLine'
+import { Gallery } from './Gallery/Gallery'
 
 
 
@@ -33,6 +34,7 @@ function App() {
       </div>
 
       <TimeLine />
+      <Gallery />
       <Sponcers />
       <GoToTopBtn />
     </>

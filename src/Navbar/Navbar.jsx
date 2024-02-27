@@ -65,8 +65,8 @@ const Navbar = () => {
     }
 
     return (
-        <>
-            <div className="w-screen p-4 bg-black  h-[80px] flex items-center justify-between">
+        <div className="w-full overflow-hidden h-full">
+            <div className="w-screen p-4 overflow-x-hidden bg-black  h-[80px] flex items-center justify-between">
                 <div className="w-[20vw] h-full flex gap-4 items-center">
 
                     <img className="img-fluid w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={dmcelogo} alt="dmceLOGO" />
@@ -79,12 +79,12 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className={"w-full top-0 transition-all duration-200  absolute z-50 h-[110%] bg-black text-white p-8 " + (side === false ? " translate-x-0 " : " translate-x-[100%]")}>
+            <div className={"w-full top-0 transition-all duration-200  absolute z-50 h-[110%] bg-black text-white p-8 " + (side === false ? " opacity-100 " : " opacity-0 pointer-events-none")}>
                 <div className="w-full p-2 h-8 cursor-pointer">
                     <CloseIcon fontSize="large" onClick={toggle} />
                 </div>
 
-                <div className="w-[96%] sidebar h-auto mt-8 flex gap-4 flex-col justify-center items-center text-2xl">
+                <div className="w-[96%] mx-auto sidebar h-auto mt-8 flex gap-4 flex-col justify-center items-center text-2xl">
 
                     <p className="p-2  border-b-4 sidepara1 border-blue-700 w-full text-center">Home</p>
                     <p className="p-2  border-b-4 sidepara2 border-blue-700 w-full text-center">About</p>
@@ -97,7 +97,7 @@ const Navbar = () => {
 
             </div>
 
-        </>
+        </div>
 
     );
 };
