@@ -103,7 +103,7 @@ export function TimeLine() {
 
           <h1 className="text-white text-4xl font-bold ">SCHEDULE</h1>
 
-                <div className="w-full grid grid-col-1 p-4 md:grid-cols-2 lg:grid-cols-3 gap-2  m-2 h-full z-40  ">
+                <div className="w-full grid grid-col-1 p-4 md:grid-cols-2 lg:grid-cols-3 gap-2  m-2 h-full z-10  ">
                     {
                         schedule.length && schedule.map((item, i) => {
                             return <div class="card1 text-white border-b border-gray-700">
