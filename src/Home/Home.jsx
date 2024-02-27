@@ -27,13 +27,13 @@ export function Home() {
       <Navbar />
       <MaskContainer
         revealText={
-          <div className="flex flex-col items-center gap-6 ">
-            <p className=" w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold ">
+          <div className="flex flex-col items-center gap-6">
+            <p className=" w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold p-20 ">
               CODE-A-THON
             </p>
             <div class="sp">
 
-              <button class="sparkle-button">
+              <button class="sparkle-button ">
                 <span class="spark"></span>
 
                 <span class="backdrop"></span>
@@ -103,7 +103,7 @@ export function Home() {
         }
         className="h-[40rem]   w-full rounded-md"
       >
-        <p className="text-6xl">CSI-DMCE</p>
+        <p className="text-6xl p-20">CSI-DMCE</p>
       </MaskContainer>
 
     </div>
