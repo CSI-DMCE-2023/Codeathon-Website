@@ -75,12 +75,9 @@ function AboutDetail() {
         <h1 className="text-sky-400 text-5xl max-md:text-3xl font-extrabold mb-10 text-center">What is Code-a-thon?</h1>
 
         <div class="About-card h-auto">
-          <p  className="max-sm:text-sm md:font-bold" >Codeathon is a 24-hour hackathon taking place in Datta Meghe  College of Engineering, Airoli, on the 09 and 10 of march 2024.
-            Our hackathon brings talented and ambitious students from all over India together to collaborate and create innovative solutions to real-world problems.
-            Students can register in groups of 2-4 people. The hackathon is going to be conducted in 2 rounds.
-            First, all the registered participants will submit their resumes, which will be screened by a qualified team on our end and shortlisted. The teams that move on to round 2 will be invited to the offline hackathon happening on campus, where they will have 24 hours to build a prototype for their chosen problem statement.
-            Arrangements will be made for refreshments, resting, and recreational activities for our participants.
-          </p>
+          <p  className="max-sm:text-sm md:font-bold  " >
+
+          Codeathon is a 24-hour hackathon at Datta Meghe College of Engineering, Airoli, on March 9-10, 2024. Students across India collaborate in groups of 2-4 to solve real-world problems. Round 1 involves resume submission and screening, with shortlisted teams advancing to Round 2, an on-campus hackathon. Teams have 24 hours to prototype solutions. Refreshments and resting areas are provided          </p>
         </div>
 
       </div>
