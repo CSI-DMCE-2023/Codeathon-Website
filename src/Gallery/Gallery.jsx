@@ -12,93 +12,93 @@ export const products = [
         title: "Moonbeam",
         link: "https://gomoonbeam.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed",
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
         title: "Cursor",
         link: "https://cursor.so",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Rogue",
         link: "https://userogue.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
 
     {
         title: "Editorially",
         link: "https://editorially.org",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Editrix AI",
         link: "https://editrix.ai",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Pixel Perfect",
         link: "https://app.pixelperfect.quest",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
 
     {
         title: "Algochurn",
         link: "https://algochurn.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Aceternity UI",
         link: "https://ui.aceternity.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Tailwind Master Kit",
         link: "https://tailwindmasterkit.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "SmartBridge",
         link: "https://smartbridgetech.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Renderwork Studio",
         link: "https://renderwork.studio",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
 
     {
         title: "Creme Digital",
         link: "https://cremedigital.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Golden Bells Academy",
         link: "https://goldenbellsacademy.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "Invoker Labs",
         link: "https://invoker.lol",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         title: "E Free Invoice",
         link: "https://efreeinvoice.com",
         thumbnail:
-            "https://res-console.cloudinary.com/do8ji7uqc/media_explorer_thumbnails/acc301b6e081be0b2c8627f964aa836c/detailed"
+            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
 ];
