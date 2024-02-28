@@ -1,10 +1,15 @@
 import { HoverEffect } from "../components/ui/card-hover-effect";
+import { motion } from 'framer-motion'
+import { fadeIn } from "../varients";
 
 export function Sponcers() {
   return (
     <div className="w-full  mx-auto px-8 bg-black py-12">
       <div className='w-full flex items-center justify-center'>
-        <h1 className="text-white mx-auto text-4xl font-bold   ">Sponsors</h1>
+        <motion.h1 variants={fadeIn('up', 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }} className="text-white mx-auto text-4xl font-bold   ">Sponsors</motion.h1>
 
       </div>
       <HoverEffect items={projects} />

@@ -50,7 +50,7 @@ export function Home() {
 
     })
     gsap.set('.sparkle-button', {
-
+      scale: 2,
       opacity: 0,
 
 
@@ -65,7 +65,7 @@ export function Home() {
     tl.to('#vanta2', {
       opacity: 1,
       scale: 1,
-      // duration: 2,
+      duration: 2,
       // delay: 1
     }).to('.homeContent', {
       duration: 1,
@@ -74,10 +74,9 @@ export function Home() {
       ease: Power3.easeInOut,
 
     }).to('.sparkle-button', {
-
+      scale: 1,
       opacity: 1,
-
-      duration: 2,
+     duration :0.5
     })
 
   }, [])
@@ -88,7 +87,7 @@ export function Home() {
   return (
     <div className="h-screen bg-black bg w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden" id="vanta2">
 
-     
+
       <MaskContainer
         revealText={
           <div className="flex flex-col items-center gap-6 ">
