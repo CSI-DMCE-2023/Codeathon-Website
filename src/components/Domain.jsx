@@ -9,6 +9,7 @@ function Domain() {
       <div class="container">
         <div class="card">
           <div class="Box">
+          <h2>SMART AUTOMATION</h2>
             {/* <img src="https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
           </div>
           <div class="details">
