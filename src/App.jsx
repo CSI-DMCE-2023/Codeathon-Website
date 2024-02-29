@@ -86,13 +86,13 @@ function App() {
             <About />
           </div>
 
-            <TimeLine />
-            <Gallery />
-            <Sponcers />
-            <GoToTopBtn />
-            <Footer />
-          </>
-      
+          <TimeLine />
+          <Gallery />
+          <Sponcers />
+          <GoToTopBtn />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
