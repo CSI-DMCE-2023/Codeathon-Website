@@ -18,6 +18,15 @@ import Lenis from '@studio-freight/lenis'
 function App() {
 
   const [loading, setLoading] = useState(true);
+  const cursor = document.getElementById("cursor");
+  const stalker = document.getElementById("stalker");
+  document.addEventListener("mousemove", (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+    stalker.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
 
   useEffect(() => {
 
@@ -43,6 +52,10 @@ function App() {
         loading ? <PreLoader />
           :
           <>
+
+            <div id="cursor"></div>
+            <div id="stalker"></div>
+
             <Navbar />
             <Home />
 
