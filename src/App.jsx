@@ -1,5 +1,6 @@
 import "./App.css";
 
+//import Scroll from "./Scroll.jsx";
 import About from "./components/About";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
@@ -13,10 +14,16 @@ import { Gallery } from "./Gallery/Gallery";
 import Footer from "./footer/Footer";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
-import Lenis from '@studio-freight/lenis'
+import Lenis from "@studio-freight/lenis";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 function App() {
-
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   const [loading, setLoading] = useState(true);
   const cursor = document.getElementById("cursor");
   const stalker = document.getElementById("stalker");
@@ -27,17 +34,15 @@ function App() {
     stalker.style.transform = `translate(${x}px, ${y}px)`;
   });
 
-
   useEffect(() => {
-
-    const lenis = new Lenis()
+    const lenis = new Lenis();
 
     function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf)
+    requestAnimationFrame(raf);
 
     // Simulate content loading delay
     const timer = setTimeout(() => {
@@ -48,28 +53,41 @@ function App() {
   }, []);
   return (
     <div>
-      {
-        loading ? <PreLoader />
-          :
-          <>
+      {loading ? (
+        <PreLoader />
+      ) : (
+        <>
+          <motion.div
+            className="progress-bar"
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "10px",
+              background: "rgb(56 189 248)",
+              transformOrigin: "0%",
+              zIndex: 100,
+              scaleX,
+            }}
+          />
+          <div id="cursor"></div>
+          <div id="stalker"></div>
 
-            <div id="cursor"></div>
-            <div id="stalker"></div>
+          <Navbar />
+          <Home />
 
-            <Navbar />
-            <Home />
+          <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
+            <About />
+          </div>
 
-            <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
-              <About />
-            </div>
-
-            <TimeLine />
-            <Gallery />
-            <Sponcers />
-            <GoToTopBtn />
-            <Footer />
-          </>
-      }
+          <TimeLine />
+          <Gallery />
+          <Sponcers />
+          <GoToTopBtn />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
