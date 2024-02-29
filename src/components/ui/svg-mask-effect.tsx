@@ -3,7 +3,6 @@ import {ComponentElement, useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 import React from 'react';
-import svg from './mask.svg'
 
 
 export const MaskContainer = ({
