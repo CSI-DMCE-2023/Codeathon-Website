@@ -68,6 +68,7 @@ function AboutDetail() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
