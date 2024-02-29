@@ -1,8 +1,8 @@
-import CSI_video from "../assets/csi.mp4"
-import "./AboutDetails.css"
-import React, { useRef, useEffect, useState } from 'react';
+import CSI_video from "../assets/csi.mp4";
+import "./AboutDetails.css";
+import React, { useRef, useEffect, useState } from "react";
+// import CsiDesc from "./CsiDesc";
 function AboutDetail() {
-
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -15,8 +15,10 @@ function AboutDetail() {
       return (
         rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
       );
     };
 
@@ -29,19 +31,18 @@ function AboutDetail() {
     };
 
     // Event listener for scroll
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up function
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [isPlaying]);
 
   return (
-
-    <div className="w-full h-full  max-md:flex-col-reverse flex  justify-center items-center md:p-8 p-2 ">
+    <div className="w-full h-full  max-md:flex-col-reverse  md:p-8 p-2  ">
       <div className=" w-full mx-auto md:w-1/2 h-1/3  md:p-20 max-md:py-16 ">
-        <div class="mob-video max-md:mx-auto">
+        <div class="mob-video w-[90%] md:w-[70%] ">
           <div class="btn1"></div>
           <div class="btn2"></div>
           <div class="btn3"></div>
@@ -66,23 +67,8 @@ function AboutDetail() {
             <div class="speaker"></div>
           </div>
         </div>
-
-   
-
-      </div>
-
-      <div className="md:w-1/2 w-full ">
-        <h1 className="text-sky-400 text-5xl max-md:text-3xl font-extrabold mb-10 text-center">What is Code-a-thon?</h1>
-
-        <div class="About-card h-auto">
-          <p  className="max-sm:text-sm md:font-bold  " >
-
-          Codeathon is a 24-hour hackathon at Datta Meghe College of Engineering, Airoli, on March 9-10, 2024. Students across India collaborate in groups of 2-4 to solve real-world problems. Round 1 involves resume submission and screening, with shortlisted teams advancing to Round 2, an on-campus hackathon. Teams have 24 hours to prototype solutions. Refreshments and resting areas are provided          </p>
-        </div>
-
       </div>
     </div>
-
-  )
+  );
 }
 export default AboutDetail;

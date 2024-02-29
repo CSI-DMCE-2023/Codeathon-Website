@@ -14,6 +14,8 @@ import { Gallery } from "./Gallery/Gallery";
 import Footer from "./footer/Footer";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
+import Contact from "./components/Contact";
+// import Spline from "./components/spline.jsx";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 
@@ -80,14 +82,17 @@ function App() {
           <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div>
+          <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
+            <About />
+          </div>
 
-          <TimeLine />
-          <Gallery />
-          <Sponcers />
-          <GoToTopBtn />
-          <Footer />
-        </>
-      )}
+            <TimeLine />
+            <Gallery />
+            <Sponcers />
+            <GoToTopBtn />
+            <Footer />
+          </>
+      
     </div>
   );
 }

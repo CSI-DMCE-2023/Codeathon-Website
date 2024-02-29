@@ -1,5 +1,4 @@
 import Domain from "./Domain"
-import Cuboid from "./Cuboid"
 import AboutDetail from "./AboutDetail"
 import React from 'react'
 
