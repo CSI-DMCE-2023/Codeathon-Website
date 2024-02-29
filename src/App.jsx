@@ -15,11 +15,31 @@ import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
 import Contact from "./components/Contact";
 // import Spline from "./components/spline.jsx";
+import Lenis from '@studio-freight/lenis'
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const cursor = document.getElementById("cursor");
+  const stalker = document.getElementById("stalker");
+  document.addEventListener("mousemove", (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    cursor.style.transform = `translate(${x}px, ${y}px)`;
+    stalker.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
 
   useEffect(() => {
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
     // Simulate content loading delay
     const timer = setTimeout(() => {
       setLoading(false);
