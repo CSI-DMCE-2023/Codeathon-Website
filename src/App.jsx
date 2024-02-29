@@ -13,12 +13,23 @@ import { Gallery } from "./Gallery/Gallery";
 import Footer from "./footer/Footer";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
+import Lenis from '@studio-freight/lenis'
 
 function App() {
 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
     // Simulate content loading delay
     const timer = setTimeout(() => {
       setLoading(false);
