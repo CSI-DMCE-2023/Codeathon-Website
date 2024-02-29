@@ -3,6 +3,7 @@ import {ComponentElement, useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 import React from 'react';
+import svg from './mask.svg'
 
 
 export const MaskContainer = ({
@@ -48,7 +49,7 @@ export const MaskContainer = ({
       }}
     >
       <motion.div
-        className={` w-full h-full flex items-center justify-center text-6xl absolute  bg-[#003399]/50 bg-grid-white/[0.2] text-white [mask-image:url(./mask.svg)] [mask-size:40px] [mask-repeat:no-repeat] `}
+        className={` w-full h-full flex items-center justify-center text-6xl absolute  bg-[#003399]/50 bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat] `}
         animate={{
           WebkitMaskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2

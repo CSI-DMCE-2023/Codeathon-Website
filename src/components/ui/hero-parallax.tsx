@@ -133,13 +133,13 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-96 w-[20rem] relative flex-shrink-0"
     >
       
         <img
           src={product.thumbnail}
-          height="600"
-          width="600"
+          height="400"
+          width="400"
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
         />
