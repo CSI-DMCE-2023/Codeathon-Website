@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div>
       <section
-        className="relative z-10 overflow-hidden bg-white dark:bg-dark"
+        className="relative z-10 overflow-hidden bg-white"
         style={{ filter: "invert(1)" }}
       >
         <div className="container flex  flex-col  my-0 mx-auto justify-center items-center ">
@@ -13,10 +13,10 @@ const Contact = () => {
           <div id="contactContainer" className=" lg:justify-between grid md:grid-cols-2 grid-cols-1 w-full">
             <div className="w-full px-4 ">
               <div className="mb-12 w-full p-4 lg:mb-0">
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="mb-9 text-base leading-relaxed text-body-color text-white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eius tempor incididunt ut labore e dolore magna aliqua. Ut
                   enim adiqua minim veniam quis nostrud exercitation ullamco
@@ -37,10 +37,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-white">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-white">
                       Datta Meghe College of Engineering, Sector-3, Airoli, Navi
                       Mumbai, MH
                     </p>
@@ -78,10 +78,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-white">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-white">
                       (022) 27797130
                     </p>
                   </div>
@@ -103,10 +103,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-white">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-white">
                      csi@dmce.ac.in
                     </p>
                   </div>
