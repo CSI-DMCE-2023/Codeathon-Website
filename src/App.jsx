@@ -18,6 +18,7 @@ import Contact from "./components/Contact";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
+import MainDomain from "./components/MainDomain.jsx";
 
 
 
@@ -86,9 +87,10 @@ function App() {
 
           <Home />
 
-          <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
+          {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
-          </div>
+          </div> */}
+          <MainDomain/>
 
          
           
