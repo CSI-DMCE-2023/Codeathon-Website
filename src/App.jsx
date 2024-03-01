@@ -19,7 +19,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
-import Faq from "./FAQ/Faq.jsx";
+
 
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
               top: 0,
               left: 0,
               right: 0,
-              height: "4px",
+              height: "10px",
               background: "linear-gradient(145deg, #9fccfa, #0974f1)",
               borderRadius: "300px",
               transformOrigin: "0%",
@@ -101,8 +101,7 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
-            <Faq />
-            <Contact />
+            <Contact/>
             <Footer />
            
           </>
