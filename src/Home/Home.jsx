@@ -5,6 +5,7 @@ import GLOBE from 'vanta/src/vanta.globe'
 // import NET from 'vanta/src/vanta.net'
 import './home.css'
 import { gsap, Power3 } from 'gsap';
+import Timer from "../timer/Timer";
 
 export function Home() {
 
@@ -90,10 +91,11 @@ export function Home() {
 
       <MaskContainer
         revealText={
-          <div className="flex flex-col items-center gap-6 ">
-            <p className=" homeContent w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold m-20 ">
+          <div className="flex flex-col items-center gap-8 ">
+            <p className=" homeContent w-full text-white mx-auto  text-center  md:text-8xl text-4xl font-bold mt-20  md:mb-10">
               CODE-A-THON
             </p>
+            <Timer/>
             <div class="sp">
 
               <button class="sparkle-button ">
