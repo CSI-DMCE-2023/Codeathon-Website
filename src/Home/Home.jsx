@@ -79,8 +79,11 @@ export function Home() {
         <MaskContainer
           revealText={
             <div className="flex flex-col items-center gap-8 ">
-              <p data-text="CODE-A-THON" className="hometext homeContent w-full text-white mx-auto   font-bold mt-20  md:mb-10 text-center bomber-escort text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-glow hero-title">
-                CODE-A-THON
+              <p data-text="100000/-" className=" hometext text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
+
+                100000/-
+
+
               </p>
               <Timer />
               <div class="sp">

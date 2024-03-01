@@ -119,7 +119,7 @@ export function TimeLine() {
                     <h2 className={styles.sectionHeadText + " text-center w-full mx-auto"}>SCHEDULE</h2>
                 </motion.div>
 
-                <div className="mt-10 flex flex-col">
+                <div className="mt-10 flex flex-col z-40">
                     <VerticalTimeline>
                         {experiences.map((experience, index) => (
                             <ExperienceCard key={index} experience={experience} />
