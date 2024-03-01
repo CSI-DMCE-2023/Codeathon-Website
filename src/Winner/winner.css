@@ -344,23 +344,3 @@
     position: relative;
 }
 
-.text::before {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #ff7a00;
-    -webkit-text-stroke: 3px #ff7a00;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid #ff7a00;
-    animation: text-fill 2s ease-in-out alternate infinite;
-}
-
-
-@keyframes text-fill {
-    100% {
-        width: 100%;
-    }
-}
