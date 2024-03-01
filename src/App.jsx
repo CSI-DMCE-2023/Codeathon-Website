@@ -11,15 +11,15 @@ import Navbar from "./Navbar/Navbar";
 import { TimeLine } from "./TimeLine/TimeLine";
 import { Gallery } from "./Gallery/Gallery";
 import Footer from "./footer/Footer";
+import Faq from "./FAQ/Faq";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
 import Contact from "./components/Contact";
-// import Spline from "./components/spline.jsx";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
-import Faq from "./FAQ/Faq.jsx";
+
 
 
 function App() {
@@ -30,14 +30,7 @@ function App() {
     restDelta: 0.001,
   });
   const [loading, setLoading] = useState(true);
-  // const cursor = document.getElementById("cursor");
-  // const stalker = document.getElementById("stalker");
-  // document.addEventListener("mousemove", (event) => {
-  //   const x = event.clientX;
-  //   const y = event.clientY;
-  //   cursor.style.transform = `translate(${x}px, ${y}px)`;
-  //   stalker.style.transform = `translate(${x}px, ${y}px)`;
-  // });
+ 
 
 
   useEffect(() => {
@@ -74,7 +67,7 @@ function App() {
               top: 0,
               left: 0,
               right: 0,
-              height: "10px",
+              height: "4px",
               background: "linear-gradient(145deg, #9fccfa, #0974f1)",
               borderRadius: "300px",
               transformOrigin: "0%",
@@ -101,7 +94,7 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
-            <Faq/>
+           <Faq/>
             <Contact />
             <Footer />
            
