@@ -75,9 +75,10 @@ function App() {
               left: 0,
               right: 0,
               height: "10px",
-              background: "rgb(56 189 248)",
+              background:"linear-gradient(145deg, #9fccfa, #0974f1)",
+              borderRadius: "300px",
               transformOrigin: "0%",
-              zIndex: 100,
+              zIndex: 1000,
               scaleX,
             }}
           />
@@ -85,20 +86,21 @@ function App() {
 
 
           <Home />
-        
 
           <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div>
-          <TimeLine />
-          <Winner />
-          <Gallery />
-          <Sponcers />
-          <GoToTopBtn />
-          <Footer />
+          <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
+            <About />
+          </div>
 
-        </>
-      )}
+            <TimeLine />
+            <Gallery />
+            <Sponcers />
+            <GoToTopBtn />
+            <Footer />
+          </>
+          )}
     </div>
   );
 }
