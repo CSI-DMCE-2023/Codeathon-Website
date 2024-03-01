@@ -101,6 +101,7 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
+            <Faq />
             <Contact />
             <Footer />
            
