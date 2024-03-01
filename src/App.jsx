@@ -19,7 +19,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
-
+import Faq from "./FAQ/Faq.jsx";
 
 
 function App() {
@@ -101,6 +101,8 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
+
+            <Faq/>
             <Contact/>
             <Footer />
            
