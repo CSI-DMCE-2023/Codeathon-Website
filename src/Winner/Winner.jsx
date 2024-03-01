@@ -110,7 +110,7 @@ const Winner = () => {
                                     <div class="button-holder w-[200px]">
 
                                         <p>25000/-</p>
-                                        <p>SUSUTAIBLE <br /> DEVELOPMENT</p>
+                                        <p>SUSTAINABLE <br /> DEVELOPMENT</p>
                                     </div>
                                 </button>
                             </div>

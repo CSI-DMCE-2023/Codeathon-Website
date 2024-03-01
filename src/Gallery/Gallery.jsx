@@ -13,32 +13,31 @@ export const products = [
         title: "Moonbeam",
         link: "https://gomoonbeam.com",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709319991/IMG_5893_gkt73y.jpg",
     },
     {
         title: "Cursor",
         link: "https://cursor.so",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709320118/IMG_20230217_134020_zmpwu9.jpg"
     },
     {
-        title: "Rogue",
-        link: "https://userogue.com",
+        
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709319612/IMG_5914_yson4f.jpg"
     },
 
     {
         title: "Editorially",
         link: "https://editorially.org",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709319146/IMG_6051_tlo0jw.jpg"
     },
     {
         title: "Editrix AI",
         link: "https://editrix.ai",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709319254/IMG_5896_wpmw9i.jpg"
     },
     {
         title: "Pixel Perfect",
@@ -57,19 +56,19 @@ export const products = [
         title: "Aceternity UI",
         link: "https://ui.aceternity.com",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709320359/IMG_5928_nlrjtf.jpg"
     },
     {
         title: "Tailwind Master Kit",
         link: "https://tailwindmasterkit.com",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709320366/IMG_6041_ixo85s.jpg"
     },
     {
         title: "SmartBridge",
         link: "https://smartbridgetech.com",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "https://res.cloudinary.com/deshcj4pb/image/upload/v1709320360/IMG_6032_jwfouj.jpg"
     },
     {
         title: "Renderwork Studio",
