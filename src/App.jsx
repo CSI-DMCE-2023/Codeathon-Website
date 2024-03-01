@@ -18,8 +18,9 @@ import Contact from "./components/Contact";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import MainDomain from "./components/MainDomain.jsx";
 import Faq from "./FAQ/Faq.jsx";
+
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -73,8 +74,8 @@ function App() {
               top: 0,
               left: 0,
               right: 0,
-              height: "4px",
-              background:"linear-gradient(145deg, #9fccfa, #0974f1)",
+              height: "10px",
+              background: "linear-gradient(145deg, #9fccfa, #0974f1)",
               borderRadius: "300px",
               transformOrigin: "0%",
               zIndex: 1000,
@@ -86,19 +87,23 @@ function App() {
 
           <Home />
 
-          <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
+          {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
-          </div>
+          </div> */}
+          <MainDomain/>
+
+         
           
+
 
             <TimeLine />
             <Winner/>
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
-            <Faq />
             <Contact />
             <Footer />
+           
           </>
           )}
     </div>
