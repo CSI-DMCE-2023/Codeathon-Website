@@ -46,7 +46,8 @@ const Winner = () => {
                 <motion.div variants={fadeIn("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }} className="w-full h-full flex items-center justify-center flex-col ">
+                    viewport={{ once: false, amount: 0.7 }} className="w-full h-full flex items-center justify-center flex-col "
+                    >
                     <p  data-text="1,00,000/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
 
                         1,00,000/-
