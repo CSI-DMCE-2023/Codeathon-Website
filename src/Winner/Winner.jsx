@@ -48,9 +48,9 @@ const Winner = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }} className="w-full h-full flex items-center justify-center flex-col ">
-                    <p  data-text="10,00,00/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
+                    <p  data-text="1,00,000/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
 
-                        10,00,00/-
+                        1,00,000/-
 
 
                     </p>

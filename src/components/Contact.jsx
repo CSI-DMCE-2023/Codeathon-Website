@@ -10,9 +10,9 @@ const Contact = () => {
       >
         <div className="container flex  flex-col  my-0 mx-auto justify-center items-center ">
           <h1 className="text-center font-bold text-4xl py-8 ">Contact Us</h1>
-          <div id="contactContainer" className="-mx-4 flex lg:justify-between">
-            <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
+          <div id="contactContainer" className=" lg:justify-between grid md:grid-cols-2 grid-cols-1 w-full">
+            <div className="w-full px-4 ">
+              <div className="mb-12 w-full p-4 lg:mb-0">
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
@@ -115,7 +115,7 @@ const Contact = () => {
             </div>
 
             <div
-              className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+              className=" rounded-lg overflow-hidden  p-10 flex items-end justify-start relative"
               style={{ filter: "invert(1)" }}
             >
               <iframe
