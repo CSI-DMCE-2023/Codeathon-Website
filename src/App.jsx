@@ -19,7 +19,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-
+import Faq from "./FAQ/Faq.jsx";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -96,6 +96,7 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
+            <Faq />
             <Contact />
             <Footer />
           </>
