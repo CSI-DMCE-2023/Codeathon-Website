@@ -3,8 +3,9 @@ import React, { useState } from "react";
 const Accordion = () => {
   return (
     <section className="relative z-20 overflow-hidden bg-black pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex-col">
         <div className="-mx-4 flex flex-wrap">
+
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
               <span className="mb-2 block text-lg font-semibold text-white">
@@ -131,7 +132,7 @@ const AccordionItem = ({ header, text }) => {
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+        <p className="py-3 text-base text-body-color dark:text-dark-6">
           {text}
         </p>
       </div>
