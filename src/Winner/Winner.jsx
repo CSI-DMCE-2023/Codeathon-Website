@@ -48,9 +48,9 @@ const Winner = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }} className="w-full h-full flex items-center justify-center flex-col ">
-                    <p  data-text="100000/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
+                    <p  data-text="10,00,00/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
 
-                        100000/-
+                        10,00,00/-
 
 
                     </p>
@@ -119,7 +119,7 @@ const Winner = () => {
                         </div>
 
                     </div>
-                    <div className=" flex-none w-fit right-20 bottom-20">
+                    <div className=" text-center py-2 opacity-65 w-full  right-20 bottom-20">
                         <p>hover/tap to see prize</p>
 
                     </div>

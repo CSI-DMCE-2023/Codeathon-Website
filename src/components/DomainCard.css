@@ -90,7 +90,7 @@
   position: relative;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Protest+Strike&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Protest+Strike&display=swap'); */
 /* Headings */
 
 /* Main heading for card's front cover */
@@ -244,19 +244,10 @@
 /* Layout Structure=========================================*/
 
 .main {
-  /* background: linear-gradient(
-    to bottom right,
-    #eee8dd,
-    #e3d9c6
-  ); */
-  background-color:black;
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  height: 70%;
-  width: 100vw;
-  /* border:2px solid aqua */
+ 
+
+
+
   margin-bottom: 8rem;
 }
 
