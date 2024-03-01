@@ -54,7 +54,7 @@ function App() {
     // Simulate content loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);

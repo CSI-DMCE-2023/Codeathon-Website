@@ -40,20 +40,7 @@ const Navbar = () => {
             stagger: 0.3
 
         })
-            // .from('.sidepara2', {
-            //     opacity: 0,
-            //     duration: 0.3,
-
-            // }).from('.sidepara3', {
-            //     opacity: 0,
-            //     duration: 0.3,
-            // }).from('.sidepara4', {
-            //     opacity: 0,
-            //     duration: 0.3,
-            // }).from('.sidepara5', {
-            //     opacity: 0,
-            //     duration: 0.3,
-            // })
+            
 
     }
 
@@ -74,12 +61,12 @@ const Navbar = () => {
     return (
         <>
             <div className="w-full h-full ">
-                <div className="w-full p-4 bg-black  h-[80px] flex items-center justify-between">
+                <div className="w-full p-8 bg-black  h-[80px] flex items-center justify-between">
                     <div className="w-[20vw] h-full flex gap-4 items-center">
                         <img className="img-fluid w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={dmcelogo} alt="dmceLOGO" />
                         <img className="img-fluid  w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={csi} alt="csi logo" />
                     </div>
-                    <div onClick={toggle} className="m-4 w-[3rem] h-[3rem] md:w-16 md:h-16 text-white navcontent cursor-pointer">
+                    <div onClick={toggle} className=" w-[3rem] h-[3rem] md:w-16 md:h-16 text-white navcontent cursor-pointer">
                         <MenuIcon fontSize="large" />
                     </div>
                 </div>
