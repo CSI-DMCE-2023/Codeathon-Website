@@ -68,8 +68,8 @@ export function Home() {
         <div className="flex-col w-full h-full z-[100]">
           <Suspense fallback={<div>Loading...</div>}>
             <Spline
-            className=" scale-50 md:scale-150"
-              style={{ height: "50%", width: "100%" ,background:"transparent" }}
+            className=" scale-50 md:scale-150 md:w-full w-[120%] -ml-8 md:ml-0"
+              style={{ height: "50%", width:"revert-layer" ,background:"transparent" }}
               scene="https://prod.spline.design/MOncfLOpOnYuBP1I/scene.splinecode"
             />
           </Suspense>
