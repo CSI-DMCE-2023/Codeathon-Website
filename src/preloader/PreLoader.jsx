@@ -15,6 +15,9 @@ const PreLoader = () => {
             opacity: 0,
             scale: 0
         })
+        gsap.set('.preloader', {
+           height : '100%'
+        })
 
         tl.to("#logo", {
             delay:0.3,
@@ -28,6 +31,11 @@ const PreLoader = () => {
                 opacity: 1,
                 scale: 1,
                 duration: 1,
+                ease: "Power3.easeOut"
+            })
+            .from(".preloader", {
+                height:'100%',
+                duration: 2,
                 ease: "Power3.easeOut"
             })
 
