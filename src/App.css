@@ -1,4 +1,4 @@
-.cantainer {
+.container {
   height: 100%;
   display: flex;
   align-items: center;
@@ -6,15 +6,15 @@
 }
 
 .Cursor {
-  pointerevents: "none";
-  position: "fixed";
-  display: "block";
-  borderradius: "0";
-  transformorigin: "center center";
-  mixblendmode: "difference";
-  top: "0";
-  left: "0";
-  zindex: "9999999999999999";
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  transform-origin: center center;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Add a value for z-index */
 }
 
 .Cursor span {
@@ -22,7 +22,7 @@
   display: block;
   width: 26px;
   height: 26px;
-  border-radius: 20px;
+  border-radius: 50%; /* Changed from 20px to 50% for a circular shape */
   background-color: #fff;
   transform-origin: center center;
   transform: translate(-50%, -50%);

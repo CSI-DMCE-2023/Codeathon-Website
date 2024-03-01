@@ -79,9 +79,9 @@ export function Home() {
         <MaskContainer
           revealText={
             <div className="flex flex-col items-center gap-8 ">
-              <p data-text="100000/-" className=" hometext text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
+              <p data-text="CODE-A-THON" className=" hometext text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-blue-700 mb-4">
 
-                100000/-
+                CODE-A-THON
 
 
               </p>
