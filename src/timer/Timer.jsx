@@ -38,7 +38,7 @@ const Timer = () => {
     }
 
     return (
-        <section id="timer pb-4 md:mt-8  ">
+        <section id="timer pb-4 md:mt-20 max-md:mt-12  ">
             {showTimer ? (
                 <div className="timer md:text-3xl text-2xl">{timeRemaining.days + "D"}-{('0' + timeRemaining.hours).slice(-2) + "H"}-{('0' + timeRemaining.minutes).slice(-2) + "M"}-{('0' + timeRemaining.seconds).slice(-2)+"S"}</div>
             ) : (
