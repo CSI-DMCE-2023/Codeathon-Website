@@ -286,4 +286,39 @@
 
 
 
-  
+  /* -------------------  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+.hometext{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    -webkit-text-stroke: 1px #eee;
+    color: transparent;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.hometext::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0976BC;
+    -webkit-text-stroke: 3px white;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #0000FF;
+    animation: text-fill 2s ease-in-out alternate infinite;
+}
+
+
+@keyframes text-fill {
+    100% {
+        width: 100%;
+    }
+}
