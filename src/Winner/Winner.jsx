@@ -26,7 +26,7 @@ const Winner = () => {
             <motion.h1 variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }} className="text-white mx-auto text-4xl font-bold">Sponsors</motion.h1>
+                viewport={{ once: false, amount: 0.7 }} className="text-white mx-auto text-4xl font-bold">Prizes</motion.h1>
         </div>
         <div className='w-full h-full grid grid-cols-1 md:grid-cols-2 my-4'>
             <motion.div variants={fadeIn('up', 0.2)}

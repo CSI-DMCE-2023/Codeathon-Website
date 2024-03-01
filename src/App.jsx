@@ -93,6 +93,7 @@ function App() {
           
 
             <TimeLine />
+            <Winner/>
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
