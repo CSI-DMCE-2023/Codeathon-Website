@@ -1,82 +1,75 @@
-"use client";
-import { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import { MaskContainer } from "../components/ui/svg-mask-effect";
-import GLOBE from 'vanta/src/vanta.globe'
+import GLOBE from "vanta/src/vanta.globe";
 // import NET from 'vanta/src/vanta.net'
-import './home.css'
-import { gsap, Power3 } from 'gsap';
+import "./home.css";
+import { gsap, Power3 } from "gsap";
 import Timer from "../timer/Timer";
-import Spline from '@splinetool/react-spline';
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 export function Home() {
+  // useEffect(() => {
+  //   GLOBE({
+  //     el: '#vanta2',
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     gyroControls: false,
+  //     minHeight: 200.00,
+  //     minWidth: 200.00,
+  //     scale: 1.00,
+  //     scaleMobile: 1.00,
+  //     color: 0x1682e0,
+  //     color2: 0xb93ea,
+  //     backgroundColor: 0x0
+  //   })
 
+  //   const tl = gsap.timeline();
+  //   gsap.set('.homeContent', {
+  //     opacity: 0,
+  //     scale: 0
 
+  //   })
+  //   gsap.set('.sparkle-button', {
+  //     scale: 2,
+  //     opacity: 0,
 
+  //   })
+  //   gsap.set('#vanta2', {
 
-  useEffect(() => {
-    GLOBE({
-      el: '#vanta2',
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x1682e0,
-      color2: 0xb93ea,
-      backgroundColor: 0x0
-    })
+  //     opacity: 0,
+  //     scale: 5
 
+  //   })
 
-    const tl = gsap.timeline();
-    gsap.set('.homeContent', {
-      opacity: 0,
-      scale: 0
+  //   tl.to('#vanta2', {
+  //     opacity: 1,
+  //     scale: 1,
+  //     duration: 2,
+  //     // delay: 1
+  //   }).to('.homeContent', {
+  //     duration: 1,
+  //     scale: 1,
+  //     opacity: 1,
+  //     ease: Power3.easeInOut,
 
+  //   }).to('.sparkle-button', {
+  //     scale: 1,
+  //     opacity: 1,
+  //     duration: 0.5
+  //   })
 
-    })
-    gsap.set('.sparkle-button', {
-      scale: 2,
-      opacity: 0,
-
-
-    })
-    gsap.set('#vanta2', {
-
-      opacity: 0,
-      scale: 5
-
-    })
-
-    tl.to('#vanta2', {
-      opacity: 1,
-      scale: 1,
-      duration: 2,
-      // delay: 1
-    }).to('.homeContent', {
-      duration: 1,
-      scale: 1,
-      opacity: 1,
-      ease: Power3.easeInOut,
-
-    }).to('.sparkle-button', {
-      scale: 1,
-      opacity: 1,
-      duration: 0.5
-    })
-
-  }, [])
-
-
-
+  // }, [])
 
   return (
     <div id="vanta2" className="w-full h-screen bg-black">
-      <div className="h-screen  bg w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden" >
+      <div className="h-screen  bg w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden">
+        <div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Spline style={{height:'100%',width:"100%"}} scene="https://prod.spline.design/LBeWNI882dcXrzas/scene.splinecode" />
+          </Suspense>
+        </div>
 
-
-        <MaskContainer
+        {/* <MaskContainer
           revealText={
             <div className="flex flex-col items-center gap-8 ">
               <p data-text="CODE-A-THON" className=" hometext text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-blue-700 mb-4">
@@ -159,16 +152,13 @@ export function Home() {
           className="h-[40rem]   w-full rounded-md"
         >
           <p className="md:text-6xl  text-3xl z-30 mt-12 p-12">CSI-DMCE</p>
-        </MaskContainer>
-
+        </MaskContainer> */}
       </div>
-
 
       {/* <div className="max-w-screen h-screen flex items-center justify-center  top-0 -z-10">
 
         <Spline scene="https://prod.spline.design/6NfpnXYI9ebWsE39/scene.splinecode" />
       </div> */}
     </div>
-
   );
 }
