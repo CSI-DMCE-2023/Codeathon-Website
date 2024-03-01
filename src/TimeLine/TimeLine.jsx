@@ -113,9 +113,9 @@ export function TimeLine() {
     const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
     return (
-        <div className="relative">
+        <div className="relative" id="timeline">
             <div className="bg-black p-8 w-full">
-                <motion.div className="w-full mx-auto" variants={textVariant()}>
+                <motion.div  id="timeline" className="w-full mx-auto" variants={textVariant()}>
                     <h2 className={styles.sectionHeadText + " text-center w-full mx-auto"}>SCHEDULE</h2>
                 </motion.div>
 

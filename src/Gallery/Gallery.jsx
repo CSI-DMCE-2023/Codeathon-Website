@@ -3,7 +3,7 @@ import React from "react";
 import { HeroParallax } from "../components/ui/hero-parallax";
 
 export function Gallery() {
-    return <div className="w-screen h-auto overflow-x-hidden">
+    return <div id="gallery" className="w-screen h-auto overflow-x-hidden">
         <HeroParallax products={products} />;
     </div>
 }

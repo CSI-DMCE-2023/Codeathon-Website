@@ -4,7 +4,7 @@ import { fadeIn } from "../varients";
 
 export function Sponcers() {
   return (
-    <div className="w-full  mx-auto px-8 bg-black py-12">
+    <div id="sponsers" className="w-full  mx-auto px-8 bg-black py-12">
       <div className='w-full flex items-center justify-center'>
         <motion.h1 variants={fadeIn('up', 0.2)}
           initial="hidden"

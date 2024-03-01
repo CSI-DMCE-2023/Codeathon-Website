@@ -1,24 +1,29 @@
-#cursor {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background-color: #0c49e6;
-  border-radius: 100%;
-  pointer-events: none;
-  z-index: 1000;
-  transition: transform ease-out 10ms;
+.cantainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#stalker {
-  position: fixed;
-  margin-top: -15px;
-  margin-left: -15px;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 174, 255, 0.423);
-  opacity: 30%;
-  border-radius: 100%;
-  pointer-events: none;
-  transition: transform ease-out 100ms;
-  z-index: 999;
+.Cursor {
+  pointerevents: "none";
+  position: "fixed";
+  display: "block";
+  borderradius: "0";
+  transformorigin: "center center";
+  mixblendmode: "difference";
+  top: "0";
+  left: "0";
+  zindex: "9999999999999999";
+}
+
+.Cursor span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #fff;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
 }

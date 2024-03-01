@@ -1,6 +1,5 @@
 import "./App.css";
 
-//import Scroll from "./Scroll.jsx";
 import About from "./components/About";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
@@ -18,6 +17,9 @@ import Contact from "./components/Contact";
 // import Spline from "./components/spline.jsx";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
+import Winner from "./Winner/Winner.jsx";
+
+
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -27,17 +29,19 @@ function App() {
     restDelta: 0.001,
   });
   const [loading, setLoading] = useState(true);
-  const cursor = document.getElementById("cursor");
-  const stalker = document.getElementById("stalker");
-  document.addEventListener("mousemove", (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-    cursor.style.transform = `translate(${x}px, ${y}px)`;
-    stalker.style.transform = `translate(${x}px, ${y}px)`;
-  });
+  // const cursor = document.getElementById("cursor");
+  // const stalker = document.getElementById("stalker");
+  // document.addEventListener("mousemove", (event) => {
+  //   const x = event.clientX;
+  //   const y = event.clientY;
+  //   cursor.style.transform = `translate(${x}px, ${y}px)`;
+  //   stalker.style.transform = `translate(${x}px, ${y}px)`;
+  // });
+
 
   useEffect(() => {
-    const lenis = new Lenis();
+
+    const lenis = new Lenis()
 
     function raf(time) {
       lenis.raf(time);
@@ -53,11 +57,14 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <div>
+
       {loading ? (
         <PreLoader />
       ) : (
+
         <>
           <motion.div
             className="progress-bar"
@@ -67,33 +74,34 @@ function App() {
               left: 0,
               right: 0,
               height: "10px",
-              background:"linear-gradient(145deg, #9fccfa, #0974f1)",
+              background: "linear-gradient(145deg, #9fccfa, #0974f1)",
               borderRadius: "300px",
               transformOrigin: "0%",
               zIndex: 1000,
               scaleX,
             }}
           />
-          <div id="cursor"></div>
-          <div id="stalker"></div>
-
           <Navbar />
+
+
           <Home />
 
           <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div>
-          {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
-            <About />
-          </div> */}
 
-          <TimeLine />
-          <Gallery />
-          <Sponcers />
-          <GoToTopBtn />
-          <Footer />
-        </>
-      )}
+         
+          
+
+
+            <TimeLine />
+            <Winner/>
+            <Gallery />
+            <Sponcers />
+            <GoToTopBtn />
+            <Footer />
+          </>
+          )}
     </div>
   );
 }
