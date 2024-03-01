@@ -19,7 +19,7 @@ import Contact from "./components/Contact";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+
 
 
 function App() {
@@ -75,7 +75,7 @@ function App() {
               left: 0,
               right: 0,
               height: "10px",
-              background:"linear-gradient(145deg, #9fccfa, #0974f1)",
+              background: "linear-gradient(145deg, #9fccfa, #0974f1)",
               borderRadius: "300px",
               transformOrigin: "0%",
               zIndex: 1000,
@@ -90,16 +90,14 @@ function App() {
           <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div>
-          
-
-            <TimeLine />
-            <Winner/>
-            <Gallery />
-            <Sponcers />
-            <GoToTopBtn />
-            <Footer />
-          </>
-          )}
+          <TimeLine />
+          <Winner />
+          <Gallery />
+          <Sponcers />
+          <GoToTopBtn />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
