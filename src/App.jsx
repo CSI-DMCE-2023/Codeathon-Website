@@ -1,6 +1,5 @@
 import "./App.css";
 
-//import Scroll from "./Scroll.jsx";
 import About from "./components/About";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
@@ -90,14 +89,16 @@ function App() {
           <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div>
-          <TimeLine />
-          <Winner />
-          <Gallery />
-          <Sponcers />
-          <GoToTopBtn />
-          <Footer />
-        </>
-      )}
+          
+
+            <TimeLine />
+            <Winner/>
+            <Gallery />
+            <Sponcers />
+            <GoToTopBtn />
+            <Footer />
+          </>
+          )}
     </div>
   );
 }
