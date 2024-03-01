@@ -1,6 +1,5 @@
 import "./App.css";
 
-//import Scroll from "./Scroll.jsx";
 import About from "./components/About";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
@@ -74,7 +73,7 @@ function App() {
               top: 0,
               left: 0,
               right: 0,
-              height: "10px",
+              height: "4px",
               background:"linear-gradient(145deg, #9fccfa, #0974f1)",
               borderRadius: "300px",
               transformOrigin: "0%",
@@ -97,6 +96,7 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
+            <Contact />
             <Footer />
           </>
           )}
