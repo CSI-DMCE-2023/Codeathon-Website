@@ -5,8 +5,7 @@ const Contact = () => {
   return (
     <div>
       <section
-        className="relative z-10 overflow-hidden bg-white"
-        style={{ filter: "invert(1)" }}
+        className="relative z-10 overflow-hidden bg-black text-white"
       >
         <div className="container flex  flex-col  my-0 mx-auto justify-center items-center ">
           <h1 className="text-center font-bold text-4xl py-8 ">Contact Us</h1>
@@ -116,7 +115,7 @@ const Contact = () => {
 
             <div
               className=" rounded-lg overflow-hidden  p-10 flex items-end justify-start relative"
-              style={{ filter: "invert(1)" }}
+              
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30150.37366781793!2d72.995556!3d19.160374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4daf8967d9%3A0xdd90bed2058f7eaa!2sDatta%20Meghe%20College%20Of%20Engineering!5e0!3m2!1sen!2sus!4v1709203790147!5m2!1sen!2sus"
