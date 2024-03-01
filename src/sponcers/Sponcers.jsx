@@ -9,7 +9,7 @@ export function Sponcers() {
         <motion.h1 variants={fadeIn('up', 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }} className="text-white mx-auto text-4xl font-bold   ">Sponsors</motion.h1>
+          viewport={{ once: false, amount: 0.7 }} className="text-white mx-auto text-4xl sm:text-6xl md:text-8xl font-bold   ">Sponsors</motion.h1>
 
       </div>
       <HoverEffect items={projects} />

@@ -14,7 +14,6 @@ import Footer from "./footer/Footer";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
 import Contact from "./components/Contact";
-// import Spline from "./components/spline.jsx";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
@@ -30,14 +29,7 @@ function App() {
     restDelta: 0.001,
   });
   const [loading, setLoading] = useState(true);
-  // const cursor = document.getElementById("cursor");
-  // const stalker = document.getElementById("stalker");
-  // document.addEventListener("mousemove", (event) => {
-  //   const x = event.clientX;
-  //   const y = event.clientY;
-  //   cursor.style.transform = `translate(${x}px, ${y}px)`;
-  //   stalker.style.transform = `translate(${x}px, ${y}px)`;
-  // });
+ 
 
 
   useEffect(() => {
@@ -60,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="">
 
       {loading ? (
         <PreLoader />
@@ -99,10 +91,10 @@ function App() {
             <TimeLine />
             <Winner/>
             <Gallery />
-            <Sponcers />
-            <GoToTopBtn />
 
+            <Sponcers />
             <Faq/>
+            <GoToTopBtn />
             <Contact/>
             <Footer />
            

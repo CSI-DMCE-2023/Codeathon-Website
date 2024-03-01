@@ -5,18 +5,17 @@ const Contact = () => {
   return (
     <div>
       <section
-        className="relative z-10 overflow-hidden bg-white dark:bg-dark"
-        style={{ filter: "invert(1)" }}
+        className="relative z-10 overflow-hidden bg-black text-white"
       >
         <div className="container flex  flex-col  my-0 mx-auto justify-center items-center ">
           <h1 className="text-center font-bold text-4xl py-8 ">Contact Us</h1>
-          <div id="contactContainer" className="-mx-4 flex lg:justify-between">
-            <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+          <div id="contactContainer" className=" lg:justify-between grid md:grid-cols-2 grid-cols-1 w-full">
+            <div className="w-full px-4 ">
+              <div className="mb-12 w-full p-4 lg:mb-0">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="mb-9 text-base leading-relaxed text-body-color text-white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eius tempor incididunt ut labore e dolore magna aliqua. Ut
                   enim adiqua minim veniam quis nostrud exercitation ullamco
@@ -37,10 +36,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-white">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-white">
                       Datta Meghe College of Engineering, Sector-3, Airoli, Navi
                       Mumbai, MH
                     </p>
@@ -78,10 +77,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-white">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color text-white">
                       (022) 27797130
                     </p>
                   </div>
@@ -103,10 +102,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-white">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-white">
                      csi@dmce.ac.in
                     </p>
                   </div>
@@ -115,8 +114,8 @@ const Contact = () => {
             </div>
 
             <div
-              className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
-              style={{ filter: "invert(1)" }}
+              className=" rounded-lg overflow-hidden  p-10 flex items-end justify-start relative"
+              
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30150.37366781793!2d72.995556!3d19.160374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4daf8967d9%3A0xdd90bed2058f7eaa!2sDatta%20Meghe%20College%20Of%20Engineering!5e0!3m2!1sen!2sus!4v1709203790147!5m2!1sen!2sus"
