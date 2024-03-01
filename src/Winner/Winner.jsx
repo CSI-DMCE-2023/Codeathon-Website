@@ -1,5 +1,4 @@
 import React from "react";
-import { styles } from "../styles";
 import { fadeIn } from "../varients";
 import { motion } from "framer-motion";
 import "./winner.css";
@@ -20,7 +19,7 @@ const Winner = () => {
     return (
         <div
             id="prizes"
-            className="relative w-full min-h-screen p-8 mb-8 bg-gradient-to-b "
+            className="relative w-full min-h-screen p-8 mb-8 bg-gradient-to-b bg-black/35 "
         >
             <video
                 autoPlay

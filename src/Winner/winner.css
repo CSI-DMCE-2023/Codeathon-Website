@@ -10,8 +10,6 @@
   position: relative;
   margin: auto;
   display: block;
-
- 
 }
 
 .box-canvas::after {
@@ -234,17 +232,7 @@
   border-radius: 50%;
 }
 
-
-
 /* ----------------------- ceb  */
-
-
-
-
-
-
-
-
 
 .light-button button.bt {
   position: relative;
@@ -271,7 +259,6 @@
   outline: #0f0f0f 2px solid;
   outline-offset: 20;
   border: 1px solid rgba(0, 0, 255, 0.405);
-
 }
 
 .light-button button.bt .button-holder svg {
@@ -311,6 +298,26 @@
   fill: rgba(88, 101, 242, 1);
 }
 
+@media (max-width: 768px) {
+  .button-holder svg {
+    fill: rgba(88, 101, 242, 1) !important;
+  }
+  .button-holder {
+    color: rgba(88, 101, 242, 1)!important;
+    outline: rgba(88, 101, 242, 1) 2px solid!important;;
+    outline-offset: 2px!important;
+  }
+  .light-holder .light {
+    background: rgb(255, 255, 255)!important;;
+    background: linear-gradient(
+      180deg,
+      rgba(88, 101, 242, 1) 0%,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(255, 255, 255, 0) 100%
+    )!important;
+  }
+}
+
 .light-button button.bt:hover .button-holder {
   color: rgba(88, 101, 242, 1);
   outline: rgba(88, 101, 242, 1) 2px solid;
@@ -327,40 +334,14 @@
   );
 }
 
-
-
 /* -------------------  */
 
-
-
-
-.text{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 50px;
-    -webkit-text-stroke: 1px #eee;
-    color: transparent;
-    letter-spacing: 5px;
-    position: relative;
-}
-
-.text::before {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #ff7a00;
-    -webkit-text-stroke: 3px #ff7a00;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid #ff7a00;
-    animation: text-fill 2s ease-in-out alternate infinite;
-}
-
-
-@keyframes text-fill {
-    100% {
-        width: 100%;
-    }
+.text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #eee;
+  color: transparent;
+  letter-spacing: 5px;
+  position: relative;
 }
