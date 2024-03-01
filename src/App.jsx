@@ -11,7 +11,6 @@ import Navbar from "./Navbar/Navbar";
 import { TimeLine } from "./TimeLine/TimeLine";
 import { Gallery } from "./Gallery/Gallery";
 import Footer from "./footer/Footer";
-import Faq from "./FAQ/Faq";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
 import Contact from "./components/Contact";
@@ -19,7 +18,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
-
+import Faq from "./FAQ/Faq.jsx";
 
 
 function App() {
@@ -92,10 +91,11 @@ function App() {
             <TimeLine />
             <Winner/>
             <Gallery />
+
             <Sponcers />
+            <Faq/>
             <GoToTopBtn />
-           <Faq/>
-            <Contact />
+            <Contact/>
             <Footer />
            
           </>
