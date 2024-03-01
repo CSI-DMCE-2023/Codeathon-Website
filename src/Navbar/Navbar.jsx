@@ -61,7 +61,7 @@ const Navbar = () => {
     return (
         <>
             <div className="w-full h-full ">
-                <div className="w-full p-8 bg-black  h-[80px] flex items-center justify-between">
+                <div className="w-full max-md:p-4 p-8 bg-black  h-[80px] flex items-center justify-between">
                     <div className="w-[20vw] h-full flex gap-4 items-center">
                         <img className="img-fluid w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={dmcelogo} alt="dmceLOGO" />
                         <img className="img-fluid  w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent" src={csi} alt="csi logo" />
@@ -70,8 +70,12 @@ const Navbar = () => {
                         <MenuIcon fontSize="large" />
                     </div>
                 </div>
-                <div className={"w-full md:w-[40%] top-0 right-0 transition-all duration-200 fixed z-50 h-[110%] bg-black text-white p-8 md:pl-16 " + (side === false ? " translate-x-0 " : " translate-x-[100%] pointer-events-none")}>
-                    <div onClick={toggle} className={" p-6 bg-blue-600 border-4 border-blue-700 top-[40%] -left-10 py-10 flex items-center justify-center rounded-full md:absolute   h-8 cursor-pointer w-fit " + (side === false ? " block " : " hidden ")}>
+
+                {/* background: rgb(253,252,255);
+background: linear-gradient(180deg, rgba(253,252,255,1) 31%, rgba(0,1,251,1) 53%, rgba(255,255,255,1) 74%); */}
+
+                <div className={"w-full md:w-[40%] top-0 right-0 transition-all md:border-l-4  duration-200 fixed z-50 h-[110%] bg-black text-white p-8 md:pl-16 " + (side === false ? " translate-x-0 " : " translate-x-[100%] pointer-events-none")}>
+                    <div onClick={toggle} className={" p-6 max-md:p-1 max-md:py-5 bg-blue-600 border-4 border-blue-700 top-[40%] -left-10 py-10 flex items-center justify-center rounded-full md:absolute   h-8 cursor-pointer w-fit " + (side === false ? " block " : " hidden ")}>
                         <CloseIcon fontSize="large" />
                     </div>
                     <div className="w-full mx-auto sidebar h-auto mt-8 flex gap-6 flex-col justify-center items-center text-2xl">

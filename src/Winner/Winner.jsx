@@ -38,9 +38,9 @@ const Winner = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-white mx-auto text-2xl sm:text-4xl md:text-7xl font-bold"
+                    className="text-white mx-auto text-4xl sm:text-6xl md:text-8xl font-bold"
                 >
-                    Prizes Pool
+                    PRIZE POOL
                 </motion.h1>
             </div>
             <div className="w-full h-full grid grid-cols-1 my-4">
@@ -57,7 +57,7 @@ const Winner = () => {
                     </p>
 
                 </motion.div>
-                <div className=" h-full text-white">
+                <div className=" h-full text-white max-md:my-8">
                     <div className="w-full h-full  flex flex-col items-center justify-center gap-8">
                         <div className="w-full flex justify-center items-center h-full gap-8 flex-wrap md:mt-12">
 
