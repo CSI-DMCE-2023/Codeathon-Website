@@ -40,7 +40,7 @@ function AboutDetail() {
   }, [isPlaying]);
 
   return (
-    <div className="w-full h-full  max-md:flex-col-reverse  md:p-8 p-2  ">
+    <div id="about" className="w-full h-full  max-md:flex-col-reverse  md:p-8 p-2  ">
       <div className=" w-full mx-auto md:w-1/2 h-1/3  md:p-20 max-md:py-16 ">
         <div class="mob-video w-[90%] md:w-[70%] ">
           <div class="btn1"></div>

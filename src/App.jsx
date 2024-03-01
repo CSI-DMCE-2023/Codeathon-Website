@@ -19,6 +19,7 @@ import Contact from "./components/Contact";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 
 function App() {
@@ -29,14 +30,14 @@ function App() {
     restDelta: 0.001,
   });
   const [loading, setLoading] = useState(true);
-  const cursor = document.getElementById("cursor");
-  const stalker = document.getElementById("stalker");
-  document.addEventListener("mousemove", (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-    cursor.style.transform = `translate(${x}px, ${y}px)`;
-    stalker.style.transform = `translate(${x}px, ${y}px)`;
-  });
+  // const cursor = document.getElementById("cursor");
+  // const stalker = document.getElementById("stalker");
+  // document.addEventListener("mousemove", (event) => {
+  //   const x = event.clientX;
+  //   const y = event.clientY;
+  //   cursor.style.transform = `translate(${x}px, ${y}px)`;
+  //   stalker.style.transform = `translate(${x}px, ${y}px)`;
+  // });
 
 
   useEffect(() => {
@@ -60,9 +61,11 @@ function App() {
 
   return (
     <div>
+
       {loading ? (
         <PreLoader />
       ) : (
+
         <>
           <motion.div
             className="progress-bar"
@@ -78,26 +81,23 @@ function App() {
               scaleX,
             }}
           />
-          {/* <div id="cursor"></div>
-          <div id="stalker"></div> */}
-
           <Navbar />
+
+
           <Home />
+        
 
           <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div>
-          <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
-            <About />
-          </div>
+          <TimeLine />
+          <Winner />
+          <Gallery />
+          <Sponcers />
+          <GoToTopBtn />
+          <Footer />
 
-            <TimeLine />
-            <Winner />
-            <Gallery />
-            <Sponcers />
-            <GoToTopBtn />
-            <Footer />
-          </>
+        </>
       )}
     </div>
   );

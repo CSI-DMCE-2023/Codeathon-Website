@@ -5,7 +5,7 @@ function Domain() {
   return (
     <>
     
-      <p className="text-sky-400 text-5xl font-extrabold mt-10">Domains</p>
+      <p id="domains" className="text-sky-400 text-5xl font-extrabold mt-10">Domains</p>
       <div class="container">
         <div class="card">
           <div class="Box">
