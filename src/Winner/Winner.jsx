@@ -19,7 +19,7 @@ const Winner = () => {
     return (
         <div
             id="prizes"
-            className="relative w-full min-h-screen p-8 mb-8 bg-gradient-to-b bg-black "
+            className="relative w-full min-h-screen p-8 mb-8 bg-gradient-to-b bg-black/35 "
         >
             <video
                 autoPlay
