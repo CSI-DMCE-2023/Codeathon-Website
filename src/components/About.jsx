@@ -7,7 +7,7 @@ const About = () => {
         <div className="w-full  bg-slate-900 flex flex-col justify-start items-center gap-4">
              {/* <Cuboid/> */}
             <AboutDetail/>
-            <MainDomain/>
+           
         </div>
       
         
