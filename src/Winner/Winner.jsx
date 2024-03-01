@@ -3,8 +3,7 @@ import { styles } from "../styles";
 import { fadeIn } from "../varients";
 import { motion } from "framer-motion";
 import "./winner.css";
-import trophy from "../assets/trophy.png";
-// import { gsap } from 'gsap';
+import video from '../assets/celeb.mp4'
 
 const Winner = () => {
     // var tl = gsap.timeline();
@@ -21,9 +20,19 @@ const Winner = () => {
     return (
         <div
             id="prizes"
-            className="w-full h-auto p-8 mb-8 bg-gradient-to-b bg-black"
+            className="relative w-full min-h-screen p-8 mb-8 bg-gradient-to-b "
         >
-            <div className="w-full flex items-center justify-center">
+            <video
+                autoPlay
+                muted
+                loop
+                className="absolute -z-40 inset-0 w-full h-full object-cover"
+            >
+                <source src={video} type="video/mp4" />
+                {/* Add additional source elements for different video formats if needed */}
+                Your browser does not support the video tag.
+            </video>
+            <div className="w-full h-full flex items-center justify-center z-40">
                 <motion.h1
                     variants={fadeIn("up", 0.2)}
                     initial="hidden"
@@ -31,32 +40,21 @@ const Winner = () => {
                     viewport={{ once: false, amount: 0.7 }}
                     className="text-white mx-auto text-2xl sm:text-4xl md:text-7xl font-bold"
                 >
-                    Prizes
+                    Prizes Pool
                 </motion.h1>
             </div>
-            <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 my-4">
+            <div className="w-full h-full grid grid-cols-1 my-4">
                 <motion.div variants={fadeIn("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }} className="w-full h-full flex items-center justify-center flex-col ">
-                    <h1 className="text-white text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12">
+                    <h1 className=" text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
 
                         100000/-
 
 
                     </h1>
-                    <div
-                        className=" flex items-center justify-center"
 
-                    >
-                        <img
-                            className="h-[70%]"
-                            initial={{ scale: 0 }}
-                            id="trophy"
-                            src={trophy}
-                            alt=""
-                        />
-                    </div>
                 </motion.div>
                 <div className=" h-full text-white">
                     <div className="w-full h-full  flex flex-col items-center justify-center gap-8">
@@ -119,12 +117,12 @@ const Winner = () => {
 
 
                         </div>
-                        
+
                     </div>
                     <div className=" flex-none w-fit right-20 bottom-20">
-                            <p>hover/tap to see prize</p>
+                        <p>hover/tap to see prize</p>
 
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
