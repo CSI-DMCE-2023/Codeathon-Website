@@ -3,13 +3,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <section
         className="relative z-10 overflow-hidden bg-white dark:bg-dark"
         style={{ filter: "invert(1)" }}
       >
-        <div className="container">
-          <h1 className="text-cxenter font-bold text-4xl py-8">Contact Us</h1>
+        <div className="container flex  flex-col  my-0 mx-auto justify-center items-center ">
+          <h1 className="text-center font-bold text-4xl py-8 ">Contact Us</h1>
           <div id="contactContainer" className="-mx-4 flex lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
@@ -130,7 +130,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

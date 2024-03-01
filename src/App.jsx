@@ -99,7 +99,9 @@ function App() {
             <Gallery />
             <Sponcers />
             <GoToTopBtn />
+            <Contact/>
             <Footer />
+           
           </>
           )}
     </div>
