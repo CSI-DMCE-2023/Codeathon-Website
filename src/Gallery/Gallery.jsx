@@ -13,7 +13,7 @@ export const products = [
         title: "Moonbeam",
         link: "https://gomoonbeam.com",
         thumbnail:
-            "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://photos.google.com/share/AF1QipONobALKl5PL_uQ6Fh0mD9bz5WVZCvvAheuu6itzBkX91MlvZYJCMNfk0SBdrcfqQ/photo/AF1QipMo_GnaT9MXrO_YezQ4dvtF7wSYmtoiJHezlMlK?key=QW1ENl9Ua2pmS19DdFRHVC1MUlF2VzJvTXF1S0RR",
     },
     {
         title: "Cursor",
