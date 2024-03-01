@@ -78,7 +78,7 @@ background: linear-gradient(180deg, rgba(253,252,255,1) 31%, rgba(0,1,251,1) 53%
                     <div onClick={toggle} className={" p-6 max-md:p-1 max-md:py-5 bg-blue-600 border-4 border-blue-700 top-[40%] -left-10 py-10 flex items-center justify-center rounded-full md:absolute   h-8 cursor-pointer w-fit " + (side === false ? " block " : " hidden ")}>
                         <CloseIcon fontSize="large" />
                     </div>
-                    <div className="w-full mx-auto sidebar h-auto mt-8 flex gap-6 flex-col justify-center items-center text-2xl">
+                    <div className="w-full mx-auto sidebar h-auto mt-8 flex gap-6 flex-col justify-center items-center text-2xl z-50">
                         <button onClick={() => scrollToTimeline('about')} className="p-2 cursor-pointer   border-b-4 sidepara2 border-blue-700 w-full text-center">About</button>
                         <button onClick={() => scrollToTimeline('domains')} className="p-2 cursor-pointer   border-b-4 sidepara2 border-blue-700 w-full text-center">Domains</button>
                         <button onClick={() => scrollToTimeline('timeline')} className="p-2  border-b-4 sidepara2 border-blue-700 w-full text-center">Timeline</button>

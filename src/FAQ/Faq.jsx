@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Accordion = () => {
   return (
     <section className="relative z-20 overflow-hidden bg-black pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]">
-      <div className="container mx-auto flex-col">
+      <div className="container mx-auto flex-col p-8">
         <div className="-mx-4 flex flex-wrap">
 
           <div className="w-full px-4">
@@ -25,30 +25,30 @@ const Accordion = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
-              header="How long we deliver your first blog post?"
+              header="What is a code-a-thon?"
+              text="A hackathon is a 24-hour event, where 'hackers' will collaborate on developing a functional prototype of hardware or software for the duration of the hackathon."
+            />
+            <AccordionItem
+              header="Will there be swag and prizes?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
             <AccordionItem
               header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              text="You bet! Participants and winners will receive swags, certificates, merchandise, goodies and more!"
             />
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="I am a first time hacker, what should I do?"
+              text="No worries! We love to welcome first-time hackers who are starting their hacking journey. We have awesome workshops and events planned which will help you get a head start in the hackathon ."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="How do I register for the Code-a-thon?"
+              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping in the discord!."
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              header="Can I participate as an individual?"
+              text="Code-a-thon foster teamwork and collaboration! We encourage you to participate as a team of 2-4 hackers."
             />
           </div>
         </div>

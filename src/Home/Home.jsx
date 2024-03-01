@@ -65,7 +65,7 @@ export function Home() {
     <div id="vanta2" className="w-full h-screen bg-black">
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden">
         <StarsCanvas />
-        <div className="flex-col w-full h-full z-[100]">
+        <div className="flex-col w-full h-full z-50">
           <Suspense fallback={<div>Loading...</div>}>
             <Spline
             className=" scale-50 md:scale-150 md:w-full w-[120%] -ml-8 md:ml-0"

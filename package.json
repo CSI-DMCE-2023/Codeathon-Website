@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.11",
     "@mui/styled-engine-sc": "^6.0.0-alpha.17",
     "@react-three/drei": "^9.99.5",
+    "@react-three/fiber": "^8.15.16",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.55",
     "@studio-freight/lenis": "^1.0.39",
