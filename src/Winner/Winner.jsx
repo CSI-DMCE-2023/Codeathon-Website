@@ -2,7 +2,7 @@ import React from "react";
 import { fadeIn } from "../varients";
 import { motion } from "framer-motion";
 import "./winner.css";
-import video from '../assets/celeb.mp4'
+// import video from '../assets/celeb.mp4'
 
 const Winner = () => {
     // var tl = gsap.timeline();
@@ -27,7 +27,7 @@ const Winner = () => {
                 loop
                 className="absolute -z-40 inset-0 w-full h-full object-cover"
             >
-                <source src={video} type="video/mp4" />
+                <source src={"https://res.cloudinary.com/dbeptj8fp/video/upload/v1709352407/fvpdrfn1yzptww8rxtf9.mp4"} type="video/mp4" />
                 {/* Add additional source elements for different video formats if needed */}
                 Your browser does not support the video tag.
             </video>
@@ -51,8 +51,6 @@ const Winner = () => {
                     <p  data-text="1,00,000/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
 
                         1,00,000/-
-
-
                     </p>
 
                 </motion.div>
