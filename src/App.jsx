@@ -1,6 +1,5 @@
 import "./App.css";
 
-import About from "./components/About";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
 import { Home } from "./Home/Home";
