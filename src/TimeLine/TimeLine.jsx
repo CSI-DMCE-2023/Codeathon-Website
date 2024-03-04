@@ -106,7 +106,7 @@ const experiences = [
   {
     title: "Closure Ceremony 🎉",
     iconBg: "#FFFFFF",
-    day: "Day 2 - 9:00 AM",
+    day: "Day 2 - 1:00 AM",
     detail:
       "Snacks will be offered post-hackathon, providing participants with a moment to relax and celebrate their accomplishments.",
   },
