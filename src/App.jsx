@@ -91,7 +91,7 @@ function App() {
             <Winner/>
             <Gallery />
 
-            <Sponcers />
+            {/* <Sponcers /> */}
             <Faq/>
             <GoToTopBtn />
             <Contact/>

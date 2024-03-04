@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from "react";
+import React, { useEffect, Suspense, useState } from "react";
 import { MaskContainer } from "../components/ui/svg-mask-effect";
 import GLOBE from "vanta/src/vanta.globe";
 // import NET from 'vanta/src/vanta.net'
@@ -7,6 +7,12 @@ import { gsap, Power3 } from "gsap";
 import Timer from "../timer/Timer";
 import { StarsCanvas } from "../spline";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
+
+function LoadingFallback() {
+  return (
+    <div className="w-full z-[100000]">Loading...</div>
+  );
+}
 
 export function Home() {
   // useEffect(() => {
@@ -61,18 +67,31 @@ export function Home() {
 
   // }, [])
 
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div id="vanta2" className="w-full h-screen bg-black">
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden">
         <StarsCanvas />
         <div className="flex-col w-full h-full z-50">
-          <Suspense fallback={<div>Loading...</div>}>
-            <Spline
-            className=" scale-50 md:scale-150 md:w-full w-[120%] -ml-8 md:ml-0"
-              style={{ height: "50%", width:"revert-layer" ,background:"transparent" }}
-              scene="https://prod.spline.design/MOncfLOpOnYuBP1I/scene.splinecode"
-            />
-          </Suspense>
+         {
+          showContent?
+          <Suspense fallback={<LoadingFallback/>}>
+          <Spline
+          className=" scale-50 md:scale-150 md:w-full w-[120%] -ml-8 md:ml-0"
+            style={{ height: "50%", width:"revert-layer" ,background:"transparent" }}
+            scene="https://prod.spline.design/MOncfLOpOnYuBP1I/scene.splinecode"
+          />
+        </Suspense> :<LoadingFallback/>
+         }
           <button class="sparkle-button w-96 max-md:w-60 md:mt-8 m-auto">
             <span class="spark"></span>
 
