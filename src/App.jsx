@@ -18,6 +18,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
 import Faq from "./FAQ/Faq.jsx";
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -77,7 +78,7 @@ function App() {
 
 
           <Home />
-
+       
           {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
@@ -96,6 +97,7 @@ function App() {
             <GoToTopBtn />
             <Contact/>
             <Footer />
+            <Analytics/>
            
           </>
           )}
