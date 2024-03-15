@@ -88,7 +88,7 @@ export function Home() {
           <Spline
           className=" scale-50 md:scale-150 md:w-full w-[120%] -ml-8 md:ml-0"
             style={{ height: "50%", width:"revert-layer" ,background:"transparent" }}
-            scene="https://prod.spline.design/MOncfLOpOnYuBP1I/scene.splinecode"
+            scene="https://prod.spline.design/54jTXvnwS6s7cmNK/scene.splinecode"
           />
         </Suspense> :<LoadingFallback/>
          }

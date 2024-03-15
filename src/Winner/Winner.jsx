@@ -50,7 +50,7 @@ const Winner = () => {
                     >
                     <p  data-text="1,00,000/-" className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-yellow-400">
 
-                        1,00,000/-
+                        6,00,000/-
                     </p>
 
                 </motion.div>
@@ -67,7 +67,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px] ">
 
-                                        <p>25000/-</p>
+                                        <p>100000/-</p>
                                         <p>AUTOMATION</p>
                                     </div>
                                 </button>
@@ -80,7 +80,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px]">
 
-                                        <p>25000/-</p>
+                                        <p>100000/-</p>
                                         <p>SOCIAL IMPACT</p>
                                     </div>
                                 </button>
@@ -93,7 +93,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px]">
 
-                                        <p>25000/-</p>
+                                        <p>100000/-</p>
                                         <p>FINTECH</p>
                                     </div>
                                 </button>
@@ -106,7 +106,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px]">
 
-                                        <p>25000/-</p>
+                                        <p>100000/-</p>
                                         <p>SUSTAINABLE <br /> DEVELOPMENT</p>
                                     </div>
                                 </button>

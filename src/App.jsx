@@ -20,6 +20,7 @@ import MainDomain from "./components/MainDomain.jsx";
 import Faq from "./FAQ/Faq.jsx";
 import { Analytics } from "@vercel/analytics/react"
 import Marketing from "./marketing/Marketing.jsx";
+import Domains from "./domain/Domain.jsx";
 
 
 function App() {
@@ -83,7 +84,7 @@ function App() {
           {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
-          <MainDomain/>
+          <Domains/>
 
          
           
