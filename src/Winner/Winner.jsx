@@ -67,7 +67,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px] ">
 
-                                        <p>100000/-</p>
+                                        <p>150000/-</p>
                                         <p>AUTOMATION</p>
                                     </div>
                                 </button>
@@ -80,7 +80,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px]">
 
-                                        <p>100000/-</p>
+                                        <p>150000/-</p>
                                         <p>SOCIAL IMPACT</p>
                                     </div>
                                 </button>
@@ -93,7 +93,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px]">
 
-                                        <p>100000/-</p>
+                                        <p>150000/-</p>
                                         <p>FINTECH</p>
                                     </div>
                                 </button>
@@ -106,7 +106,7 @@ const Winner = () => {
                                     </div>
                                     <div class="button-holder w-[200px]">
 
-                                        <p>100000/-</p>
+                                        <p>150000/-</p>
                                         <p>SUSTAINABLE <br /> DEVELOPMENT</p>
                                     </div>
                                 </button>
