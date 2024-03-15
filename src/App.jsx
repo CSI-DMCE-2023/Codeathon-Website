@@ -19,6 +19,7 @@ import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
 import Faq from "./FAQ/Faq.jsx";
 import { Analytics } from "@vercel/analytics/react"
+import Marketing from "./marketing/Marketing.jsx";
 
 
 function App() {
@@ -90,6 +91,7 @@ function App() {
 
             <TimeLine />
             <Winner/>
+            <Marketing/>
             <Gallery />
 
             {/* <Sponcers /> */}
