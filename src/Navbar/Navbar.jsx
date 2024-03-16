@@ -63,11 +63,11 @@ const Navbar = () => {
               src={dmcelogo}
               alt="dmceLOGO"
             />
-            <img
+            {/* <img
               className="img-fluid  w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent"
               src={csi}
               alt="csi logo"
-            />
+            /> */}
           </div>
           {side===true?(<div
             onClick={toggle}

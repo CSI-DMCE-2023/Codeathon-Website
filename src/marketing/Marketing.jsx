@@ -5,7 +5,7 @@ import market from '../assets/marketing.jpg'
 const Marketing = () => {
     return (
         <>
-            <div className='w-full bg-black pt-8 text-white h-auto flex flex-col md:p-4 p-2 '>
+            {/* <div className='w-full bg-black pt-8 text-white h-auto flex flex-col md:p-4 p-2 '>
                 <motion.h1 variants={fadeIn('up', 0.2)}
                     initial="hidden"
                     whileInView={"show"}
@@ -17,7 +17,7 @@ const Marketing = () => {
                         [1, 1, 1, 1, 1, 1].map((item, i) => {
                             return <div class="group relative overflow-hidden h-72 w-64 bg-blue-800 rounded-xl mx-auto  ">
                                 <div
-                                    class="absolute w-56 h-64 bg-gray-50 z-10 top-4 left-4 opacity-50 rounded-2xl blur duration-300 group-hover:blur-none [transform:rotate3d(1_,-1,_1,_30deg)] duration-500 group-hover:[transform:rotate3d(1_,-1,_1,_0deg)]"
+                                    class="absolute w-56 h-64 bg-gray-50 z-10 top-4 left-4 opacity-50 rounded-2xl blur group-hover:blur-none [transform:rotate3d(1_,-1,_1,_30deg)] duration-500 group-hover:[transform:rotate3d(1_,-1,_1,_0deg)]"
                                 ></div>
                                 <div
                                     class="absolute w-56 h-64 z-10 top-4 left-4 p-3 rounded-2xl flex flex-col justify-end items-start gap-4 [transform:rotate3d(1_,-1,_1,_30deg)] duration-500 group-hover:[transform:rotate3d(1_,-1,_1,_0deg)]"
@@ -48,7 +48,7 @@ const Marketing = () => {
 
 
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

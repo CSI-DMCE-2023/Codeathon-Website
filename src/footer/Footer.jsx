@@ -12,7 +12,7 @@ const Footer = () => {
                 viewport={{ once: false, amount: 0.7 }} className='max-md:flex-col max-md:gap-8 w-full text-white h-auto  py-8 md:px-28 flex justify-between items-center'>
 
 
-                <p>CSI-DMCE 2024 || All Rights Are Reserved</p>
+                <p>DMCE 2024 || All Rights Are Reserved</p>
                 <div className=' flex gap-8'>
 
                     <section class="flex justify-center items-center">
