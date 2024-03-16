@@ -6,6 +6,7 @@ import "./home.css";
 import { gsap, Power3 } from "gsap";
 import Timer from "../timer/Timer";
 import { StarsCanvas } from "../spline";
+import Button from "./Button/Button";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 function LoadingFallback() {
@@ -92,7 +93,7 @@ export function Home() {
           />
         </Suspense> :<LoadingFallback/>
          }
-          <button class="sparkle-button w-96 max-md:w-60 md:mt-8 m-auto">
+          {/* <button class="sparkle-button w-96 max-md:w-60 md:mt-8 m-auto">
             <span class="spark"></span>
 
             <span class="backdrop"></span>
@@ -123,11 +124,12 @@ export function Home() {
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path>
-            </svg>
-            <span class="text text-white max-md:text-sm text-2xl">
-              Apply with dev
-            </span>
-          </button>
+            </svg> */}
+            <Button />
+            {/* <span class="text text-white max-md:text-sm text-2xl">
+              Register Now 
+            </span> */}
+          {/* </button> */}
         </div>
 
         {/* <MaskContainer

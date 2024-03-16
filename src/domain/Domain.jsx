@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Domaincards from './Domaincards';
 
 const Domains = () => {
 
@@ -12,7 +13,7 @@ const Domains = () => {
         {
             title: "SOCIAL IMPACT",
             imgLink: "https://img.freepik.com/free-photo/dictatorship-oppression-collage-concept_23-2149711433.jpg?t=st=1709318206~exp=1709321806~hmac=04c5c38e409b5d3608d9b09c47a1353d355579918eeac71f82cf88e6f4b5778c&w=996",
-            paragraph: "Social impact initiatives play a crucial role in addressing pressing societal challenges and fostering positive change. By harnessing the power of community engagement, advocacy, and innovative solutions, social "
+            paragraph: "Social impact initiatives play a crucial role in addressing pressing societal challenges and fostering positive change. "
         },
         {
             title: "FINTECH",
@@ -36,18 +37,9 @@ const Domains = () => {
                 <div className='grid mt-8 md:mt-12 grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 md:grid-cols-4'>
                     {
                         objects && objects.map((item, i) => {
-                            return <div class="relative group duration-500 cursor-pointer group overflow-hidden relative text-gray-50 h-72 w-56  rounded-2xl hover:duration-700 duration-700">
-                                <div class="w-56 bottop h-72 bg-blue-400 text-gray-800">
-                                    <img class="w-fit h-full z-50 object-cover " src={item.imgLink} alt="logo" srcset="" />
-                                </div>
-                                <div class=" absolute bot bg-gray-50 bot top-[15.5rem] w-56 p-3 flex flex-col gap-1 group-hover:top-0 group-hover:h-full group-hover:duration-600 duration-500">
-
-                                    <span class="text-black  font-bold text-md">{item.title}</span>
-                                    <p class="text-neutral-800">{item.paragraph}</p>
-                                </div>
-
-
-                            </div>
+                            return (
+                                <Domaincards title={item.title} paragraph={item.paragraph} imglogo={item.imgLink}/>
+                            )
                         })
                     }
 
