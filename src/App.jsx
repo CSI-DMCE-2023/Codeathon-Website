@@ -21,7 +21,7 @@ import Faq from "./FAQ/Faq.jsx";
 import { Analytics } from "@vercel/analytics/react"
 import Marketing from "./marketing/Marketing.jsx";
 import Domains from "./domain/Domain.jsx";
-
+import ReactGA from "react-ga4";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -31,7 +31,8 @@ function App() {
     restDelta: 0.001,
   });
   const [loading, setLoading] = useState(true);
- 
+  ReactGA.initialize("G-E0D9FS4JDP");
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
 
   useEffect(() => {
