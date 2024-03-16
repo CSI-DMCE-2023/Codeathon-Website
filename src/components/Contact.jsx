@@ -81,7 +81,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <div>
-                      <span>Roshani Nalawade - </span> +91 93214 70733 <br />
+                      <span>Aditya Parab - </span> +91 93723 48202<br />
                       <span>Viraj Sawant - </span> +91 91368 35165
                     </div>
                   </div>

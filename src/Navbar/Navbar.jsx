@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import dmcelogo from "../assets/dmce.png";
 import csi from "../assets/logo.png";
+import softlink from "../assets/Softlink.png";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -57,17 +58,17 @@ const Navbar = () => {
     <>
       <div className="w-full h-full ">
         <div className="w-full max-md:p-4 p-8 bg-black  h-[80px] flex items-center justify-between">
-          <div className="w-[20vw] h-full flex gap-4 items-center">
+          <div className="w-[35vw] h-full flex gap-4 items-center">
             <img
               className="img-fluid w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent"
               src={dmcelogo}
               alt="dmceLOGO"
             />
-            {/* <img
-              className="img-fluid  w-[3rem] h-[3rem] md:w-16 md:h-16 navcontent"
-              src={csi}
+            <img
+              className="img-fluid  w-[20rem] h-[3rem] md:w-48 object-cover md:h-16 navcontent"
+              src={softlink}
               alt="csi logo"
-            /> */}
+            />
           </div>
           {side===true?(<div
             onClick={toggle}

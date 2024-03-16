@@ -90,18 +90,15 @@ export function Home() {
                   width: "revert-layer",
                   background: "transparent",
                 }}
-                scene="https://prod.spline.design/54jTXvnwS6s7cmNK/scene.splinecode"
+                scene="https://my.spline.design/untitled-e433afa7f63d8dc031ed10754393f910/"
               />
             </Suspense> 
           ) : (
             <LoadingFallback />
           )}
-          <div>
+          {/* <div>
               <h1>Logithon</h1>
-          </div>
-          <div>
-
-          </div>
+          </div> */}
           <Button />
         </div>
 

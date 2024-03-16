@@ -24,7 +24,7 @@ const PreLoader = () => {
             opacity: 1,
             scale: 1,
             duration: 1,
-            rotate : 360,
+            // rotate : 360,
             ease: "Power3.easeOut"
         })
             .to("#loading", {
