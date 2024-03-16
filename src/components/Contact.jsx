@@ -80,9 +80,10 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-white">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color text-white">
-                      (022) 27797130
-                    </p>
+                    <div>
+                      <span>Roshani Nalawade - </span> +91 93214 70733 <br />
+                      <span>Viraj Sawant - </span> +91 91368 35165
+                    </div>
                   </div>
                 </div>
 
