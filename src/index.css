@@ -11,8 +11,8 @@
     bottom: -15rem!important;
 } */
 
-.bot{
-
+body{
+    background-color: black;
 }
 
 .bottop:hover .bot{

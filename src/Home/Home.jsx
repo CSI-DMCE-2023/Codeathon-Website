@@ -90,7 +90,7 @@ export function Home() {
                   width: "revert-layer",
                   background: "transparent",
                 }}
-                scene="https://prod.spline.design/54jTXvnwS6s7cmNK/scene.splinecode"
+                scene="https://prod.spline.design/eatze73xxFkdvtg8/scene.splinecode"
               />
             </Suspense> 
           ) : (

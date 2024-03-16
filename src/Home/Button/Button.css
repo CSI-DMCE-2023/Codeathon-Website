@@ -1,5 +1,5 @@
 .btn {
-    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-color: linear-gradient(-45deg, #003153, #7e03aa, #00fffb);
     --border-width: .125em;
     --curve-size: .5em;
     --blur: 30px;

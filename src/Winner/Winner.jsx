@@ -19,18 +19,8 @@ const Winner = () => {
     return (
         <div
             id="prizes"
-            className="relative w-full min-h-screen p-8 pb-8 bg-gradient-to-b bg-black/35 "
+            className="relative w-full min-h-screen p-8 pb-8 "
         >
-            <video
-                autoPlay
-                muted
-                loop
-                className="absolute -z-40 inset-0 w-full h-full object-cover"
-            >
-                <source src={"https://res.cloudinary.com/dbeptj8fp/video/upload/v1709352407/fvpdrfn1yzptww8rxtf9.mp4"} type="video/mp4" />
-                {/* Add additional source elements for different video formats if needed */}
-                Your browser does not support the video tag.
-            </video>
             <div className="w-full h-full flex items-center justify-center z-40">
                 <motion.h1
                     variants={fadeIn("up", 0.2)}

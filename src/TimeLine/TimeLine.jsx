@@ -16,7 +16,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/soft.jpeg";
 
 const experiences = [
   {
