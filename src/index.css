@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .bot{
+    position: absolute;
+    bottom: -7.5rem!important;
+}
+
+.tbox:hover .bot{
+    bottom: -15rem!important;
+} */
+
+.bot{
+
+}
+
+.bottop:hover .bot{
+    bottom: 0 !important;
+    
+}
