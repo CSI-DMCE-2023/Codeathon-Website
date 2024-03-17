@@ -1,31 +1,21 @@
 import React from "react";
-import "./Domaincard.css";
-import styled from "styled-components";
-function Domaincards(props) {
+
+function Domaincards({ imglogo, title, paragraph, index }) {
   return (
-    <div className="card">
-      <div className="top-section">
-        <img src={props.imglogo} style={{zIndex:-1}}/>
-        <div className="border"></div>
-        <div className="icons">
-          <div className="logo">
-            <p className="text-sm text-white font-bold">
-                DMCE
-            </p>
-          </div>
-        </div>
+    <div className="card hover:scale-105 rounded-xl w-full max-w-sm bg-white ease-in-out duration-500">
+      <div className="px-3 pt-3">
+        <img src={imglogo} className="rounded-xl" />
       </div>
-      <div className="bottom-section">
-        <span className="title mt-3">{props.title}</span>
-        <div className="row row1">
-          <p className="text-md text-left    text-white">
-            {props.paragraph}
-          </p>
+      <div className=" p-4">
+        <span className="font-semibold textlg sm:text-xl text-center">
+          #{index + 1} {title}
+        </span>
+        <div className="mt-4">
+          <p className="text-sm sm:text-base text-left">{paragraph}</p>
         </div>
       </div>
     </div>
   );
 }
-
 
 export default Domaincards;
