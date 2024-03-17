@@ -45,56 +45,47 @@ function App() {
     requestAnimationFrame(raf);
 
     // Simulate content loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+    // const timer = setTimeout(() => {
+    //   setLoading(false);
+    // }, 3000);
 
-    return () => clearTimeout(timer);
+    // return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="">
-      {loading ? (
-        <PreLoader />
-      ) : (
-        <>
-          <motion.div
-            className="progress-bar"
-            style={{
-              position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              height: "4px",
-              background: "linear-gradient(145deg, #9fccfa, #0974f1)",
-              borderRadius: "300px",
-              transformOrigin: "0%",
-              zIndex: 1000,
-              scaleX,
-            }}
-          />
-          <Navbar />
-
-          <Home />
-
-          {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
+    <div>
+      {loading && <PreLoader />}
+      <motion.div
+        className="progress-bar"
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "4px",
+          background: "linear-gradient(145deg, #9fccfa, #0974f1)",
+          borderRadius: "300px",
+          transformOrigin: "0%",
+          zIndex: 1000,
+          scaleX,
+        }}
+      />
+      <Navbar />
+      <Home setLoading={setLoading} />
+      {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
-          <Domains />
-
-          <TimeLine />
-          <Winner />
-          <Marketing />
-          <Gallery />
-
-          {/* <Sponcers /> */}
-          <FAQ />
-          <GoToTopBtn />
-          <Contact />
-          <Footer />
-          <Analytics />
-        </>
-      )}
+      <Domains />
+      <TimeLine />
+      <Winner />
+      <Marketing />
+      <Gallery />
+      {/* <Sponcers /> */}
+      <FAQ />
+      <GoToTopBtn />
+      <Contact />
+      <Footer />
+      <Analytics />
     </div>
   );
 }
