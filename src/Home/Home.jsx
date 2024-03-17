@@ -11,7 +11,7 @@ export function Home({ setLogoLoader }) {
         <StarsCanvas />
         <div className="flex-col w-full h-full z-50">
           <Spline
-            className="scale-100 md:scale-150 md:w-full w-[120%] -ml-8 mt-20 md:ml-0 bg-slate-50"
+            className=" scale-50 md:scale-150 md:w-full w-[190%] -m-[50%] mt-20 sm:ml-0 bg-slate-50"
             style={{
               height: "50%",
               width: "revert-layer",
