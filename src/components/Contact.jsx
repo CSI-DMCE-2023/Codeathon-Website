@@ -2,13 +2,13 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="bg-black text-white px-2">
+    <section className="bg-black text-white ">
       <div className="container mx-auto flex flex-col">
         <h1 className="text-center font-bold text-2xl sm:text-3xl py-6 sm:py-8 uppercase mt-6 sm:mt-8">
           Contact Us
         </h1>
-        <div className="grid md:grid-cols-2">
-          <div className="py-4 px-8 w-full">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div className="py-4 px-8 sm:px-8 w-full">
             <h2 className="text-3xl sm:text-4xl font-bold uppercase">
               GET IN TOUCH WITH US
             </h2>
