@@ -106,9 +106,9 @@ const ContactUs = () => {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30150.37366781793!2d72.995556!3d19.160374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4daf8967d9%3A0xdd90bed2058f7eaa!2sDatta%20Meghe%20College%20Of%20Engineering!5e0!3m2!1sen!2sus!4v1709203790147!5m2!1sen!2sus"
               width="600"
               height="450"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
