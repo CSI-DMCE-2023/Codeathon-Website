@@ -16,7 +16,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import logo from "../assets/soft.jpeg";
+import logo from "../assets/mainlogo.png";
 
 const experiences = [
   {
@@ -127,7 +127,7 @@ const ExperienceCard = ({ experience }) => (
         <img
           src={logo}
           alt={experience.company_name}
-          className="w-[80%] h-[80%] object-cover"
+          className="w-[100%] h-[100%] rounded-full object-cover"
         />
       </div>
     }
