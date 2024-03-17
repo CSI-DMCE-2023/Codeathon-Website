@@ -2,14 +2,14 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section id="cantact" className="bg-black text-white ">
+    <section id="cantact" className="text-white px-5">
       <div className="container mx-auto flex flex-col">
-        <h1 className="text-center font-bold text-2xl sm:text-3xl py-6 sm:py-8 uppercase mt-6 sm:mt-8">
+        <h1 className="py-6 sm:py-8 text-3xl md:text-5xl text-white font-semibold text-center mt-6 sm:mt-8">
           Contact Us
         </h1>
         <div className="grid md:grid-cols-2 grid-cols-1">
-          <div className="py-4 px-8 sm:px-8 w-full">
-            <h2 className="text-3xl sm:text-4xl font-bold uppercase">
+          <div className="py-4 sm:pe-4 w-full">
+            <h2 className="text-3xl sm:text-4xl font-semibold uppercase">
               GET IN TOUCH WITH US
             </h2>
             <p className="mb-8 sm:mb-10 mt-2 sm:mt-5 text-base leading-relaxed text-body-color ">

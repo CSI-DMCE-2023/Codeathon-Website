@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Domains from "./components/domain/Domain.jsx";
+import PS from "./components/ps/PS";
 import TimeLine from "./components/TimeLine/TimeLine";
 import Gallery from "./components/Gallery";
-import FAQ from "./components/FAQ";
+import FAQs from "./components/FAQs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -81,13 +81,13 @@ function App() {
       {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
-      <Domains />
+      <PS />
       <TimeLine />
       <Winner />
       <Marketing />
       <Gallery />
       {/* <Sponcers /> */}
-      <FAQ />
+      <FAQs />
       <GoToTopBtn />
       <Contact />
       <Footer />
