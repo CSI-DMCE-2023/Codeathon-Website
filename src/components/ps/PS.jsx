@@ -39,7 +39,7 @@ const PS = () => {
         PROBLEM STATEMENTS
       </h1>
       <div className="mt-8 md:mt-12 mx-4 sm:mx-6">
-        <div className="flex gap-4 md:gap-8 flex-wrap justify-center">
+        <div className="flex gap-4 md:gap-8 flex-wrap justify-center max-w-5xl">
           {objects.map((item, index) => {
             return (
               <PScard

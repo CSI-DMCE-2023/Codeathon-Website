@@ -4,27 +4,27 @@ import { CardBody, CardContainer, CardItem } from "../../ui/3d-card.jsx";
 function PScard({ imglogo, title, paragraph, index }) {
   return (
     <CardContainer className="h-full">
-      <CardBody className="relative group/card hover:shadow-2xl hover:shadow-gray-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[30rem] rounded-xl p-6 border h-full flex flex-col justify-between">
+      <CardBody className="relative group/card hover:shadow-2xl hover:shadow-gray-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[30rem] rounded-xl p-5 border h-full flex flex-col justify-between">
         <div>
-          <CardItem translateZ="100" className="w-full mt-4">
+          <CardItem translateZ="100" className="w-full">
             <img
               src={imglogo}
               height="1000"
               width="1000"
-              className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+              className="h-52 w-full object-cover rounded-xl group-hover/card:shadow-xl"
               alt="thumbnail"
             />
           </CardItem>
           <CardItem
             translateZ="50"
-            className="text-2xl font-bold text-white mt-6"
+            className="text-xl font-semibold text-white mt-6"
           >
             #{index + 1} {title}
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-base max-w-sm mt-4 text-neutral-300"
+            className="text-sm mt-4 text-neutral-300"
           >
             {paragraph}
           </CardItem>

@@ -20,7 +20,7 @@ const AccordionItem = ({ header, text }) => {
             stroke=""
           />
         </svg>
-        <h4 className="ms-4 sm:ms-5 text-sm sm:text-lg font-semibold text-dark">
+        <h4 className="ms-4 sm:ms-5 text-sm sm:text-lg font-semibold text-start">
           {header}
         </h4>
       </button>
