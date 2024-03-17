@@ -8,7 +8,7 @@ function Domaincards({ imglogo, title, paragraph, index }) {
       </div>
       <div className=" p-4 ">
         <span className="font-semibold textlg sm:text-xl text-center">
-          #{index + 1} {title}
+          PS{index + 1} {title}
         </span>
         <div className="mt-4">
           <p className="text-sm sm:text-base text-left">{paragraph}</p>
