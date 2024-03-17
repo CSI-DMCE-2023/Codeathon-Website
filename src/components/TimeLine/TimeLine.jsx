@@ -1,10 +1,7 @@
 "use client";
 import { useScroll, useTransform } from "framer-motion";
 import React from "react";
-import { GoogleGeminiEffect } from "../components/ui/google-gemini-effect";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import EventIcon from "@mui/icons-material/Event";
+import { GoogleGeminiEffect } from "../ui/google-gemini-effect";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -13,10 +10,8 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
-import logo from "../assets/mainlogo.png";
+import { styles } from "../../styles";
+import { textVariant } from "../../utils/motion";
 
 const experiences = [
   {
@@ -122,15 +117,6 @@ const ExperienceCard = ({ experience }) => (
     contentArrowStyle={{ borderRight: "7px solid #232631", zIndex: 100 }}
     date={experience.day}
     iconStyle={{ background: experience.iconBg }}
-    icon={
-      <div className="flex justify-center items-center w-full h-full">
-        <img
-          src={logo}
-          alt={experience.company_name}
-          className="w-[100%] h-[100%] rounded-full object-cover"
-        />
-      </div>
-    }
   >
     <div>
       <h3 className="text-white text-[20px] md:text-[24px] font-bold">
@@ -161,18 +147,10 @@ export function TimeLine() {
   return (
     <div className="relative" id="timeline">
       <div className="bg-black p-8 w-full">
-        <motion.div
-          id="timeline"
-          className="w-full mx-auto"
-          variants={textVariant()}
-        >
-          <h2
-            className={styles.sectionHeadText + " text-center w-full mx-auto"}
-          >
-            SCHEDULE
-          </h2>
+        <motion.div className="text-white" variants={textVariant()}>
+          <h2 className={styles.sectionHeadText + " text-center"}>SCHEDULE</h2>
+          <p className="text-lg font-medium text-center ">30 - 31 march</p>
         </motion.div>
-
         <div className="mt-10 flex flex-col z-40">
           <VerticalTimeline>
             {experiences.map((experience, index) => (
