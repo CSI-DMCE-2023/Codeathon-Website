@@ -34,7 +34,7 @@ const Domains = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16">
+    <div id="domains" className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16">
       <p className="pb-6 text-3xl md:text-5xl text-white font-bold text-center">
         PROBLEM STATEMENTS
       </p>
