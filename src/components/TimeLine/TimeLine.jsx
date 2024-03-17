@@ -145,7 +145,7 @@ const ExperienceCard = ({ experience }) => (
 
   return (
     <div className="relative" id="timeline">
-      <div className="bg-black p-8 w-full">
+      <div className="bg-black p-8 w-full z-50">
         <motion.div className="text-white" variants={textVariant()}>
           <h2 className={styles.sectionHeadText + " text-center"}>SCHEDULE</h2>
           <p className="text-lg font-medium text-center ">30 - 31 march</p>
@@ -159,7 +159,7 @@ const ExperienceCard = ({ experience }) => (
         </div>
       </div>
       <div
-        className="h-full  top-0 w-full dark:border dark:border-white/[0.1] absolute overflow-clip z-0 "
+        className="h-full  top-0 w-full dark:border dark:border-white/[0.1] absolute overflow-clip "
         ref={ref}
       >
         <GoogleGeminiEffect
