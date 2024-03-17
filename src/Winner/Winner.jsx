@@ -46,8 +46,7 @@ const Winner = () => {
         </motion.div>
         <div className=" h-full text-white max-md:my-8">
           <div className="w-full h-full  flex flex-col items-center justify-center gap-8 text-xl font-md  mt-[3.5rem]">
-            
-            Lorem ipsum is placeholder text
+          <p className="text-2xl "> *The prize will only be awarded if the proposed solution aligns with and meets the evaluation criteria.</p>
           </div>
         </div>
       </div>
