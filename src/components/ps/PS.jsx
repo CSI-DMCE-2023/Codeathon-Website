@@ -1,7 +1,7 @@
 import React from "react";
-import Domaincards from "./Domaincards";
+import PScard from "./PScard";
 
-const Domains = () => {
+const PS = () => {
   const objects = [
     {
       title: "Intelligent Warehouse Management System",
@@ -34,15 +34,15 @@ const Domains = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16">
-      <p className="pb-6 text-3xl md:text-5xl text-white font-bold text-center">
+    <div className="flex flex-col justify-center items-center py-10 mb-12 px-3">
+      <h1 className="text-2xl md:text-6xl font-bold text-white">
         PROBLEM STATEMENTS
-      </p>
+      </h1>
       <div className="mt-8 md:mt-12 mx-4 sm:mx-6">
-        <div className="flex gap-4 md:gap-8 flex-wrap justify-center">
+        <div className="flex gap-4 md:gap-8 flex-wrap justify-center max-w-5xl">
           {objects.map((item, index) => {
             return (
-              <Domaincards
+              <PScard
                 title={item.title}
                 paragraph={item.paragraph}
                 imglogo={item.imgLink}
@@ -57,4 +57,4 @@ const Domains = () => {
   );
 };
 
-export default Domains;
+export default PS;
