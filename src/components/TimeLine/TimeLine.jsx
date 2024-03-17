@@ -109,7 +109,7 @@ const experiences = [
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: "rgb(15 23 42 / 70%)",
+      background: "rgb(15 23 42 / 90%)",
       color: "#fff",
       zIndex: 100,
     }}
@@ -137,11 +137,11 @@ const ExperienceCard = ({ experience }) => (
     offset: ["start start", "end start"],
   });
 
-  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
-  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
-  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
-  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
-  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
 
   return (
     <div className="relative" id="timeline">
