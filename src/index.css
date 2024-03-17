@@ -129,6 +129,7 @@ body {
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
+  height: 12px;
 }
 
 *::-webkit-scrollbar-track {
@@ -136,11 +137,11 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #00cea8;
-  background: linear-gradient(90deg, #00cea8 0%, rgba(60, 51, 80, 0) 100%);
+  background: #B9D9EB;
+  background: linear-gradient(90deg, #B9D9EB 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     90deg,
-    #00cea8 0%,
+    #B9D9EB 0%,
     rgba(60, 51, 80, 0) 100%
   );
   border-radius: 7px;
