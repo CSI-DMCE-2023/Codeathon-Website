@@ -34,21 +34,24 @@ const Domains = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-full bg-black py-10">
+    <div className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16">
       <p className="pb-6 text-3xl md:text-5xl text-white font-bold text-center">
         PROBLEM STATEMENTS
       </p>
-      <div className="grid mt-8 md:mt-12 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-4">
-        {objects.map((item, i) => {
-          return (
-            <Domaincards
-              title={item.title}
-              paragraph={item.paragraph}
-              imglogo={item.imgLink}
-              key={i}
-            />
-          );
-        })}
+      <div className="mt-8 md:mt-12 mx-4 sm:mx-6">
+        <div className="flex gap-4 md:gap-8 flex-wrap justify-center">
+          {objects.map((item, index) => {
+            return (
+              <Domaincards
+                title={item.title}
+                paragraph={item.paragraph}
+                imglogo={item.imgLink}
+                index={index}
+                key={index}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
