@@ -48,7 +48,7 @@ const FAQ = () => {
         <div className="grid md:grid-cols-2 gap-6 w-full mt-10 sm:mt-16 max-w-md md:max-w-6xl">
           <div className="flex flex-col gap-6">
             <AccordionItem
-              header="What is a Log-I-thon?"
+              header="What is a LogiTHON?"
               text="A hackathon is a 24-hour event, where 'hackers' will collaborate on developing a functional prototype of hardware or software for the duration of the hackathon."
             />
             <AccordionItem
@@ -66,7 +66,7 @@ const FAQ = () => {
               text="No worries! We love to welcome first-time hackers who are starting their hacking journey. We have awesome workshops and events planned which will help you get a head start in the hackathon ."
             />
             <AccordionItem
-              header="How do I register for the Log-I-thon?"
+              header="How do I register for the LogiTHON?"
               text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping in the discord!."
             />
             <AccordionItem
