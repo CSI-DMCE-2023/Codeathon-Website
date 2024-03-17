@@ -99,41 +99,42 @@ background: linear-gradient(180deg, rgba(253,252,255,1) 31%, rgba(0,1,251,1) 53%
             <CloseIcon fontSize="large" />
           </div>
           <div className="w-full mx-auto sidebar h-auto mt-8 flex gap-6 flex-col justify-center items-center text-2xl z-50">
-            <button
-              onClick={() => scrollToTimeline("about")}
-              className="p-2 cursor-pointer   border-b-4 sidepara2 border-blue-700 w-full text-center"
-            >
-              About
-            </button>
+
             <button
               onClick={() => scrollToTimeline("domains")}
               className="p-2 cursor-pointer   border-b-4 sidepara2 border-blue-700 w-full text-center"
             >
-              Domains
+              PROBLEM STATEMENTS
             </button>
             <button
               onClick={() => scrollToTimeline("timeline")}
               className="p-2  border-b-4 sidepara2 border-blue-700 w-full text-center"
             >
-              Timeline
+              SCHEDULE
             </button>
             <button
               onClick={() => scrollToTimeline("prizes")}
               className="p-2  cursor-pointer  border-b-4 sidepara3  border-blue-700 w-full text-center"
             >
-              Prizes
+              PRIZES
             </button>
             <button
               onClick={() => scrollToTimeline("gallery")}
               className="p-2  cursor-pointer  border-b-4 sidepara4  border-blue-700 w-full text-center"
             >
-              Gallery
+              GALLERY
             </button>
             <button
-              onClick={() => scrollToTimeline("contact")}
+              onClick={() => scrollToTimeline("faqs")}
               className="p-2  cursor-pointer  border-b-4 sidepara5  border-blue-700 w-full text-center"
             >
-              Contact
+              FAQS
+            </button>
+            <button
+              onClick={() => scrollToTimeline("cantact")}
+              className="p-2  cursor-pointer  border-b-4 sidepara5  border-blue-700 w-full text-center"
+            >
+              CONTACT
             </button>
             <button
               onClick={() => scrollToTimeline("sponsers")}

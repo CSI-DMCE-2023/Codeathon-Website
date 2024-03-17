@@ -37,7 +37,7 @@ const AccordionItem = ({ header, text }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-black px-2 py-10 sm:py-12 relative z-20 overflow-hidden">
+    <section id="faqs" className="bg-black px-2 py-10 sm:py-12 relative z-20 overflow-hidden">
       <div className="container mx-auto flex-col">
         <div className="text-center text-white">
           <div className="font-bold text-2xl sm:text-3xl">FAQ</div>
