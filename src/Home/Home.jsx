@@ -12,7 +12,7 @@ export function Home({ setLogoLoader }) {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex-col w-full h-full z-50">
           <Spline
-            className=" scale-50 md:scale-150 md:w-full w-[190%] -m-[50%] mt-20 sm:ml-0 bg-slate-50"
+            className=" scale-50 md:scale-150 md:w-full w-[190%] -m-[50%] mt-32 sm:ml-0 bg-slate-50"
             style={{
               height: "50%",
               width: "revert-layer",
@@ -21,7 +21,7 @@ export function Home({ setLogoLoader }) {
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
             onLoad={() => setLogoLoader(false)}
           />
-          <div className="w-full flex justify-center items-center absolute bottom-[20%] sm:bottom-[20%]">
+          <div className="w-full flex justify-center items-center absolute bottom-[20%] sm:bottom-[15%]">
             <button className="btn">Register Now</button>
           </div>
         </div>

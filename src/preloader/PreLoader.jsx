@@ -39,7 +39,7 @@ const PreLoader = () => {
   //   }, []);
 
   return (
-    <div className="preloader z-[150] p-4 md:p-8 fixed top-0 left-0 bottom-0 right-0 w-full h-full flex justify-center items-center flex-col gap-8 bg-black overflow-hidden">
+    <div className="preloader z-[220] p-4 md:p-8 fixed top-0 left-0 bottom-0 right-0 w-full h-full flex justify-center items-center flex-col gap-8 bg-black overflow-hidden">
       <section class="bg-blue-900 relative place-items-center grid w-full gap-4">
         <div class="bg-gray-500 w-48 h-48  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
         <div class="bg-gray-400 w-32 h-32 absolute animate-ping rounded-full shadow-xl"></div>
