@@ -9,7 +9,7 @@ import Navbar from "./Navbar/Navbar";
 
 import { TimeLine } from "./TimeLine/TimeLine";
 import { Gallery } from "./Gallery/Gallery";
-import Footer from "./footer/Footer";
+import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
 import Contact from "./components/Contact";
@@ -18,7 +18,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
 import Faq from "./FAQ/Faq.jsx";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import Marketing from "./marketing/Marketing.jsx";
 import Domains from "./domain/Domain.jsx";
 import ReactGA from "react-ga4";
@@ -34,10 +34,8 @@ function App() {
   ReactGA.initialize("G-E0D9FS4JDP");
   ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
-
   useEffect(() => {
-
-    const lenis = new Lenis()
+    const lenis = new Lenis();
 
     function raf(time) {
       lenis.raf(time);
@@ -56,11 +54,9 @@ function App() {
 
   return (
     <div className="">
-
       {loading ? (
         <PreLoader />
       ) : (
-
         <>
           <motion.div
             className="progress-bar"
@@ -79,32 +75,26 @@ function App() {
           />
           <Navbar />
 
-
           <Home />
-       
+
           {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
-          <Domains/>
+          <Domains />
 
-         
-          
+          <TimeLine />
+          <Winner />
+          <Marketing />
+          <Gallery />
 
-
-            <TimeLine />
-            <Winner/>
-            <Marketing/>
-            <Gallery />
-
-            {/* <Sponcers /> */}
-            <Faq/>
-            <GoToTopBtn />
-            <Contact/>
-            <Footer />
-            <Analytics/>
-           
-          </>
-          )}
+          {/* <Sponcers /> */}
+          <Faq />
+          <GoToTopBtn />
+          <Contact />
+          <Footer />
+          <Analytics />
+        </>
+      )}
     </div>
   );
 }
