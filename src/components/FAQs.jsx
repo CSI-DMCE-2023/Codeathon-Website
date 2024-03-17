@@ -61,8 +61,8 @@ const FAQ = () => {
               text="Yes! There will be swag and prizes!"
             />
             <AccordionItem
-              header="What is the mode of conduct of logiTHON?"
-              text="logiTHON will be conducted offline, offering a unique setting for real-time collaboration, networking opportunities, immediate feedback, a focused environment, and hands-on learning experiences."
+              header="What is the mode of conduct of LogiTHON?"
+              text="LogiTHON will be conducted offline, offering a unique setting for real-time collaboration, networking opportunities, immediate feedback, a focused environment, and hands-on learning experiences."
             />
           </div>
           <div className="flex flex-col gap-6">

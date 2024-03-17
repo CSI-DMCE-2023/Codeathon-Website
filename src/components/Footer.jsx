@@ -27,7 +27,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-xs sm:text-sm font-light">
-          logiTHON 2024 | All Rights Are Reserved
+          LogiTHON 2024 | All Rights Are Reserved
         </p>
       </motion.div>
     </div>
