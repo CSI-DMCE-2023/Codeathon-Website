@@ -17,7 +17,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
 import MainDomain from "./components/MainDomain.jsx";
-import Faq from "./FAQ/Faq.jsx";
+import FAQ from "./components/FAQ";
 import { Analytics } from "@vercel/analytics/react";
 import Marketing from "./marketing/Marketing.jsx";
 import Domains from "./domain/Domain.jsx";
@@ -88,7 +88,7 @@ function App() {
           <Gallery />
 
           {/* <Sponcers /> */}
-          <Faq />
+          <FAQ />
           <GoToTopBtn />
           <Contact />
           <Footer />
