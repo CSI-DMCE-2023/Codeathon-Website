@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const AccordionItem = ({ header, text }) => {
   const [active, setActive] = useState(false);
   return (
-    <div className="w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:p-8 lg:px-6 xl:px-8">
+    <div className="w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:px-8">
       <button className="flex items-center" onClick={() => setActive(!active)}>
         <svg
           className={`duration-200 ease-in-out size-3 sm:size-5 ${
@@ -45,7 +45,7 @@ const FAQ = () => {
             Any Questions? Look Here
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 gap-6 w-full mt-10 sm:mt-16">
+        <div className="grid sm:grid-cols-2 gap-6 w-full mt-10 sm:mt-16 max-w-6xl">
           <div className="flex flex-col gap-6">
             <AccordionItem
               header="What is a Log-I-thon?"
