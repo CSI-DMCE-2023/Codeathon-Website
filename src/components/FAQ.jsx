@@ -37,7 +37,7 @@ const AccordionItem = ({ header, text }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-black px-2 py-10 sm:py-12 relative z-20 overflow-hidden">
+    <section id="faqs" className="bg-black px-2 py-10 sm:py-12 relative z-20 overflow-hidden">
       <div className="container mx-auto flex-col">
         <div className="text-center text-white">
           <div className="font-bold text-2xl sm:text-3xl">FAQ</div>
@@ -53,11 +53,11 @@ const FAQ = () => {
             />
             <AccordionItem
               header="Will there be swag and prizes?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              text="Yes! There will be swag and prizes!"
             />
             <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="You bet! Participants and winners will receive swags, certificates, merchandise, goodies and more!"
+              header="What is the mode of conduct of logiTHON?"
+              text="logiTHON will be conducted offline, offering a unique setting for real-time collaboration, networking opportunities, immediate feedback, a focused environment, and hands-on learning experiences."
             />
           </div>
           <div className="flex flex-col gap-6">
@@ -67,7 +67,7 @@ const FAQ = () => {
             />
             <AccordionItem
               header="How do I register for the LogiTHON?"
-              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping in the discord!."
+              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping on our Social Media handles!."
             />
             <AccordionItem
               header="Can I participate as an individual?"

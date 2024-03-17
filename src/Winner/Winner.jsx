@@ -37,19 +37,19 @@ const Winner = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="w-full h-full flex items-center justify-center flex-col "
         >
-          <p
-            
-            className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-cyan-400  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-          >
-            6,00,000/-  
+          <p className=" text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8  mt-12 text-cyan-400  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            6,00,000/-
           </p>
-        </motion.div>
-        <div className=" h-full text-white max-md:my-8">
-          <div className="w-full h-full  flex flex-col items-center justify-center gap-8 text-xl font-md  mt-[3.5rem]">
-            
-            Lorem ipsum is placeholder text
+          <div className=" h-full text-white max-md:my-8">
+            <div className="w-full h-full  flex flex-col items-center justify-center gap-8 text-xl font-md  mt-[3.5rem]">
+              <p className="text-2xl ">
+                {" "}
+                *The prize will only be awarded if the proposed solution aligns
+                with and meets the evaluation criteria.
+              </p>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

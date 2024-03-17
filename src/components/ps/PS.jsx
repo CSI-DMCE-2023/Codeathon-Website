@@ -34,12 +34,12 @@ const PS = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center py-10 mb-12 px-3">
-      <h1 className="text-2xl md:text-6xl font-bold text-white">
+    <div className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16">
+      <p className="pb-6 text-3xl md:text-5xl text-white font-bold text-center">
         PROBLEM STATEMENTS
-      </h1>
+      </p>
       <div className="mt-8 md:mt-12 mx-4 sm:mx-6">
-        <div className="flex gap-4 md:gap-8 flex-wrap justify-center max-w-5xl">
+        <div className="flex gap-4 md:gap-8 flex-wrap justify-center">
           {objects.map((item, index) => {
             return (
               <PScard

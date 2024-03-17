@@ -178,7 +178,7 @@ const HeroParallax = ({ products }) => {
 
 function Gallery() {
   return (
-    <div className="w-full overflow-x-hidden text-white">
+    <div id="gallery" className="w-full overflow-x-hidden text-white">
       <HeroParallax products={products} />
     </div>
   );
