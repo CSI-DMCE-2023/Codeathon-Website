@@ -2,6 +2,7 @@ import React from "react";
 import LinkedIn from "../assets/icons/linkedin.png";
 import Instagram from "../assets/icons/instagram.png";
 import Discord from "../assets/icons/discord.png";
+import Facebook from "../assets/facebook.png"
 function CalltoAction() {
   return (
     <div className="text-white">
@@ -19,23 +20,23 @@ function CalltoAction() {
           <div class="mt-12 flex items-center justify-center gap-x-6 flex-wrap">
             <div className="flex-col items-center justify-evenly h-full">
               <div className="flex justify-center    gap-x-6">
-                <a href="/" target="_blank">
+                <a href="https://www.linkedin.com/company/softlinkglobalpvt/" target="_blank">
                   <img
                     src={LinkedIn}
                     alt="linkedin"
                     className="size-8 sm:size-9"
                   />
                 </a>
-                <a href="/" target="_blank">
+                <a href="https://www.instagram.com/softlink.global/" target="_blank">
                   <img
                     src={Instagram}
                     alt="instagram"
                     className="size-8 sm:size-9"
                   />
                 </a>
-                <a href="/" target="_blank">
+                <a href="https://www.facebook.com/softlinkglobal/" target="_blank">
                   <img
-                    src={Discord}
+                    src={Facebook}
                     alt="discord"
                     className="size-8 sm:size-9"
                   />
