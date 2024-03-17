@@ -7,24 +7,6 @@ import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 const Navbar = () => {
-  // useEffect(() => {
-
-  //     //const tl = gsap.timeline();
-
-  //     // gsap.set('.navcontent', {
-  //     //     opacity: 0,
-  //     //     scale: 0,
-  //     //     stagger: 0.3,
-  //     // })
-  //     // gsap.to('.navcontent', {
-  //     //     opacity: 1,
-  //     //     scale: 1,
-  //     //     stagger: 0.3,
-  //     //     delay: 4
-  //     // })
-
-  // }, [])
-
   const timeLine = () => {
     const tl = gsap.timeline();
     gsap.set(".sidebar button ", {
@@ -70,16 +52,17 @@ const Navbar = () => {
               alt="csi logo"
             />
           </div>
-          {side===true?(<div
-            onClick={toggle}
-            className=" w-[3rem] h-[3rem] md:w-16 md:h-16 z-[110] text-white navcontent cursor-pointer"
-          >
-            <MenuIcon fontSize="large" />
-          </div>):""}
+          {side === true ? (
+            <div
+              onClick={toggle}
+              className=" w-[3rem] h-[3rem] md:w-16 md:h-16 z-[110] text-white navcontent cursor-pointer"
+            >
+              <MenuIcon fontSize="large" />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
-
-        {/* background: rgb(253,252,255);
-background: linear-gradient(180deg, rgba(253,252,255,1) 31%, rgba(0,1,251,1) 53%, rgba(255,255,255,1) 74%); */}
 
         <div
           className={
@@ -136,12 +119,12 @@ background: linear-gradient(180deg, rgba(253,252,255,1) 31%, rgba(0,1,251,1) 53%
             >
               CONTACT
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToTimeline("sponsers")}
               className="p-2  cursor-pointer  border-b-4 sidepara5  border-blue-700 w-full text-center"
             >
               Sponsers
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
