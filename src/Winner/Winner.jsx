@@ -17,7 +17,7 @@ const Winner = () => {
   // });
 
   return (
-    <div id="prizes" className="relative w-full min-h-screen p-8 pb-8 ">
+    <div id="prizes" className="relative w-full max-h-screen mb-20 p-8 pb-8 ">
       <div className="w-full h-full flex items-center justify-center z-40">
         <motion.h1
           variants={fadeIn("up", 0.2)}

@@ -124,7 +124,7 @@ const experiences = [
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: "rgb(15 23 42 / 70%)",
+      background: "rgb(15 23 42 / 90%)",
       color: "#fff",
       zIndex: 100,
     }}
@@ -148,15 +148,15 @@ function TimeLine() {
     offset: ["start start", "end start"],
   });
 
-  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
-  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
-  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
-  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
-  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
 
   return (
     <div className="relative" id="timeline">
-      <div className="bg-black p-8 w-full">
+      <div className="bg-black p-8 w-full z-50">
         <motion.div className="text-white" variants={textVariant()}>
           <h2 className={styles.sectionHeadText + " text-center"}>SCHEDULE</h2>
           <p className="text-lg font-medium text-center ">30 - 31 march</p>
@@ -170,7 +170,7 @@ function TimeLine() {
         </div>
       </div>
       <div
-        className="h-full  top-0 w-full dark:border dark:border-white/[0.1] absolute overflow-clip z-0 "
+        className="h-full  top-0 w-full dark:border dark:border-white/[0.1] absolute overflow-clip "
         ref={ref}
       >
         <GoogleGeminiEffect
