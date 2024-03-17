@@ -71,7 +71,7 @@ const FAQ = () => {
             />
             <AccordionItem
               header="Can I participate as an individual?"
-              text="Code-a-thon foster teamwork and collaboration! We encourage you to participate as a team of 2-4 hackers."
+              text="LogiTHON foster teamwork and collaboration! We encourage you to participate as a team of 2-4 hackers."
             />
           </div>
         </div>

@@ -1,27 +1,31 @@
-import "./App.css";
+import React, { useEffect, useState } from "react";
 
+import Domains from "./components/domain/Domain.jsx";
+import TimeLine from "./components/TimeLine/TimeLine";
+import Gallery from "./components/Gallery";
+import FAQ from "./components/FAQ";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
+import "./App.css";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
 import { Home } from "./Home/Home";
-import { Sponcers } from "./sponcers/Sponcers.jsx";
+// import { Sponcers } from "./sponcers/Sponcers.jsx";
 
 import Navbar from "./Navbar/Navbar";
 
-import { TimeLine } from "./TimeLine/TimeLine";
-import { Gallery } from "./Gallery/Gallery";
-import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
 import PreLoader from "./preloader/PreLoader.jsx";
-import Contact from "./components/Contact";
+
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
-import MainDomain from "./components/MainDomain.jsx";
-import FAQ from "./components/FAQ";
+// import MainDomain from "./components/MainDomain.jsx";
+
 import { Analytics } from "@vercel/analytics/react";
 import Marketing from "./marketing/Marketing.jsx";
-import Domains from "./domain/Domain.jsx";
-import ReactGA from "react-ga4";
+
+// import ReactGA from "react-ga4";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -33,8 +37,8 @@ function App() {
 
   const [preLoader, setPreLoader] = useState(true);
   const [logoLoader, setLogoLoader] = useState(true);
-  ReactGA.initialize("G-E0D9FS4JDP");
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  // ReactGA.initialize("G-E0D9FS4JDP");
+  // ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
   useEffect(() => {
     const lenis = new Lenis();
