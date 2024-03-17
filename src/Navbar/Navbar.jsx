@@ -42,16 +42,17 @@ const Navbar = () => {
           <div class="flex items-center justify-between">
             <div class="flex shrink-0">
               <a aria-current="page" class="flex items-center" href="/">
+              <img
+                  class="h-10 object-cover mx-4 sm:h-10 w-auto"
+                  src={dmcelogo}
+                  alt=""
+                />
                 <img
                   class="h-10 object-cover sm:h-10 sm:mx-4 w-auto"
                   src={softlink}
                   alt=""
                 />
-                <img
-                  class="h-10 object-cover mx-4 sm:h-10 w-auto"
-                  src={dmcelogo}
-                  alt=""
-                />
+                
                 <p class="sr-only">Website Title</p>
               </a>
             </div>
