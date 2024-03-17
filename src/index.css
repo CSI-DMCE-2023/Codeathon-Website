@@ -11,11 +11,10 @@
     bottom: -15rem!important;
 } */
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.bottop:hover .bot{
-    bottom: 0 !important;
-    
+.bottop:hover .bot {
+  bottom: 0 !important;
 }
