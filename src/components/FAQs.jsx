@@ -37,11 +37,16 @@ const AccordionItem = ({ header, text }) => {
 
 const FAQ = () => {
   return (
-    <section id="faqs" className="bg-black px-2 py-10 sm:py-12 relative z-20 overflow-hidden">
+    <section
+      id="faqs"
+      className="px-5 py-10 sm:py-12 relative z-20 overflow-hidden"
+    >
       <div className="container mx-auto flex-col">
         <div className="text-center text-white">
-          <div className="font-bold text-2xl sm:text-3xl">FAQ</div>
-          <h2 className="mt-2 sm:mt-5 text-3xl sm:text-4xl font-bold">
+          <h1 className="py-6 sm:py-8 text-3xl md:text-5xl text-white font-semibold text-center mt-6 sm:mt-8">
+            FAQs
+          </h1>
+          <h2 className="text-3xl sm:text-4xl font-semibold">
             Any Questions? Look Here
           </h2>
         </div>

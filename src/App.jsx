@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import PS from "./components/ps/PS";
 import TimeLine from "./components/TimeLine/TimeLine";
 import Gallery from "./components/Gallery";
-import FAQ from "./components/FAQ";
+import FAQs from "./components/FAQs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -87,7 +87,7 @@ function App() {
       <Marketing />
       <Gallery />
       {/* <Sponcers /> */}
-      <FAQ />
+      <FAQs />
       <GoToTopBtn />
       <Contact />
       <Footer />
