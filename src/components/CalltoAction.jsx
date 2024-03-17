@@ -2,7 +2,7 @@ import React from "react";
 import LinkedIn from "../assets/icons/linkedin.png";
 import Instagram from "../assets/icons/instagram.png";
 import Discord from "../assets/icons/discord.png";
-import Facebook from "../assets/facebook.png"
+import Facebook from "../assets/fblogo.png"
 function CalltoAction() {
   return (
     <div className="text-white">
@@ -43,9 +43,10 @@ function CalltoAction() {
                 </a>
               </div>
               <div className="m-8  " > 
-              <button
-                type="button"
-                class="text-md relative inline-flex items-center gap-x-2 rounded-lg bg-cyan-400 px-6 py-4 font-semibold text-white shadow-sm hover:bg-[#00308F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+              <a
+              href="https://softlinkglobal.com/"
+              target="_blank"
+                class="text-md cursor-pointer relative inline-flex items-center gap-x-2 rounded-lg bg-cyan-400 px-6 py-4 font-semibold text-white shadow-sm hover:bg-[#00308F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
               >
                 Explore More
                 <svg
@@ -61,7 +62,7 @@ function CalltoAction() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </button>
+              </a>
               </div>
             </div>
           </div>
