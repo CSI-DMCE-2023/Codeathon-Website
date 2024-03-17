@@ -132,7 +132,7 @@ const HeroParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[250vh] md:h-[220vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[210vh] md:h-[240vh] py-10 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <div className="relative py-20 md:py-32 px-4 w-full left-0 top-0 text-white">
         <h1 className="text-3xl md:text-5xl font-semibold ms-0 md:ms-10">
