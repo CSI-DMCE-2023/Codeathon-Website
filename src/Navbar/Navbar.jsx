@@ -41,20 +41,21 @@ const Navbar = () => {
         <div class="px-4">
           <div class="flex items-center justify-between">
             <div class="flex shrink-0">
-              <a aria-current="page" class="flex items-center" href="/">
+              {/* <a aria-current="page" class="fl/ex items-center" href="/"> */}
+              <a href="https://dmce.ac.in/" target="_blank">
               <img
                   class="h-10 object-cover mx-4 sm:h-10 w-auto"
                   src={dmcelogo}
                   alt=""
                 />
+              </a>
+                <a href="https://softlinkglobal.com/" target="_blank">
                 <img
                   class="h-10 object-cover sm:h-10 sm:mx-4 w-auto"
                   src={softlink}
                   alt=""
                 />
-                
-                <p class="sr-only">Website Title</p>
-              </a>
+                </a>
             </div>
             <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
               <button
