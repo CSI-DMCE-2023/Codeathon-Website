@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { TimeLine } from "./components/TimeLine/TimeLine";
+import Domains from "./components/domain/Domain.jsx";
+import TimeLine from "./components/TimeLine/TimeLine";
 import Gallery from "./components/Gallery";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
@@ -23,7 +24,7 @@ import Winner from "./Winner/Winner.jsx";
 
 import { Analytics } from "@vercel/analytics/react";
 import Marketing from "./marketing/Marketing.jsx";
-import Domains from "./domain/Domain.jsx";
+
 // import ReactGA from "react-ga4";
 
 function App() {

@@ -1,4 +1,3 @@
-"use client";
 import { useScroll, useTransform } from "framer-motion";
 import React from "react";
 import { GoogleGeminiEffect } from "../ui/google-gemini-effect";
@@ -131,7 +130,7 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 );
 
-export function TimeLine() {
+ function TimeLine() {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -176,3 +175,5 @@ export function TimeLine() {
     </div>
   );
 }
+
+export default TimeLine;
