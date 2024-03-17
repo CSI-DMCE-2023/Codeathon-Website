@@ -86,11 +86,11 @@ function App() {
       <TimeLine />
       <Winner />
       <Marketing />
+      <CalltoAction />
       <Gallery />
       {/* <Sponcers /> */}
       <FAQs />
       <GoToTopBtn />
-      <CalltoAction />
       <Contact />
       <Footer />
       <Analytics />

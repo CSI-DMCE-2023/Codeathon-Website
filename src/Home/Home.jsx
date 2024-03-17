@@ -5,6 +5,7 @@ import "./Button.css";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 export function Home({ setLogoLoader }) {
+
   return (
     <div id="vanta2" className="h-screen bg-black">
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden bg-black bg-grid-white/[0.2] relative ">
