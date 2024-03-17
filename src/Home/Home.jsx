@@ -4,7 +4,7 @@ import { StarsCanvas } from "../spline";
 import "./Button.css";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
-export function Home({ setLoading }) {
+export function Home({ setLogoLoader }) {
   return (
     <div id="vanta2" className="h-screen bg-black">
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden">
@@ -18,10 +18,10 @@ export function Home({ setLoading }) {
               background: "transparent",
             }}
             scene="https://prod.spline.design/eatze73xxFkdvtg8/scene.splinecode"
-            onLoad={() => setLoading(false)}
+            onLoad={() => setLogoLoader(false)}
           />
           <div className="w-full flex justify-center items-center absolute bottom-[8%]">
-            <button class="btn">Register Now</button>
+            <button className="btn">Register Now</button>
           </div>
         </div>
       </div>

@@ -30,7 +30,9 @@ function App() {
     damping: 30,
     restDelta: 0.001,
   });
-  const [loading, setLoading] = useState(true);
+
+  const [preLoader, setPreLoader] = useState(true);
+  const [logoLoader, setLogoLoader] = useState(true);
   ReactGA.initialize("G-E0D9FS4JDP");
   ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
@@ -45,16 +47,16 @@ function App() {
     requestAnimationFrame(raf);
 
     // Simulate content loading delay
-    // const timer = setTimeout(() => {
-    //   setLoading(false);
-    // }, 3000);
+    const timer = setTimeout(() => {
+      setPreLoader(false);
+    }, 5000);
 
-    // return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
-      {loading && <PreLoader />}
+      {(preLoader || logoLoader) && <PreLoader />}
       <motion.div
         className="progress-bar"
         style={{
@@ -71,7 +73,7 @@ function App() {
         }}
       />
       <Navbar />
-      <Home setLoading={setLoading} />
+      <Home setLogoLoader={setLogoLoader} />
       {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
