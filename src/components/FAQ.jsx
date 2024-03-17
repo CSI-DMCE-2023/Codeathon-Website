@@ -45,7 +45,7 @@ const FAQ = () => {
             Any Questions? Look Here
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 gap-6 w-full mt-10 sm:mt-16 max-w-6xl">
+        <div className="grid md:grid-cols-2 gap-6 w-full mt-10 sm:mt-16 max-w-md md:max-w-6xl">
           <div className="flex flex-col gap-6">
             <AccordionItem
               header="What is a Log-I-thon?"
