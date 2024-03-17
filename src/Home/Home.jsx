@@ -21,7 +21,7 @@ export function Home({ setLogoLoader }) {
             onLoad={() => setLogoLoader(false)}
           />
           <div className="w-full flex justify-center items-center absolute bottom-[8%]">
-            <button class="btn">Register Now</button>
+            <button className="btn">Register Now</button>
           </div>
         </div>
       </div>

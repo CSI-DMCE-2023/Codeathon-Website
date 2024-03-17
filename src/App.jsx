@@ -49,7 +49,7 @@ function App() {
     // Simulate content loading delay
     const timer = setTimeout(() => {
       setPreLoader(false);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -72,22 +72,22 @@ function App() {
           scaleX,
         }}
       />
-      <Navbar />
+      {/* <Navbar /> */}
       <Home setLogoLoader={setLogoLoader} />
       {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
-      <Domains />
+      {/* <Domains />
       <TimeLine />
       <Winner />
       <Marketing />
-      <Gallery />
+      <Gallery /> */}
       {/* <Sponcers /> */}
-      <FAQ />
+      {/* <FAQ />
       <GoToTopBtn />
       <Contact />
       <Footer />
-      <Analytics />
+      <Analytics /> */}
     </div>
   );
 }
