@@ -7,19 +7,19 @@ import "./winner.css";
 import { LampContainer } from "../components/ui/lamp";
 const Winner = () => {
   let triggered = false;
-  useEffect(()=>{
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       start: 0,
       end: "max",
-      onUpdate: function() {
+      onUpdate: function () {
         if (!triggered) {
           updateValues();
           triggered = true;
         }
-      }
+      },
     });
-    function updateValues(){
+    function updateValues() {
       if (
         ScrollTrigger.isInViewport(document.getElementById("prizes"), 0.1, true)
       ) {
@@ -28,7 +28,7 @@ const Winner = () => {
           let num = clean(element.getAttribute("data-number"));
           let decimals = (num.split(".")[1] || "").length;
           let proxy = { val: 0 };
-  
+
           gsap.to(proxy, {
             val: +num,
             duration: 2,
@@ -36,22 +36,22 @@ const Winner = () => {
               trigger: element,
               start: "top center", // Trigger animation when the top of the element hits the center of the viewport
               toggleActions: "restart none none none",
-              once:true
+              once: true,
             },
             onUpdate: () =>
-              (element.innerText = "₹ "+formatNumber(proxy.val, decimals)),
+              (element.innerText = "₹ " + formatNumber(proxy.val, decimals)),
           });
         });
-  
-        function formatNumber(num, decimals) {
-          return num.toLocaleString("en-IN", {
-            minimumFractionDigits: decimals,
-            maximumFractionDigits: decimals,
-          });
+
+        function formatNumber(value, decimals) {
+          let s = (+value).toLocaleString("en-IN").split(".");
+          return decimals
+            ? s[0] + "." + ((s[1] || "") + "00000000").substr(0, decimals)
+            : s[0];
         }
       }
     }
-  },[])
+  }, []);
   return (
     <div id="prizes" className="relative w-full max-h-screen p-8 pb-8">
       <LampContainer>
@@ -76,7 +76,7 @@ const Winner = () => {
           >
             <p
               data-number="600000"
-              className="counts number medium-slow text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+              className="counts number medium-slow text text-center sm:text-5xl text-4xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
               Rs 600000
             </p>
