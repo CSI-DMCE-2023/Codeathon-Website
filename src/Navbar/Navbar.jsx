@@ -6,6 +6,7 @@ import softlink from "../assets/Softlink.png";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import brochure from "../assets/Brochure.pdf"
 const Navbar = () => {
   // const timeLine = () => {
   //   const tl = gsap.timeline();
@@ -92,11 +93,12 @@ const Navbar = () => {
               </button>
             </div>
             <div class="flex items-center justify-end gap-3">
-              <button
-                class=" items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
+              <a
+              href={brochure} download="SoftlinkBrochure" target='_blank'
+                class=" cursor-pointer items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
               >
                 Brochure
-              </button>
+              </a>
             </div>
           </div>
         </div>

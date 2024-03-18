@@ -22,9 +22,9 @@ export function Home({ setLogoLoader }) {
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
             onLoad={() => setLogoLoader(false)}
           />
-          <div className="w-full flex justify-center items-center absolute bottom-[20%] sm:bottom-[15%]">
+          <a href="https://unstop.com/o/w4XysVp" className="w-full flex justify-center items-center absolute bottom-[20%] sm:bottom-[15%]">
             <button className="btn">Register Now</button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
