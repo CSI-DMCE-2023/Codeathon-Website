@@ -68,7 +68,7 @@ const FAQ = () => {
           <div className="flex flex-col gap-6">
             <AccordionItem
               header="I am a first time hacker, what should I do?"
-              text="No worries! We love to welcome first-time hackers who are starting their hacking journey. We have awesome workshops and events planned which will help you get a head start in the hackathon ."
+              text="No worries! We love to welcome first-time hackers who are starting their hacking journey. We have fantastic events and activities lined up to give you a great start in the hackathon."
             />
             <AccordionItem
               header="How do I register for the LogiTHON?"
