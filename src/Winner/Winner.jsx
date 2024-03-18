@@ -31,7 +31,7 @@ const Winner = () => {
             toggleActions: "restart none none none",
           },
           onUpdate: () =>
-            (element.innerText = formatNumber(proxy.val, decimals)),
+            (element.innerText = "₹ "+formatNumber(proxy.val, decimals)),
         });
       });
 
@@ -69,7 +69,7 @@ const Winner = () => {
               data-number="600000"
               className="counts number medium-slow text text-center sm:text-5xl text-4xl md:text-7xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
-              600000
+              Rs 600000
             </p>
             <div className=" h-full text-white max-md:my-8">
               <div className="w-full h-full flex flex-col items-center justify-center gap-8 text-xl font-md mt-[3.5rem]">
