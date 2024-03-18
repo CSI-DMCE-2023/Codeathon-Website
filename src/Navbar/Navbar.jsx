@@ -6,7 +6,7 @@ import softlink from "../assets/Softlink.png";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import brochure from "../assets/Brochure.pdf"
+import brochure from "../assets/Brochure.pdf";
 const Navbar = () => {
   // const timeLine = () => {
   //   const tl = gsap.timeline();
@@ -44,19 +44,19 @@ const Navbar = () => {
             <div class="flex shrink-0">
               {/* <a aria-current="page" class="fl/ex items-center" href="/"> */}
               <a href="https://dmce.ac.in/" target="_blank">
-              <img
+                <img
                   class="h-10 object-cover mx-4 sm:h-10 w-auto"
                   src={dmcelogo}
                   alt=""
                 />
               </a>
-                <a href="https://softlinkglobal.com/" target="_blank">
+              <a href="https://softlinkglobal.com/" target="_blank">
                 <img
                   class="h-10 object-cover sm:h-10 sm:mx-4 w-auto"
                   src={softlink}
                   alt=""
                 />
-                </a>
+              </a>
             </div>
             <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
               <button
@@ -94,7 +94,9 @@ const Navbar = () => {
             </div>
             <div class="flex items-center justify-end gap-3">
               <a
-              href={brochure} download="SoftlinkBrochure" target='_blank'
+                href={brochure}
+                download="SoftlinkBrochure"
+                target="_blank"
                 class=" cursor-pointer items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
               >
                 Brochure
