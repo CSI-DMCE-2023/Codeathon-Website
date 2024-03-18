@@ -83,8 +83,8 @@ function App() {
             <About />
           </div> */}
       <PS />
-      <TimeLine />
       <Winner />
+      <TimeLine />
       <Marketing />
       <CalltoAction />
       <Gallery />
