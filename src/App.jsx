@@ -25,6 +25,7 @@ import Winner from "./Winner/Winner.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import Marketing from "./marketing/Marketing.jsx";
 import CalltoAction from "./components/CalltoAction.jsx";
+import About from "./components/About.jsx";
 
 // import ReactGA from "react-ga4";
 
@@ -82,8 +83,10 @@ function App() {
       {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
+          <About />
       <PS />
       <Winner />
+
       <TimeLine />
       <Marketing />
       <CalltoAction />

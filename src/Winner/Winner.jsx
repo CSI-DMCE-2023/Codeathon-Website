@@ -21,7 +21,7 @@ const Winner = () => {
     });
     function updateValues() {
       if (
-        ScrollTrigger.isInViewport(document.getElementById("prizes"), 0.5, true)
+        ScrollTrigger.isInViewport(document.getElementById("prizes"), 0.3, true)
       ) {
         gsap.utils.toArray(".counts").forEach((element) => {
           let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
