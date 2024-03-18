@@ -5,25 +5,36 @@ import { fadeIn } from "../varients";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./winner.css";
 import { LampContainer } from "../components/ui/lamp";
+import Winnercard from "./Winnercard";
 const Winner = () => {
   let triggered = false;
   useEffect(() => {
+    const element = document.getElementById("prizesdata")
+    if (!element) {
+      console.error("Element with ID 'prizesdata' not found.");
+      return;
+    }
+  
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       start: 0,
       end: "max",
-      once: true, // Trigger animation only once
-      onUpdate: function() {
-        if (!triggered) {
+      onUpdate: function () {
+        const isInView = ScrollTrigger.isInViewport(element, 0.9, false);
+        // console.log("Element in view:", isInView);
+  
+        if (isInView && !triggered) {
           updateValues();
           triggered = true;
+          console.log("Values updated.");
         }
-      }
+      },
     });
     function updateValues() {
-      if (
-        ScrollTrigger.isInViewport(document.getElementById("prizes"), 0.3, true)
-      ) {
+      // if (
+      //   ScrollTrigger.isInViewport(element, 0.2, true)
+      // ) {
+        console.log("letsss work")
         gsap.utils.toArray(".counts").forEach((element) => {
           let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
           let num = clean(element.getAttribute("data-number"));
@@ -37,7 +48,7 @@ const Winner = () => {
               trigger: element,
               start: "top center", // Trigger animation when the top of the element hits the center of the viewport
               toggleActions: "restart none none none",
-              once: true,
+              // once: true,
             },
             onUpdate: () =>
               (element.innerText = "₹ " + formatNumber(proxy.val, decimals)),
@@ -51,7 +62,7 @@ const Winner = () => {
             : s[0];
         }
       }
-    }
+    // }
   }, []);
   return (
     <div id="prizes" className="relative w-full max-h-screen p-8 pb-8">
@@ -76,14 +87,20 @@ const Winner = () => {
             className="w-full h-full flex items-center justify-center flex-col"
           >
             <p
+              id="prizesdata"
               data-number="600000"
               className="counts number medium-slow text text-center sm:text-5xl text-4xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
               Rs 600000
             </p>
+            {/* <div className=" absolute flex justify-evenly flex-wrap w-full top-[120%]">
+              <Winnercard />
+              <Winnercard />
+              <Winnercard />
+            </div> */}
             <div className=" h-full text-white max-md:my-8">
               <div className="w-full h-full flex flex-col items-center justify-center gap-8 text-xl font-md mt-[3.5rem]">
-                <p className="text-sm">
+                <p className="text-sm text-center">
                   *Prize awarded only if solution meets evaluation criteria.
                 </p>
               </div>
