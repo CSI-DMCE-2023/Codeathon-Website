@@ -72,7 +72,7 @@ const FAQ = () => {
             />
             <AccordionItem
               header="How do I register for the LogiTHON?"
-              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping on our Social Media handles!."
+              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping on our Social Media handles!"
             />
             <AccordionItem
               header="Can I participate as an individual?"
