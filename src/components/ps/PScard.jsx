@@ -29,7 +29,7 @@ function PScard({ imglogo, title, paragraph, index }) {
             {paragraph}
           </CardItem>
         </div>
-        <div className="flex justify-between items-center mt-10">
+        {/* <div className="flex justify-between items-center mt-10">
           <CardItem
             translateZ={20}
             as="button"
@@ -37,7 +37,7 @@ function PScard({ imglogo, title, paragraph, index }) {
           >
             See more →
           </CardItem>
-        </div>
+        </div> */}
       </CardBody>
     </CardContainer>
   );
