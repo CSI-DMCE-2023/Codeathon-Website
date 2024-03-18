@@ -21,83 +21,83 @@ const experiences = [
   },
   {
     title: "Registration Ends",
-    day: "22nd March",
+    day: "28th March",
     detail: "Join us on this journey by registering before the final deadline.",
   },
   {
     title: "Round 1 Results",
-    day: "23rd March",
+    day: "29th March",
     detail:
       "Team leaders will be notified of their selection for the hackathon, and will be provided with further details regarding the event.",
   },
   {
     title: "Round 2 Results",
-    day: "26th March",
+    day: "4th April",
     detail:
       "Qualified teams from round 1 will be judged based on their submitted video explaining problem statement, and will be notified of their selection for the final round.",
   },
   {
     title: "Welcome to LogiTHON! 🎉",
-    day: "30th March - 8:00AM",
+    day: "19th April - 8:00AM",
     detail: "All the selected teams are invited to the venue.",
   },
   {
     title: "Orientation Session",
-    day: "30th March - 9:00AM",
+    day: "19th April - 9:00AM",
     detail:
       "An orientation session will be convened during which participants will be assigned to their designated labs and working spaces.",
   },
   {
     title: "Hackathon Commences",
-    day: "30th March - 10:00AM",
+    day: "19th April - 10:00AM",
     detail:
       "The hackathon begins, igniting a spirit of innovation as participants eagerly delve into their projects.",
   },
   {
     title: "Lunch 🍽️",
-    day: "30th March- 1:00 PM",
+    day: "19th April- 1:00 PM",
     detail:
       "Lunch break for participants, to recharge and refuel before diving back into their projects with renewed energy.",
   },
   {
     title: "Mentoring Round",
-    day: "30th March - 4:00 PM",
+    day: "19th April - 4:00 PM",
     detail:
       "The mentoring round commences, providing participants with invaluable guidance and insights to elevate their projects.",
   },
   {
     title: "Evening Snacks 🍪",
-    day: "30th March - 7:00 PM",
+    day: "19th April - 7:00 PM",
     detail:
       "Participants will enjoy evening refreshments, providing an opportunity to unwind and mingle after a day of productive hacking.",
   },
   {
     title: "Dinner 🍽️",
-    day: "30th March - 8:30 PM",
+    day: "19th April - 8:30 PM",
     detail:
       "Dinner will be provided, offering participants an opportunity to unwind and network with fellow attendees after a day of productive collaboration.",
   },
   {
     title: "Jamming Session 🎸",
-    day: "30th March - 11:30 PM",
+    day: "19th April - 11:30 PM",
     detail:
       "Harmonious Break: Join the Jamming Session for a Relaxing and Creative Interlude!",
   },
   {
     title: "Midnight Refreshments 🧃",
-    day: "31th March - 2:00 AM",
+    day: "Day 2 - 2:00 AM",
     detail:
       "Midnight refreshments will be available, offering participants a chance to recharge and refuel during the late hours of the hackathon.",
   },
   {
     title: "First Judging Round",
-    day: "31th March - 7:00 AM",
+    day: "Day 2 - 7:00 AM",
     detail:
       "Evaluating projects based on the progress achieved up to the day prior, highlighting participants' accomplishments thus far in the hackathon.",
   },
   {
     title: "Breakfast ☕",
-    day: "30th March- 9:00 AM",
+    day: "Day 2- 9:00 AM",
     detail:
       "Breakfast will be served, fueling participants for another day of innovation and problem-solving.",
   },
