@@ -6,43 +6,52 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./winner.css";
 import { LampContainer } from "../components/ui/lamp";
 const Winner = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  ScrollTrigger.create({
-    start: 0,
-    end: "max",
-    onUpdate: updateValues
-  });
-  function updateValues(){
-    if (
-      ScrollTrigger.isInViewport(document.getElementById("prizes"), 0.1, true)
-    ) {
-      gsap.utils.toArray(".counts").forEach((element) => {
-        let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
-        let num = clean(element.getAttribute("data-number"));
-        let decimals = (num.split(".")[1] || "").length;
-        let proxy = { val: 0 };
-
-        gsap.to(proxy, {
-          val: +num,
-          duration: 2,
-          scrollTrigger: {
-            trigger: element,
-            start: "top center", // Trigger animation when the top of the element hits the center of the viewport
-            toggleActions: "restart none none none",
-          },
-          onUpdate: () =>
-            (element.innerText = "₹ "+formatNumber(proxy.val, decimals)),
+  let triggered = false;
+  useEffect(()=>{
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: function() {
+        if (!triggered) {
+          updateValues();
+          triggered = true;
+        }
+      }
+    });
+    function updateValues(){
+      if (
+        ScrollTrigger.isInViewport(document.getElementById("prizes"), 0.1, true)
+      ) {
+        gsap.utils.toArray(".counts").forEach((element) => {
+          let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
+          let num = clean(element.getAttribute("data-number"));
+          let decimals = (num.split(".")[1] || "").length;
+          let proxy = { val: 0 };
+  
+          gsap.to(proxy, {
+            val: +num,
+            duration: 2,
+            scrollTrigger: {
+              trigger: element,
+              start: "top center", // Trigger animation when the top of the element hits the center of the viewport
+              toggleActions: "restart none none none",
+              once:true
+            },
+            onUpdate: () =>
+              (element.innerText = "₹ "+formatNumber(proxy.val, decimals)),
+          });
         });
-      });
-
-      function formatNumber(value, decimals) {
-        let s = (+value).toLocaleString("en-US").split(".");
-        return decimals
-          ? s[0] + "." + ((s[1] || "") + "00000000").substr(0, decimals)
-          : s[0];
+  
+        function formatNumber(value, decimals) {
+          let s = (+value).toLocaleString("en-US").split(".");
+          return decimals
+            ? s[0] + "." + ((s[1] || "") + "00000000").substr(0, decimals)
+            : s[0];
+        }
       }
     }
-  }
+  },[])
   return (
     <div id="prizes" className="relative w-full max-h-screen p-8 pb-8">
       <LampContainer>
