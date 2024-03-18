@@ -159,7 +159,7 @@ function TimeLine() {
       <div className="bg-black p-8 w-full z-50">
         <motion.div className="text-white" variants={textVariant()}>
           <h2 className={styles.sectionHeadText + " text-center"}>SCHEDULE</h2>
-          <p className="text-lg font-medium text-center ">30 - 31 march</p>
+          <p className="text-xl font-medium text-center ">19 - 20 April</p>
         </motion.div>
         <div className="mt-10 flex flex-col z-40">
           <VerticalTimeline>
