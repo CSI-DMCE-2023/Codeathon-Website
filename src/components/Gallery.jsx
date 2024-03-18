@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import post1 from "../assets/insta1.jpg";
-import post2 from "../assets/insta2.jpg";
-import post3 from "../assets/insta3.jpg";
-import post4 from "../assets/insta4.jpg";
+import post1 from "/soft1.jpg";
+import post2 from "/soft2.jpg";
+import post3 from "/soft3.jpg";
+import post4 from "/soft4.jpg";
 
 export const products = [
   {
