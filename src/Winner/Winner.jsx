@@ -12,12 +12,13 @@ const Winner = () => {
     ScrollTrigger.create({
       start: 0,
       end: "max",
-      onUpdate: function () {
+      once: true, // Trigger animation only once
+      onUpdate: function() {
         if (!triggered) {
           updateValues();
           triggered = true;
         }
-      },
+      }
     });
     function updateValues() {
       if (
