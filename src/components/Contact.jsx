@@ -97,7 +97,11 @@ const ContactUs = () => {
               </div>
               <div>
                 <h4 className="mb-1 text-xl font-bold ">Email Address</h4>
-                <p className="font-medium">csi@dmce.ac.in</p>
+                <div>
+                  <span className="font-semibold">Aditya Parab - </span> adityaparab212@gmail.com
+                  <br />
+                  <span className="font-semibold">Viraj Sawant - </span> virajsawant3107@gmail.com
+                </div>
               </div>
             </div>
           </div>
