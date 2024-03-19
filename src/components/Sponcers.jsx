@@ -17,12 +17,7 @@ const data = [
     name: "Codecourse",
     link: "https://codecourse.com",
     img: sponcer2,
-  },
-  {
-    name: "Laradir",
-    link: "https://laradir.com",
-    img: sponcer3,
-  },
+  }
 ];
 function Sponcers() {
   return (
