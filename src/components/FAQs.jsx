@@ -1,33 +1,34 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const AccordionItem = ({ header, text }) => {
   const [active, setActive] = useState(false);
   return (
     <div className="w-full rounded-lg bg-white p-4 shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] sm:px-8">
       <button className="flex items-center" onClick={() => setActive(!active)}>
-        <svg
-          className={`duration-200 ease-in-out size-3 sm:size-5 ${
-            active ? "rotate-180" : ""
-          }`}
-          width="17"
-          height="10"
-          viewBox="0 0 17 10"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-            fill=""
-            stroke=""
-          />
-        </svg>
+        <div>
+          <svg
+            className={`duration-200 ease-in-out size-3 sm:size-5 ${active ? "rotate-180" : ""
+              }`}
+            width="17"
+            height="10"
+            viewBox="0 0 17 10"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
+              fill=""
+              stroke=""
+            />
+          </svg>
+        </div>
+
         <h4 className="ms-4 sm:ms-5 text-sm sm:text-lg font-semibold text-start">
           {header}
         </h4>
       </button>
       <div
-        className={`ps-[30px] sm:ps-[43px] duration-200 ease-in-out ${
-          active ? "block" : "hidden"
-        }`}
+        className={`ps-[30px] sm:ps-[43px] duration-200 ease-in-out ${active ? "block" : "hidden"
+          }`}
       >
         <p className="mt-3 text-xs sm:text-base">{text}</p>
       </div>
@@ -53,30 +54,38 @@ const FAQ = () => {
         <div className="grid md:grid-cols-2 gap-6 w-full mt-10 sm:mt-16 max-w-md md:max-w-6xl">
           <div className="flex flex-col gap-6">
             <AccordionItem
-              header="What is a LogiTHON?"
-              text="A hackathon is a 24-hour event, where 'hackers' will collaborate on developing a functional prototype of hardware or software for the duration of the hackathon."
+              header="How do I register for LogiTHON?"
+              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping on our Social Media handles!"
             />
             <AccordionItem
-              header="Will there be swag and prizes?"
-              text="Yes! There will be swag and prizes!"
+              header="How will I know if my team has been shortlisted for Round 2?"
+              text="Shortlisted teams for Round 2 will be notified via email or WhatsApp groups. Additionally, updates will be provided on our official website and social media channels."
             />
             <AccordionItem
-              header="What is the mode of conduct of LogiTHON?"
-              text="LogiTHON will be conducted offline, offering a unique setting for real-time collaboration, networking opportunities, immediate feedback, a focused environment, and hands-on learning experiences."
+              header="⁠How can I submit my video for Round 1 of Logithon?"
+              text="To submit your video for Round 1, you can upload it either on YouTube or Google Drive and share the link with us during the submission period."
+            />
+            <AccordionItem
+              header="What are the requirements for the Round 2 video presentation?"
+              text="The video should span 2-3 minutes and comprehensively cover the PowerPoint content, the proposed solution and the technological stacks utilized."
             />
           </div>
           <div className="flex flex-col gap-6">
             <AccordionItem
-              header="I am a first time hacker, what should I do?"
-              text="No worries! We love to welcome first-time hackers who are starting their hacking journey. We have fantastic events and activities lined up to give you a great start in the hackathon."
-            />
-            <AccordionItem
-              header="How do I register for the LogiTHON?"
-              text="Follow the link at the top of the page. If you have any questions please reach out to us, or give us a ping on our Social Media handles!"
-            />
-            <AccordionItem
               header="Can I participate as an individual?"
-              text="LogiTHON foster teamwork and collaboration! We encourage you to participate as a team of 2-4 hackers."
+              text="LogiTHON fosters teamwork and collaboration! We encourage you to participate as a team of 2-4 hackers."
+            />
+            <AccordionItem
+              header="What is the mode of conduct of LogiTHON?"
+              text="LogiTHON will be conducted offline, offering a unique setting for real-time collaboration, networking opportunities, immediate feedback and a focused environment."
+            />
+            <AccordionItem
+              header="Will participants get travel and accommodation arrangements for the Final Offline Round?"
+              text="Participants are responsible for their own travel arrangements during the Final Offline Round. However, food and accommodation will be provided at the venue."
+            />
+            <AccordionItem
+              header="Do participants need to carry laptops?"
+              text="Yes, participants are required to bring their own laptops and other essential devices. Ethernet connections will be provided at the venue."
             />
           </div>
         </div>
