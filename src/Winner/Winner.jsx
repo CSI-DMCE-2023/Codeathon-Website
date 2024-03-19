@@ -89,11 +89,10 @@ const Winner = () => {
             <div
               id="prizesdata"
               data-number="600000"
-              style={{fontFamily:"Timmana",fontWeight:400,fontStyle:"normal"}}
               // style={{font-family: "Timmana", sans-serif;
               // font-weight: 400;
               // font-style: normal;}}
-              className="counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+              className=" font-mono counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
               Rs 600000
             </div>

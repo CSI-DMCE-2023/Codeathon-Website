@@ -34,7 +34,7 @@ const experiences = [
     title: "Round 2 Results",
     day: "4th April",
     detail:
-      "Qualified teams from round 1 will be judged based on their submitted video explaining problem statement, and will be notified of their selection for the final round.",
+      "Qualified teams from round 1 will be judged based on their submitted video explaining the submitted PPT, and will be notified of their selection for the final round.",
   },
   {
     title: "Welcome to LogiTHON! 🎉",
