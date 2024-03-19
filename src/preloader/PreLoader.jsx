@@ -32,12 +32,12 @@ const PreLoader = () => {
     tl
     .to("#dmcelogo", {
       left:"50%",
-      duration: 1,
+      duration: 2,
       ease: "Power3.easeOut",
     })
     .to("#softlinklogo", {
       right:"50%",
-      duration: 1,
+      duration: 2,
       ease: "Power3.easeOut",
     },"<")
     .to("#logo", {
@@ -47,19 +47,19 @@ const PreLoader = () => {
       duration: 2,
       // rotate : 360,
       ease: "Power3.easeOut",
-    })
+    },"<")
       .to("#loading", {
         opacity: 1,
         scale: 1,
         duration: 1,
         ease: "Power3.easeOut",
-      })
+      },"<")
 
       .from(".preloader", {
         height: "100%",
         duration: 2,
         ease: "Power3.easeOut",
-      });
+      })
   }, []);
 
   return (
