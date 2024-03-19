@@ -34,7 +34,7 @@ const PS = () => {
       id="domains"
       className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16 px-3"
     >
-      <h1 className="pb-6 text-3xl md:text-5xl text-white font-bold text-center z-[200]">
+      <h1 className="pb-6 text-3xl md:text-5xl text-white font-bold text-center z-[100]">
         PROBLEM STATEMENTS
       </h1>
       <div className="mt-8 md:mt-12 mx-4 sm:mx-6">

@@ -35,7 +35,7 @@ const ContactUs = () => {
                 <h4 className="mb-1 text-xl font-bold ">Our Location</h4>
                 <p className="text-base">
                   Datta Meghe College of Engineering, <br /> Sector-3, Airoli,
-                  Navi Mumbai, MH
+                  Navi Mumbai, Maharastra
                 </p>
               </div>
             </div>
