@@ -78,10 +78,10 @@ const Winner = () => {
             PRIZE POOL
           </motion.h1>
         </div>
-        <div className="w-full h-full grid grid-cols-1 my-4">
+        {/* <div className="w-full h-full grid grid-cols-1 my-4"> */}
           <motion.div
             variants={fadeIn("up", 0.2)}
-            initial="hidden"
+            // initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className="w-full h-full flex items-center justify-center flex-col"
@@ -99,7 +99,7 @@ const Winner = () => {
                 </p>
               </div>
           </motion.div>
-        </div>
+        {/* </div> */}
       </LampContainer>
     </div>
   );
