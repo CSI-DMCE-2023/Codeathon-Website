@@ -108,7 +108,7 @@ const experiences = [
       "In the Final Judging Round, Projects are Assessed for Innovation, Execution, and Impact, Leading to Prize Distribution.",
   },
   {
-    title: "Luncg",
+    title: "Lunch",
     day: "Day 2 - 12:00 PM",
     detail:
       "Recharge and Refuel: Enjoy a Delectable Lunch Break for the Teams!",
