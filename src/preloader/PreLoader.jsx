@@ -86,7 +86,7 @@ const PreLoader = () => {
         id="loading"
         className="text-white mx-auto text-4xl font-bold text-center max-md:text-2xl   "
       >
-        Let's Develop Something Unique
+        DMCE X SOFTLINK LogiTHON
       </h1>
       {/* <section class="bg-blue-900 relative place-items-center grid w-full gap-4">
         <div class="bg-gray-500 w-44 h-44  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
