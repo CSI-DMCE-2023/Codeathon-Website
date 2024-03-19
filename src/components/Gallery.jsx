@@ -136,7 +136,7 @@ const HeroParallax = ({ products }) => {
     >
       <div className="relative py-20 md:py-32 px-4 w-full left-0 top-0 text-white">
         <h1 className="text-3xl md:text-5xl font-semibold ms-0 md:ms-10">
-          OUR GALLERY
+          GALLERY
         </h1>
       </div>
       <motion.div
