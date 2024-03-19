@@ -67,7 +67,7 @@ const Winner = () => {
   return (
     <div id="prizes" className="relative w-full max-h-screen p-8 pb-8">
       <LampContainer>
-        <div className="w-full h-full flex items-center justify-center z-40">
+        <div className="w-full  h-full flex items-center justify-center z-40">
           <motion.h1
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -75,7 +75,7 @@ const Winner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="text-white mx-auto text-4xl sm:text-6xl md:text-8xl font-bold"
           >
-            PRIZE POOL
+            CASH PRIZE POOL
           </motion.h1>
         </div>
         {/* <div className="w-full h-full grid grid-cols-1 my-4"> */}
