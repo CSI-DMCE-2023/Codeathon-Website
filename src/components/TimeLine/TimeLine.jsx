@@ -108,10 +108,10 @@ const experiences = [
       "In the Final Judging Round, Projects are Assessed for Innovation, Execution, and Impact, Leading to Prize Distribution.",
   },
   {
-    title: "Snacks 🍪",
+    title: "Luncg",
     day: "Day 2 - 12:00 PM",
     detail:
-      "Snacks will be offered post-hackathon, providing participants with a moment to relax and celebrate their accomplishments.",
+      "Recharge and Refuel: Enjoy a Delectable Lunch Break for the Teams!",
   },
   {
     title: "Closure Ceremony 🎉",
