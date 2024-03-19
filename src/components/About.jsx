@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
             <img class="w-full rounded-lg" src={logithon} alt="office content 1" />
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src={logistics} alt="office content 2" />
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src={"https://images.unsplash.com/photo-1651649503984-5b5f3514d6f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fGxvZ2lzdGljc3xlbnwwfDF8MHx8fDA%3D"} alt="office content 2" />
         </div>
     </div>
 </section>
