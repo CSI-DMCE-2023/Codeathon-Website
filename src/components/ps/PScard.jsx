@@ -29,7 +29,7 @@ function PScard({ imglogo, title, paragraph, index }) {
             {paragraph}
           </CardItem>
         </div>
-        <a href="" className="flex justify-between items-center mt-10">
+        <a href="https://drive.google.com/file/d/1C2u7vhy-TXVv9fW6zfWczX0ggx_wSMr8/view" target="_blank" className="flex justify-between items-center mt-10">
           <CardItem
             translateZ={20}
             as="button"
