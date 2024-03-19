@@ -32,12 +32,12 @@ const PreLoader = () => {
     tl
     .to("#dmcelogo", {
       left:"50%",
-      duration: 2,
+      duration: 1,
       ease: "Power3.easeOut",
     })
     .to("#softlinklogo", {
       right:"50%",
-      duration: 2,
+      duration: 1,
       ease: "Power3.easeOut",
     },"<")
     .to("#logo", {
