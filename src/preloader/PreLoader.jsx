@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import dmcelogo from "../assets/dmce.png";
-import mainlogo from "../assets/mainlogo.png";
-import softlink from "../assets/Softlink.png";
+// import dmcelogo from "../assets/dmce.png";
+// import mainlogo from "../assets/mainlogo.png";
+// import softlink from "../assets/Softlink.png";
 const PreLoader = () => {
   useEffect(() => {
     const tl = gsap.timeline();
@@ -67,19 +67,19 @@ const PreLoader = () => {
       <img
         id="dmcelogo"
         className=" absolute left-[20%] w-[10%] object-contain max-md:w-[40%] aspect-square"
-        src={dmcelogo}
+        src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832671/hackathon/lh8v8zj9wvqbi9fdousi.png"}
         alt="logo"
       />
       <img
         id="softlinklogo"
         className=" absolute right-[20%] w-[10%] object-contain max-md:w-[40%] aspect-square"
-        src={softlink}
+        src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832671/hackathon/uzjcmpjwwmusgfzeyc3p.png"}
         alt="logo"
       />
       <img
         id="logo"
         className="w-[30%] max-md:w-[90%] aspect-square"
-        src={mainlogo}
+        src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832676/hackathon/p5tybh77b1oquqteoa3t.png"}
         alt="logo"
       />
       <h1
