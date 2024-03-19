@@ -86,20 +86,18 @@ const Winner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="w-full h-full flex items-center justify-center flex-col"
           >
-            <p
+            <div
               id="prizesdata"
               data-number="600000"
-              className="counts number medium-slow text text-center text-5xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+              className="counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
               Rs 600000
-            </p>
-            <div className=" h-full text-white">
-              <div className="w-full h-full font-md mt-12">
+            </div>
+            <div className=" w-full h-full font-md mt-12 text-white">
                 <p className=" text-xs sm:text-sm text-center">
                   *Runner-up awarded only if solution meets predefined criteria
                 </p>
               </div>
-            </div>
           </motion.div>
         </div>
       </LampContainer>
