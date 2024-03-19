@@ -85,37 +85,37 @@ const experiences = [
   },
   {
     title: "Midnight Refreshments 🧃",
-    day: "Day 2 - 2:00 AM",
+    day: "20th March - 2:00 AM",
     detail:
       "Midnight refreshments will be available, offering participants a chance to recharge and refuel during the late hours of the hackathon.",
   },
   {
     title: "First Judging Round",
-    day: "Day 2 - 7:00 AM",
+    day: "20th March - 7:00 AM",
     detail:
       "Evaluating projects based on the progress achieved up to the day prior, highlighting participants' accomplishments thus far in the hackathon.",
   },
   {
     title: "Breakfast ☕",
-    day: "Day 2- 9:00 AM",
+    day: "20th March - 9:00 AM",
     detail:
       "Breakfast will be served, fueling participants for another day of innovation and problem-solving.",
   },
   {
     title: "Final Juding Round - Hackathon Concludes",
-    day: "Day 2 - 10:00 AM",
+    day: "20th March - 10:00 AM",
     detail:
       "In the Final Judging Round, Projects are Assessed for Innovation, Execution, and Impact, Leading to Prize Distribution.",
   },
   {
     title: "Lunch",
-    day: "Day 2 - 12:00 PM",
+    day: "20th March - 12:00 PM",
     detail:
       "Recharge and Refuel: Enjoy a Delectable Lunch Break for the Teams!",
   },
   {
     title: "Closure Ceremony 🎉",
-    day: "Day 2 - 1:00 PM",
+    day: "20th March - 1:00 PM",
     detail:
       "Get Ready for the Exciting Announcement of Winners and the Distribution of Prizes, Recognizing the Outstanding Efforts of Participants!",
   },
