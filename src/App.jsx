@@ -93,7 +93,7 @@ function App() {
       <CalltoAction />
       <Gallery />
       {/* <Sponcers /> */}
-      {/* <Sponcers /> */}
+      <Sponcers />
       <FAQs />
       <GoToTopBtn />
       <Contact />
