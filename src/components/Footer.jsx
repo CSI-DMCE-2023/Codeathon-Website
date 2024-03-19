@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../varients";
 // import LinkedIn from "../assets/icons/linkedin.png";
-// import Instagram from "../assets/icons/instagram.png";
+import Instagram from "../assets/icons/instagram.png";
 // import Discord from "../assets/icons/discord.png";
 
 const Footer = () => {
