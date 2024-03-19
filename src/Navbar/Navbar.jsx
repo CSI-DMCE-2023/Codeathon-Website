@@ -96,7 +96,7 @@ const Navbar = () => {
             <div class="flex items-center justify-end gap-3">
               <a
                 href={brochure}
-                download="SoftlinkBrochure"
+                download="Softlink_Logithon"
                 target="_blank"
                 class=" cursor-pointer items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
               >

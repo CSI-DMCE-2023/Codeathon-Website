@@ -11,10 +11,10 @@ const PreLoader = () => {
       opacity: 0,
       scale: 0,
     });
-    gsap.set("#loading", {
-      opacity: 0,
-      scale: 0,
-    });
+    // gsap.set("#loading", {
+    //   opacity: 0,
+    //   scale: 0,
+    // });
     gsap.set("#dmcelogo", {
       opacity: 1,
       scale: 1,
@@ -48,12 +48,12 @@ const PreLoader = () => {
       // rotate : 360,
       ease: "Power3.easeOut",
     },"<")
-      .to("#loading", {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        ease: "Power3.easeOut",
-      },"<")
+      // .to("#loading", {
+      //   opacity: 1,
+      //   scale: 1,
+      //   duration: 1,
+      //   ease: "Power3.easeOut",
+      // },"<")
 
       .from(".preloader", {
         height: "100%",
@@ -82,12 +82,12 @@ const PreLoader = () => {
         src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832676/hackathon/p5tybh77b1oquqteoa3t.png"}
         alt="logo"
       />
-      <h1
+      {/* <h1
         id="loading"
         className="text-white mx-auto text-4xl font-bold text-center max-md:text-2xl   "
       >
         DMCE X SOFTLINK LogiTHON
-      </h1>
+      </h1> */}
       {/* <section class="bg-blue-900 relative place-items-center grid w-full gap-4">
         <div class="bg-gray-500 w-44 h-44  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
         <div class="bg-gray-400 w-28 h-28 absolute animate-ping rounded-full shadow-xl"></div>
