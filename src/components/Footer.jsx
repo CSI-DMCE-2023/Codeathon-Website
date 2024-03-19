@@ -15,17 +15,17 @@ const Footer = () => {
         viewport={{ once: false, amount: 0.7 }}
         className="gap-y-4 py-4 flex flex-col justify-center items-center"
       >
-        {/* <div className="flex gap-x-6"> */}
+        <div className="flex gap-x-6">
         {/* <a href="/" target="_blank">
             <img src={LinkedIn} alt="linkedin" className="size-8 sm:size-9" />
-          </a>
-          <a href="/" target="_blank">
-            <img src={Instagram} alt="instagram" className="size-8 sm:size-9" />
           </a> */}
+          <a href="https://www.instagram.com/logithon.ai?igsh=Y3oyeDZiM2J6bnh5&utm_source=qr" target="_blank">
+            <img src={Instagram} alt="instagram" className="size-8 sm:size-9" />
+          </a>
         {/* <a href="/" target="_blank">
             <img src={Discord} alt="discord" className="size-8 sm:size-9" />
           </a> */}
-        {/* </div> */}
+        </div>
         <p className="text-xs sm:text-sm font-light">
           LogiTHON 2024 | All Rights Are Reserved
         </p>
