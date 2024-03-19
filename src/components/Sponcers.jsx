@@ -1,49 +1,53 @@
-import React from "react";
-import mtpo from "../assets/matpo.png"
-import sponcer2 from "../assets/sponcer2.jpeg"
-import sponcer3 from "../assets/sponcer3.webp"
+import mtpo from "../assets/matpo.png";
+import sponcer2 from "../assets/sponcer2.jpeg";
+import sponcer3 from "../assets/sponcer3.webp";
+
+const data = [
+  {
+    name: "Ploi",
+    link: "https://ploi.io",
+    img: "https://meghaengg.ac.in/wp-content/uploads/2022/01/Iste.png",
+  },
+  {
+    name: "Agiledrop",
+    link: "https://www.agiledrop.com/laravel?utm_source=filament",
+    img: mtpo,
+  },
+  {
+    name: "Codecourse",
+    link: "https://codecourse.com",
+    img: sponcer2,
+  },
+  {
+    name: "Laradir",
+    link: "https://laradir.com",
+    img: sponcer3,
+  },
+];
 function Sponcers() {
   return (
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-around gap-8 py-12 px-4">
-      <p class="w-full mb-4 -mt-4 uppercase text-3xl md:text-5xl text-white font-semibold text-center">
+    <div class="max-w-7xl mx-auto py-12 px-4 text-white">
+      <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
         Associate Partner
       </p>
+      <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
+        {data.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            title={item.name}
+          >
+            <img
+              className="size-28 sm:size-36 object-contain rounded-lg"
 
-      <a
-        class="flex items-center justify-center text-gray-400 hover:text-gray-200"
-        href="https://ploi.io"
-        target="_blank"
-        title="Ploi"
-      >
-        <img className="w-48 h-48 object-contain" src="https://meghaengg.ac.in/wp-content/uploads/2022/01/Iste.png" alt="" srcset="" />
-      </a>
+              src={item.img}
+              alt="image"
+            />
+          </a>
+        ))}
+      </div>
 
-      <a
-        class="flex items-center justify-center text-gray-400 hover:text-gray-200"
-        href="https://www.agiledrop.com/laravel?utm_source=filament"
-        target="_blank"
-        title="Agiledrop"
-      >
-         <img className="w-48 h-48 object-contain" src={mtpo} alt="" srcset="" />
-      </a>
 
-      <a
-        class="flex items-center justify-center text-gray-400 hover:text-gray-200"
-        href="https://codecourse.com"
-        target="_blank"
-        title="Codecourse"
-      >
-         <img className="w-48 h-48 object-contain" src={sponcer2} alt="" srcset="" />
-      </a>
-
-      <a
-        class="flex items-center justify-center text-gray-400 hover:text-gray-200"
-        href="https://laradir.com"
-        target="_blank"
-        title="Laradir"
-      >
-         <img className="w-48 h-48 object-contain" src={sponcer3} alt="" srcset="" />
-      </a>
     </div>
   );
 }
