@@ -14,7 +14,7 @@ const Winner = () => {
       console.error("Element with ID 'prizesdata' not found.");
       return;
     }
-  
+
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       start: 0,
@@ -22,7 +22,7 @@ const Winner = () => {
       onUpdate: function () {
         const isInView = ScrollTrigger.isInViewport(element, 0.9, false);
         // console.log("Element in view:", isInView);
-  
+
         if (isInView && !triggered) {
           updateValues();
           triggered = true;
@@ -34,34 +34,34 @@ const Winner = () => {
       // if (
       //   ScrollTrigger.isInViewport(element, 0.2, true)
       // ) {
-        console.log("letsss work")
-        gsap.utils.toArray(".counts").forEach((element) => {
-          let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
-          let num = clean(element.getAttribute("data-number"));
-          let decimals = (num.split(".")[1] || "").length;
-          let proxy = { val: 0 };
+      console.log("letsss work")
+      gsap.utils.toArray(".counts").forEach((element) => {
+        let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
+        let num = clean(element.getAttribute("data-number"));
+        let decimals = (num.split(".")[1] || "").length;
+        let proxy = { val: 0 };
 
-          gsap.to(proxy, {
-            val: +num,
-            duration: 2,
-            scrollTrigger: {
-              trigger: element,
-              start: "top center", // Trigger animation when the top of the element hits the center of the viewport
-              toggleActions: "restart none none none",
-              // once: true,
-            },
-            onUpdate: () =>
-              (element.innerText = "₹ " + formatNumber(proxy.val, decimals)),
-          });
+        gsap.to(proxy, {
+          val: +num,
+          duration: 2,
+          scrollTrigger: {
+            trigger: element,
+            start: "top center", // Trigger animation when the top of the element hits the center of the viewport
+            toggleActions: "restart none none none",
+            // once: true,
+          },
+          onUpdate: () =>
+            (element.innerText = "₹ " + formatNumber(proxy.val, decimals)),
         });
+      });
 
-        function formatNumber(value, decimals) {
-          let s = (+value).toLocaleString("en-IN").split(".");
-          return decimals
-            ? s[0] + "." + ((s[1] || "") + "00000000").substr(0, decimals)
-            : s[0];
-        }
+      function formatNumber(value, decimals) {
+        let s = (+value).toLocaleString("en-IN").split(".");
+        return decimals
+          ? s[0] + "." + ((s[1] || "") + "00000000").substr(0, decimals)
+          : s[0];
       }
+    }
     // }
   }, []);
   return (
@@ -89,18 +89,13 @@ const Winner = () => {
             <p
               id="prizesdata"
               data-number="600000"
-              className="counts number medium-slow text text-center sm:text-5xl text-4xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+              className="counts number medium-slow text text-center text-5xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
             >
               Rs 600000
             </p>
-            {/* <div className=" absolute flex justify-evenly flex-wrap w-full top-[120%]">
-              <Winnercard />
-              <Winnercard />
-              <Winnercard />
-            </div> */}
-            <div className=" h-full text-white max-md:my-8">
-              <div className="w-full h-full flex flex-col items-center justify-center gap-8 text-xl font-md mt-[3.5rem]">
-                <p className=" text-xs text-center">
+            <div className=" h-full text-white">
+              <div className="w-full h-full font-md mt-12">
+                <p className=" text-xs sm:text-sm text-center">
                   *Runner-up awarded only if solution meets predefined criteria
                 </p>
               </div>
