@@ -105,7 +105,7 @@ const experiences = [
     title: "Final Juding Round - Hackathon Concludes",
     day: "Day 2 - 10:00 AM",
     detail:
-      "The final judging round marks the conclusion of the hackathon, where projects are evaluated to determine the winners based on their innovation, execution, and impact.",
+      "In the Final Judging Round, Projects are Assessed for Innovation, Execution, and Impact, Leading to Prize Distribution.",
   },
   {
     title: "Snacks 🍪",
@@ -117,7 +117,7 @@ const experiences = [
     title: "Closure Ceremony 🎉",
     day: "Day 2 - 1:00 PM",
     detail:
-      "Snacks will be offered post-hackathon, providing participants with a moment to relax and celebrate their accomplishments.",
+      "Get Ready for the Exciting Announcement of Winners and the Distribution of Prizes, Recognizing the Outstanding Efforts of Participants!",
   },
 ];
 
@@ -159,7 +159,6 @@ function TimeLine() {
       <div className="bg-black p-8 w-full z-50">
         <motion.div className="text-white" variants={textVariant()}>
           <h2 className={styles.sectionHeadText + " text-center"}>SCHEDULE</h2>
-          <p className="text-xl font-medium text-center ">19 - 20 April</p>
         </motion.div>
         <div className="mt-10 flex flex-col z-40">
           <VerticalTimeline>

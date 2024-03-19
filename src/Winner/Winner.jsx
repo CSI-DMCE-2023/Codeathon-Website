@@ -100,8 +100,8 @@ const Winner = () => {
             </div> */}
             <div className=" h-full text-white max-md:my-8">
               <div className="w-full h-full flex flex-col items-center justify-center gap-8 text-xl font-md mt-[3.5rem]">
-                <p className="text-sm text-center">
-                  *Prizes are awarded exclusively to runner-ups whose solutions meet the evaluation criteria.
+                <p className=" text-xs text-center">
+                  *Runner-up awarded only if solution meets predefined criteria
                 </p>
               </div>
             </div>
