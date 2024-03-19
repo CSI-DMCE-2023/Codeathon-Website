@@ -84,8 +84,8 @@ function App() {
             <About />
           </div> */}
           <About />
-      <PS />
       <Winner />
+      <PS />
 
       <TimeLine />
       <Marketing />
