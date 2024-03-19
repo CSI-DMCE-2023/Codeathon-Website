@@ -59,6 +59,12 @@ const Navbar = () => {
               </a>
             </div>
             <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+            <button
+                class=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                onClick={() => scrollToTimeline("prizes")}
+              >
+                PRIZES
+              </button>
               <button
                 aria-current="page"
                 class=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
@@ -67,12 +73,7 @@ const Navbar = () => {
                 {" "}
                 PROBLEM STATEMENTS
               </button>
-              <button
-                class=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
-                onClick={() => scrollToTimeline("prizes")}
-              >
-                PRIZES
-              </button>
+
               <button
                 class=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
                 onClick={() => scrollToTimeline("gallery")}
