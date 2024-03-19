@@ -20,7 +20,7 @@ export function Home({ setLogoLoader }) {
               background: "transparent",
             }}
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
-            onLoad={() => setLogoLoader(false)}
+            onLoad={() => setLogoLoader(true)}
           />
           <a target="_blank" href="https://unstop.com/o/w4XysVp" className="w-full flex justify-center items-center absolute bottom-[20%] sm:bottom-[15%]">
             <button className="btn">Register Now</button>
