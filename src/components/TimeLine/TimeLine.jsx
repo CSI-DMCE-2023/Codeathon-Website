@@ -172,7 +172,7 @@ function TimeLine() {
         className="h-full  top-0 w-full dark:border dark:border-white/[0.1] absolute overflow-clip "
         ref={ref}
       >
-        <GoogleGeminiEffect
+        {/* <GoogleGeminiEffect
           pathLengths={[
             pathLengthFirst,
             pathLengthSecond,
@@ -180,7 +180,7 @@ function TimeLine() {
             pathLengthFourth,
             pathLengthFifth,
           ]}
-        />
+        /> */}
       </div>
     </div>
   );

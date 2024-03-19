@@ -10,11 +10,10 @@ function CalltoAction() {
         <div class="relative isolate flex flex-wrap w-full justify-evenly items-center overflow-hidden px-6 py-24 text-center sm:rounded-3xl sm:px-16">
           <div>
             <h2 class="font-nudge-extrabold mx-auto max-w-2xl text-3xl font-bold uppercase tracking-wide sm:text-4xl">
-              Know more about Softlink global pvt.ltd.
+              Know more about<br></br> Softlink global pvt.ltd.
             </h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-              Experience the benefits of our community. No obligations, just
-              join and explore.
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+            Discover the advantages of being part of our company with no commitments - simply join us and explore.
             </p>
           </div>
           <div class="mt-12 flex items-center justify-center gap-x-6 flex-wrap">
