@@ -57,11 +57,11 @@ function GoToTopBtn() {
     }, [isClicked]);
 
     return (
-        <div className='z-50 '>
+        <div className='z-[250] '>
 
             
             <img
-                className='z-40 hover:scale-125 transition-all duration-100'
+                className='z-[250] hover:scale-125 transition-all duration-100'
                 src={isClicked ? rocketWithFire : rocket}
                 alt="Rocket"
                 onClick={scrollToTop}
