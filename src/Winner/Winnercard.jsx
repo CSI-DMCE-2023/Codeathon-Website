@@ -12,7 +12,7 @@ function Winnercard({ title, description, runner }) {
           <div className="h-2/3">
             <p className="mx-3 mb-1 text-white">{description}</p>
             {runner && (
-              <p className=" text-gray-400 h-20 text-xs mx-3 ">
+              <p className=" text-gray-400 mb-2 text-xs mx-3 ">
                 *Runner-up awarded only if solution meets predefined criteria
               </p>
             )}
