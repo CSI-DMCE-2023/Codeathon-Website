@@ -8,10 +8,10 @@ function CalltoAction() {
         <div class="relative isolate flex flex-wrap w-full justify-evenly items-center overflow-hidden px-6 py-24 text-center sm:rounded-3xl sm:px-16">
           <div>
             <h2 class="font-nudge-extrabold mx-auto max-w-2xl text-3xl text-start font-bold uppercase tracking-wide sm:text-4xl">
-              Know more about<br></br> Softlink global pvt.ltd.
+              Know more about<br></br> Softlink global pvt. ltd.
             </h2>
             <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300 text-justify">
-            Softlink global PVT. LTD. is a leading provider of software solutions for the Freight Forwarding, Logistics and Supply Chain sector. With over 4,500 clients across 45+ countries, our flagship product, Logi-Sys offers a comprehensive cloud-based platform tailored to industry needs. Supported by a team of 300+ experts, we strive to innovate and empower the logistics industry globally.
+            Softlink global Pvt. Ltd. is a leading provider of software solutions for the Freight Forwarding, Logistics and Supply Chain sector. With over 4,500 clients across 45+ countries, our flagship product, Logi-Sys offers a comprehensive cloud-based platform tailored to industry needs. Supported by a team of 300+ experts, we strive to innovate and empower the logistics industry globally.
             </p>
           </div>
           <div class="mt-12 flex items-center justify-center gap-x-6 flex-wrap">

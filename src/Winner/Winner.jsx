@@ -9,7 +9,7 @@ import Winnercard from "./Winnercard";
 const Winner = () => {
   let triggered = false;
   useEffect(() => {
-    const element = document.getElementById("prizesdata")
+    const element = document.getElementById("prizesdata");
     if (!element) {
       console.error("Element with ID 'prizesdata' not found.");
       return;
@@ -34,7 +34,7 @@ const Winner = () => {
       // if (
       //   ScrollTrigger.isInViewport(element, 0.2, true)
       // ) {
-      console.log("letsss work")
+      console.log("letsss work");
       gsap.utils.toArray(".counts").forEach((element) => {
         let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
         let num = clean(element.getAttribute("data-number"));
@@ -67,7 +67,7 @@ const Winner = () => {
   return (
     <div id="prizes" className="relative w-full max-h-screen p-8 pb-8">
       <LampContainer>
-        <div className="w-full  h-full flex items-center justify-center z-40">
+        <div className="w-full  max-h-screen flex items-center justify-center z-40">
           <motion.h1
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -79,29 +79,42 @@ const Winner = () => {
           </motion.h1>
         </div>
         {/* <div className="w-full h-full grid grid-cols-1 my-4"> */}
-          <motion.div
-            variants={fadeIn("up", 0.2)}
-            // initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="w-full h-full flex items-center justify-center flex-col"
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          // initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full h-full flex items-center justify-center flex-col"
+        >
+          <div
+            id="prizesdata"
+            data-number="600000"
+            className=" font-mono counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold  mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
           >
-            <div
-              id="prizesdata"
-              data-number="600000"
-              // style={{font-family: "Timmana", sans-serif;
-              // font-weight: 400;
-              // font-style: normal;}}
-              className=" font-mono counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold -m-8 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-            >
-              Rs 600000
-            </div>
-            <div className=" w-full h-full font-md mt-12 text-white">
-                <p className=" text-xs sm:text-sm text-center">
-                  *Runner-up awarded only if solution meets predefined criteria
-                </p>
-              </div>
-          </motion.div>
+            Rs 600000
+          </div>
+          <div className="flex flex-wrap justify-evenly mt-8">
+            <Winnercard
+              title={"Winner"}
+              description={
+                "Each Problem Statement Winner will receive 1,00,000 cash prize"
+              }
+              runner={false}
+            />
+            <Winnercard
+              title={"First Runner-Up"}
+              description={
+                "Each Problem Statement's Runner-Up will receive 50,000 cash prize"
+              }
+              runner={true}
+            />
+            <Winnercard
+              title={"PPO and Internships"}
+              description={"PPO and Internships from Softlink Global Pvt. Ltd."}
+              runner={false}
+            />
+          </div>
+        </motion.div>
         {/* </div> */}
       </LampContainer>
     </div>

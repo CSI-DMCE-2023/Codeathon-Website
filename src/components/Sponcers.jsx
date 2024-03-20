@@ -32,7 +32,7 @@ function Sponcers() {
     <>
     <div class="max-w-7xl mx-auto py-12 px-4 text-white">
       <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
-        Associate Partner
+        Associate Partners
       </p>
       <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
         {data.map((item) => (
