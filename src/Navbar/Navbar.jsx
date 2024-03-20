@@ -108,7 +108,7 @@ const Navbar = () => {
                 id="downloadLink"
                 target="_blank"
                 onClick={handlebrochure}
-                class=" cursor-pointer items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
+                class=" cursor-pointer items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-black hover:text-white sm:inline-flex"
               >
                 Brochure
               </a>
