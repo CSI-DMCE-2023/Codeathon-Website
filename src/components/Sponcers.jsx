@@ -1,6 +1,7 @@
 import mtpo from "../assets/matpo.png";
 import sponcer2 from "../assets/sponcer2.jpeg";
-import sponcer3 from "../assets/sponcer3.webp";
+// import sponcer3 from "../assets/sponcer3.webp";
+import job4u from "../assets/job4u.png";
 
 const data = [
   {
@@ -18,6 +19,11 @@ const data = [
     link: "https://ftpoindia.org.in/",
     img: sponcer2,
   },
+  {
+    name: "job4u",
+    link: "https://www.job4u.in/",
+    img: job4u,
+  }
 ];
 
 const poweredby = [
@@ -30,40 +36,40 @@ const poweredby = [
 function Sponcers() {
   return (
     <>
-    <div class="max-w-7xl mx-auto py-12 px-4 text-white">
-      <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
-        Associate Partners
-      </p>
-      <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
-        {data.map((item) => (
-          <a href={item.link} target="_blank" title={item.name}>
-            <img
-              className="size-28 sm:size-36 object-contain rounded-lg"
-              src={item.img}
-              alt="image"
-            />
-          </a>
-        ))}
+      <div class="max-w-7xl mx-auto py-12 px-4 text-white">
+        <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
+          Associate Partner
+        </p>
+        <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
+          {data.map((item) => (
+            <a href={item.link} target="_blank" title={item.name}>
+              <img
+                className="size-28 sm:size-36 object-contain rounded-lg"
+                src={item.img}
+                alt="image"
+              />
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
-    <div class="max-w-7xl mx-auto py-12 px-4 text-white">
-      <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
-        Powered By
-      </p>
-      <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
-        {poweredby.map((item) => (
-          <a href={item.link} target="_blank" title={item.name}>
-            <img
-              className="size-28 sm:size-36 object-contain rounded-lg"
-              src={item.img}
-              alt="image"
-            />
-          </a>
-        ))}
+      <div class="max-w-7xl mx-auto py-12 px-4 text-white">
+        <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
+          Powered By
+        </p>
+        <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
+          {poweredby.map((item) => (
+            <a href={item.link} target="_blank" title={item.name}>
+              <img
+                className="size-28 sm:size-36 object-contain rounded-lg"
+                src={item.img}
+                alt="image"
+              />
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 }
 
-export default Sponcers;
+export default Sponcers
