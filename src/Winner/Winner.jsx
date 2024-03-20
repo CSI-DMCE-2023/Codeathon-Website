@@ -51,7 +51,7 @@ const Winner = () => {
             // once: true,
           },
           onUpdate: () =>
-            (element.innerText = "₹ " + formatNumber(proxy.val, decimals)),
+            (element.innerText = "₹" + formatNumber(proxy.val, decimals)),
         });
       });
 
@@ -73,7 +73,7 @@ const Winner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-white mx-auto text-4xl sm:text-6xl md:text-8xl font-bold"
+            className="text-white mx-auto text-center text-4xl sm:text-6xl md:text-8xl font-bold"
           >
             CASH PRIZE POOL
           </motion.h1>
