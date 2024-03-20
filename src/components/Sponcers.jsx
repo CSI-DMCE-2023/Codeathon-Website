@@ -4,46 +4,65 @@ import sponcer3 from "../assets/sponcer3.webp";
 
 const data = [
   {
-    name: "Ploi",
-    link: "https://ploi.io",
+    name: "iste",
+    link: "https://www.isteonline.in/",
     img: "https://meghaengg.ac.in/wp-content/uploads/2022/01/Iste.png",
   },
   {
-    name: "Agiledrop",
-    link: "https://www.agiledrop.com/laravel?utm_source=filament",
+    name: "matpo",
+    link: "https://matpo.in/",
     img: mtpo,
   },
   {
-    name: "Codecourse",
-    link: "https://codecourse.com",
+    name: "ftpo",
+    link: "https://ftpoindia.org.in/",
     img: sponcer2,
-  }
+  },
 ];
+
+const poweredby = [
+  {
+    name: "Unstop",
+    link: "https://unstop.com/",
+    img: "https://play-lh.googleusercontent.com/Sn4FCvXPL21HgxKO_-Oj0_ldYA8YH2muN6enGKpBylzvYpCa_cZTqbU6VEXYRtFGwg",
+  },
+]
 function Sponcers() {
   return (
+    <>
     <div class="max-w-7xl mx-auto py-12 px-4 text-white">
       <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
         Associate Partner
       </p>
       <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
         {data.map((item) => (
-          <a
-            href={item.link}
-            target="_blank"
-            title={item.name}
-          >
+          <a href={item.link} target="_blank" title={item.name}>
             <img
               className="size-28 sm:size-36 object-contain rounded-lg"
-
               src={item.img}
               alt="image"
             />
           </a>
         ))}
       </div>
-
-
     </div>
+    <div class="max-w-7xl mx-auto py-12 px-4 text-white">
+      <p class="w-full uppercase text-2xl md:text-4xl  font-semibold text-center">
+        Powered By
+      </p>
+      <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
+        {poweredby.map((item) => (
+          <a href={item.link} target="_blank" title={item.name}>
+            <img
+              className="size-28 sm:size-36 object-contain rounded-lg"
+              src={item.img}
+              alt="image"
+            />
+          </a>
+        ))}
+      </div>
+    </div>
+    </>
   );
 }
 
