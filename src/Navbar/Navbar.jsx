@@ -36,6 +36,14 @@ const Navbar = () => {
       timelineSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handlebrochure = () => {
+    var newFilename = "Softlink_Logithon";
+    var downloadLink = document.getElementById("downloadLink");
+
+    if (downloadLink) {
+      downloadLink.setAttribute("download", newFilename);
+    }
+  };
   return (
     <>
       <header class="fixed inset-x-0 top-0 z-[200] mx-auto w-full max-w-screen-md border border-gray-100 bg-[rgb(15 23 42 / 70%)] py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg text-white">
@@ -59,7 +67,7 @@ const Navbar = () => {
               </a>
             </div>
             <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
-            <button
+              <button
                 class=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
                 onClick={() => scrollToTimeline("prizes")}
               >
@@ -95,9 +103,11 @@ const Navbar = () => {
             </div>
             <div class="flex items-center justify-end gap-3">
               <a
-                href={brochure}
+                href={brochure}  
                 download="SoftlinkLogithon"
+                id="downloadLink"
                 target="_blank"
+                onClick={handlebrochure}
                 class=" cursor-pointer items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
               >
                 Brochure
