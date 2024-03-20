@@ -32,7 +32,7 @@ const PS = () => {
   return (
     <div
       id="domains"
-      className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16 px-3"
+      className="flex flex-col justify-center items-center w-full bg-black py-10 mb-16 mt-10 sm:mt-0 px-3"
     >
       <h1 className="pb-6 text-3xl md:text-5xl text-white font-bold text-center z-[100]">
         PROBLEM STATEMENTS

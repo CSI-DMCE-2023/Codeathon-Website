@@ -65,7 +65,7 @@ const Winner = () => {
     // }
   }, []);
   return (
-    <div id="prizes" className="relative w-full max-h-screen p-8 pb-8">
+    <div id="prizes" className="relative w-full max-h-screen sm:p-8 pb-8">
       <LampContainer>
         <div className="w-full  max-h-screen flex items-center justify-center z-40">
           <motion.h1
@@ -89,7 +89,7 @@ const Winner = () => {
           <div
             id="prizesdata"
             data-number="600000"
-            className=" font-mono counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold  mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+            className=" font-mono counts w-full h-full number medium-slow text text-center text-5xl md:text-9xl font-bold mb-6 mt-12 text-cyan-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
           >
             Rs 600000
           </div>
