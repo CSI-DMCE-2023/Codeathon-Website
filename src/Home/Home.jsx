@@ -11,7 +11,7 @@ export function Home({ setLogoLoader }) {
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden bg-black bg-grid-white/[0.2] relative ">
         {/* <StarsCanvas /> */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className="flex-col w-full h-full z-50">
+        <div className="flex-col w-full h-full justify-center items-center z-50">
           <Spline
             className=" scale-50 md:scale-150 md:w-full w-[190%] -m-[50%] mt-32 sm:ml-0 bg-slate-50"
             style={{
@@ -22,7 +22,7 @@ export function Home({ setLogoLoader }) {
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
             onLoad={() => setLogoLoader(false)}
           />
-          <a target="_blank" href="https://unstop.com/o/w4XysVp" className="w-full flex justify-center items-center absolute bottom-[20%] sm:bottom-[15%]">
+          <a target="_blank" href="https://unstop.com/o/w4XysVp" className=" flex justify-center items-center absolute sm:left-[43%] left-[20%]  bottom-[20%] sm:bottom-[15%]">
             <button className="btn">Register Now</button>
           </a>
         </div>
