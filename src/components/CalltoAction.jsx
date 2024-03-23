@@ -68,9 +68,9 @@ function CalltoAction() {
                     className="-mr-0.5 h-5 w-5"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </a>
@@ -87,12 +87,12 @@ function CalltoAction() {
               cy="512"
               r="512"
               fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
-              fill-opacity="0.7"
+              fillOpacity="0.7"
             ></circle>
             <defs>
               <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-                <stop stop-color="#7CB9E8"></stop>
-                <stop offset="1" stop-color="#7CB9E8"></stop>
+                <stop stopColor="#7CB9E8"></stop>
+                <stop offset="1" stopColor="#7CB9E8"></stop>
               </radialGradient>
             </defs>
           </svg>

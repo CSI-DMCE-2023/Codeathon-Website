@@ -84,7 +84,7 @@ function App() {
       {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
             <About />
           </div> */}
-          <About />
+      <About />
       <Winner />
       <PS />
 
