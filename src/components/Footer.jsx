@@ -19,7 +19,7 @@ const Footer = () => {
         {/* <a href="/" target="_blank">
             <img src={LinkedIn} alt="linkedin" className="size-8 sm:size-9" />
           </a> */}
-          <a href="https://www.instagram.com/dmce.hackathon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+          <a href="https://www.instagram.com/logithon.ai/" target="_blank">
             <img src={Instagram} alt="instagram" className="size-8 sm:size-9" />
           </a>
         {/* <a href="/" target="_blank">

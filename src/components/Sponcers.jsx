@@ -21,7 +21,7 @@ const data = [
   },
   {
     name: "job4u",
-    link: "https://www.job4u.in/",
+    link: "https://www.instagram.com/job4u_info/",
     img: job4u,
   }
 ];

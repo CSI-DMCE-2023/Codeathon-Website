@@ -6,7 +6,7 @@ import softlink from "../assets/Softlink.png";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import brochure from "../assets/Brochure.pdf";
+import brochure from "../assets/LogithonBrochure.pdf";
 const Navbar = () => {
   // const timeLine = () => {
   //   const tl = gsap.timeline();
