@@ -26,7 +26,7 @@ const Winner = () => {
         if (isInView && !triggered) {
           updateValues();
           triggered = true;
-          console.log("Values updated.");
+          // console.log("Values updated.");
         }
       },
     });
@@ -34,7 +34,7 @@ const Winner = () => {
       // if (
       //   ScrollTrigger.isInViewport(element, 0.2, true)
       // ) {
-      console.log("letsss work");
+      // console.log("letsss work");
       gsap.utils.toArray(".counts").forEach((element) => {
         let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
         let num = clean(element.getAttribute("data-number"));

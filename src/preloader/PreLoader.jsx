@@ -18,36 +18,43 @@ const PreLoader = () => {
     gsap.set("#dmcelogo", {
       opacity: 1,
       scale: 1,
-      translateX:-100
+      translateX: -100,
     });
     gsap.set("#softlinklogo", {
       opacity: 1,
       scale: 1,
-      translateX:100
+      translateX: 100,
     });
     gsap.set(".preloader", {
       height: "100%",
     });
 
-    tl
-    .to("#dmcelogo", {
-      left:"50%",
+    tl.to("#dmcelogo", {
+      left: "50%",
       duration: 2,
       ease: "Power3.easeOut",
     })
-    .to("#softlinklogo", {
-      right:"50%",
-      duration: 2,
-      ease: "Power3.easeOut",
-    },"<")
-    .to("#logo", {
-      delay: 0.5,
-      opacity: 1,
-      scale: 1,
-      duration: 2,
-      // rotate : 360,
-      ease: "Power3.easeOut",
-    },"<")
+      .to(
+        "#softlinklogo",
+        {
+          right: "50%",
+          duration: 2,
+          ease: "Power3.easeOut",
+        },
+        "<"
+      )
+      .to(
+        "#logo",
+        {
+          delay: 0.5,
+          opacity: 1,
+          scale: 1,
+          duration: 2,
+          // rotate : 360,
+          ease: "Power3.easeOut",
+        },
+        "<"
+      )
       // .to("#loading", {
       //   opacity: 1,
       //   scale: 1,
@@ -59,7 +66,7 @@ const PreLoader = () => {
         height: "100%",
         duration: 2,
         ease: "Power3.easeOut",
-      })
+      });
   }, []);
 
   return (
@@ -67,19 +74,25 @@ const PreLoader = () => {
       <img
         id="dmcelogo"
         className=" absolute left-[20%] w-[10%] object-contain max-md:w-[40%] aspect-square"
-        src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832671/hackathon/lh8v8zj9wvqbi9fdousi.png"}
+        src={
+          "https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832671/hackathon/lh8v8zj9wvqbi9fdousi.png"
+        }
         alt="logo"
       />
       <img
         id="softlinklogo"
         className=" absolute right-[20%] w-[10%] object-contain max-md:w-[40%] aspect-square"
-        src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832671/hackathon/uzjcmpjwwmusgfzeyc3p.png"}
+        src={
+          "https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832671/hackathon/uzjcmpjwwmusgfzeyc3p.png"
+        }
         alt="logo"
       />
       <img
         id="logo"
         className="w-[30%] max-md:w-[90%] aspect-square"
-        src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832676/hackathon/p5tybh77b1oquqteoa3t.png"}
+        src={
+          "https://res.cloudinary.com/dbeptj8fp/image/upload/v1710832676/hackathon/p5tybh77b1oquqteoa3t.png"
+        }
         alt="logo"
       />
       {/* <h1
@@ -88,16 +101,16 @@ const PreLoader = () => {
       >
         DMCE X SOFTLINK LogiTHON
       </h1> */}
-      {/* <section class="bg-blue-900 relative place-items-center grid w-full gap-4">
-        <div class="bg-gray-500 w-44 h-44  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
-        <div class="bg-gray-400 w-28 h-28 absolute animate-ping rounded-full shadow-xl"></div>
-        <div class="bg-white w-20 h-20 absolute animate-pulse rounded-full shadow-xl"></div>
+      {/* <section className="bg-blue-900 relative place-items-center grid w-full gap-4">
+        <div className="bg-gray-500 w-44 h-44  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
+        <div className="bg-gray-400 w-28 h-28 absolute animate-ping rounded-full shadow-xl"></div>
+        <div className="bg-white w-20 h-20 absolute animate-pulse rounded-full shadow-xl"></div>
       </section>
       <div>
-        <h2 class="text-center text-white text-xl font-semibold mt-32">
+        <h2 className="text-center text-white text-xl font-semibold mt-32">
           Loading...
         </h2>
-        <p class="text-center text-white mt-2">
+        <p className="text-center text-white mt-2">
           This may take a few seconds, please don't close this page.
         </p>
       </div> */}

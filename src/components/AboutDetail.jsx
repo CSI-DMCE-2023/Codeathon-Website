@@ -40,14 +40,17 @@ function AboutDetail() {
   }, [isPlaying]);
 
   return (
-    <div id="about" className="w-full h-full  max-md:flex-col-reverse  md:p-8 p-2  ">
+    <div
+      id="about"
+      className="w-full h-full  max-md:flex-col-reverse  md:p-8 p-2  "
+    >
       <div className=" w-full mx-auto md:w-1/2 h-1/3  md:p-20 max-md:py-16 ">
-        <div class="mob-video w-[90%] md:w-[70%] ">
-          <div class="btn1"></div>
-          <div class="btn2"></div>
-          <div class="btn3"></div>
-          <div class="btn4"></div>
-          <div class="mob-int relative border">
+        <div className="mob-video w-[90%] md:w-[70%] ">
+          <div className="btn1"></div>
+          <div className="btn2"></div>
+          <div className="btn3"></div>
+          <div className="btn4"></div>
+          <div className="mob-int relative border">
             <video
               ref={videoRef}
               className="CSI_Video absolute border object-cover"
@@ -60,15 +63,14 @@ function AboutDetail() {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="top">
-            <div class="camera">
-              <div class="int"></div>
+          <div className="top">
+            <div className="camera">
+              <div className="int"></div>
             </div>
-            <div class="speaker"></div>
+            <div className="speaker"></div>
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

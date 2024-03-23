@@ -1,37 +1,51 @@
 import LinkedIn from "../assets/icons/linkedin.png";
 import Instagram from "../assets/icons/instagram.png";
-import Facebook from "../assets/icons/facebook.png"
+import Facebook from "../assets/icons/facebook.png";
 function CalltoAction() {
   return (
     <div className="text-white">
-      <div class="mx-auto  sm:px-6 lg:px-8">
-        <div class="relative isolate flex flex-wrap w-full justify-evenly items-center overflow-hidden px-6 py-24 text-center sm:rounded-3xl sm:px-16">
+      <div className="mx-auto  sm:px-6 lg:px-8">
+        <div className="relative isolate flex flex-wrap w-full justify-evenly items-center overflow-hidden px-6 py-24 text-center sm:rounded-3xl sm:px-16">
           <div>
-            <h2 class="font-nudge-extrabold mx-auto max-w-2xl text-3xl text-start font-bold uppercase tracking-wide sm:text-4xl">
+            <h2 className="font-nudge-extrabold mx-auto max-w-2xl text-3xl text-start font-bold uppercase tracking-wide sm:text-4xl">
               Know more about<br></br> Softlink global pvt. ltd.
             </h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300 text-justify">
-            Softlink global Pvt. Ltd. is a leading provider of software solutions for the Freight Forwarding, Logistics and Supply Chain sector. With over 4,500 clients across 45+ countries, our flagship product, Logi-Sys offers a comprehensive cloud-based platform tailored to industry needs. Supported by a team of 300+ experts, we strive to innovate and empower the logistics industry globally.
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300 text-justify">
+              Softlink global Pvt. Ltd. is a leading provider of software
+              solutions for the Freight Forwarding, Logistics and Supply Chain
+              sector. With over 4,500 clients across 45+ countries, our flagship
+              product, Logi-Sys offers a comprehensive cloud-based platform
+              tailored to industry needs. Supported by a team of 300+ experts,
+              we strive to innovate and empower the logistics industry globally.
             </p>
           </div>
-          <div class="mt-12 flex items-center justify-center gap-x-6 flex-wrap">
+          <div className="mt-12 flex items-center justify-center gap-x-6 flex-wrap">
             <div className="flex flex-col-reverse items-center justify-evenly h-full">
               <div className="flex justify-center    gap-x-6">
-                <a href="https://www.linkedin.com/company/softlinkglobalpvt/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/company/softlinkglobalpvt/"
+                  target="_blank"
+                >
                   <img
                     src={LinkedIn}
                     alt="linkedin"
                     className="size-8 sm:size-9"
                   />
                 </a>
-                <a href="https://www.instagram.com/softlink.global/" target="_blank">
+                <a
+                  href="https://www.instagram.com/softlink.global/"
+                  target="_blank"
+                >
                   <img
                     src={Instagram}
                     alt="instagram"
                     className="size-8 sm:size-9"
                   />
                 </a>
-                <a href="https://www.facebook.com/softlinkglobal/" target="_blank">
+                <a
+                  href="https://www.facebook.com/softlinkglobal/"
+                  target="_blank"
+                >
                   <img
                     src={Facebook}
                     alt="discord"
@@ -39,11 +53,11 @@ function CalltoAction() {
                   />
                 </a>
               </div>
-              <div className="m-8  " >
+              <div className="m-8  ">
                 <a
                   href="https://softlinkglobal.com/"
                   target="_blank"
-                  class="text-md cursor-pointer relative inline-flex items-center gap-x-2 rounded-lg bg-cyan-500 px-6 py-4 font-semibold text-white shadow-sm hover:bg-[#00308F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+                  className="text-md cursor-pointer relative inline-flex items-center gap-x-2 rounded-lg bg-cyan-500 px-6 py-4 font-semibold text-white shadow-sm hover:bg-[#00308F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
                 >
                   Explore More
                   <svg
@@ -51,7 +65,7 @@ function CalltoAction() {
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
-                    class="-mr-0.5 h-5 w-5"
+                    className="-mr-0.5 h-5 w-5"
                   >
                     <path
                       fill-rule="evenodd"
@@ -65,7 +79,7 @@ function CalltoAction() {
           </div>
           <svg
             viewBox="0 0 1024 1024"
-            class="absolute left-1/2 top-1/2 -z-10 h-[72rem] w-[72rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            className="absolute left-1/2 top-1/2 -z-10 h-[72rem] w-[72rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
             aria-hidden="true"
           >
             <circle
