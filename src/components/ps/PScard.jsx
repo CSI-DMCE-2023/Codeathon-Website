@@ -1,7 +1,7 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../../ui/3d-card.jsx";
 
-function PScard({ imglogo, title, paragraph, index }) {
+function PScard({ imglogo, title, paragraph, index, videoLink }) {
   return (
     <CardContainer className="h-full">
       <CardBody className="relative group/card hover:shadow-2xl hover:shadow-gray-500/[0.1] bg-black border-white/[0.2] w-auto sm:w-[30rem] rounded-xl p-5 border h-full flex flex-col justify-between">
@@ -29,15 +29,34 @@ function PScard({ imglogo, title, paragraph, index }) {
             {paragraph}
           </CardItem>
         </div>
-        <a href="https://drive.google.com/file/d/16vmYMvdcDeEGEiiR_yQobGk5ZvukoVwn/view?usp=sharing" target="_blank" className="flex justify-between items-center mt-10 w-fit">
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl text-sm font-normal text-white"
+        <div className="flex justify-between items-center mt-6">
+          <a
+            href="https://drive.google.com/file/d/16vmYMvdcDeEGEiiR_yQobGk5ZvukoVwn/view?usp=sharing"
+            target="_blank"
+            className="flex justify-between items-center w-fit"
           >
-            See more →
-          </CardItem>
-        </a>
+            <CardItem
+              translateZ={20}
+              as="button"
+              className="px-4 py-2 rounded-xl text-sm font-normal text-white"
+            >
+              See more →
+            </CardItem>
+          </a>
+          <a
+            href={videoLink}
+            target="_blank"
+            className="flex justify-between items-center w-fit"
+          >
+            <CardItem
+              translateZ={20}
+              as="button"
+              className="px-4 py-2 rounded-xl text-sm font-normal text-white"
+            >
+              Video →
+            </CardItem>
+          </a>
+        </div>
       </CardBody>
     </CardContainer>
   );
