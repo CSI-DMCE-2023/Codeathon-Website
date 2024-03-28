@@ -4,6 +4,11 @@ import post1 from "/soft1.jpg";
 import post2 from "/soft2.jpg";
 import post3 from "/soft3.jpg";
 import post4 from "/soft4.jpg";
+import csi1 from "../assets/csi1.jpg"
+import csi2 from "../assets/csi2.jpg"
+import csi3 from "../assets/csi3.jpg"
+import csi4 from "../assets/csi4.jpg"
+import csi5 from "../assets/csi5.jpg"
 
 export const products = [
   {
@@ -61,7 +66,27 @@ export const products = [
   {
     title: "Softlink",
     link: "https://renderwork.studio",
-    thumbnail: post2,
+    thumbnail: csi2,
+  },
+  {
+    title: "Softlink",
+    link: "https://renderwork.studio",
+    thumbnail: csi1,
+  },
+  {
+    title: "Softlink",
+    link: "https://renderwork.studio",
+    thumbnail: csi3,
+  },
+  {
+    title: "Softlink",
+    link: "https://renderwork.studio",
+    thumbnail: csi4,
+  },
+  {
+    title: "Softlink",
+    link: "https://renderwork.studio",
+    thumbnail: csi1,
   },
 ];
 
@@ -96,7 +121,7 @@ const ProductCard = ({ product, translate }) => {
 const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
-  //   const thirdRow = products.slice(10, 15);
+    const thirdRow = products.slice(10, 15);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -132,7 +157,7 @@ const HeroParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[210vh] md:h-[240vh] py-10 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[210vh] md:h-[300vh] py-10 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <div className="relative py-20 md:py-32 px-4 w-full left-0 top-0 text-white">
         <h1 className="text-3xl md:text-5xl font-semibold ms-0 md:ms-10">

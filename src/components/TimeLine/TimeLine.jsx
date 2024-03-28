@@ -21,12 +21,12 @@ const experiences = [
   },
   {
     title: "Registration Ends",
-    day: "28th March",
+    day: "2nd April",
     detail: "Join us on this journey by registering before the final deadline.",
   },
   {
     title: "Round 1 Results",
-    day: "29th March",
+    day: "2nd April",
     detail:
       "Team leaders will be notified of their selection for the hackathon, and will be provided with further details regarding the event.",
   },
