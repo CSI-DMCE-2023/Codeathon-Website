@@ -26,13 +26,13 @@ const experiences = [
   },
   {
     title: "Round 1 Results",
-    day: "2nd April",
+    day: "5th April",
     detail:
       "Team leaders will be notified of their selection for the hackathon, and will be provided with further details regarding the event.",
   },
   {
     title: "Round 2 Results",
-    day: "4th April",
+    day: "8th April",
     detail:
       "Qualified teams from round 1 will be judged based on their submitted video explaining the submitted PPT, and will be notified of their selection for the final round.",
   },
