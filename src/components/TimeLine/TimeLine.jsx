@@ -21,7 +21,7 @@ const experiences = [
   },
   {
     title: "Registration Ends",
-    day: "2nd April",
+    day: "2nd April - 11:59PM",
     detail: "Join us on this journey by registering before the final deadline.",
   },
   {

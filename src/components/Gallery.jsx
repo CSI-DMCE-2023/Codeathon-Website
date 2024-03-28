@@ -64,29 +64,29 @@ export const products = [
     thumbnail: post1,
   },
   {
-    title: "Softlink",
+    title: "Code-A-Thon",
     link: "https://renderwork.studio",
     thumbnail: csi2,
   },
   {
-    title: "Softlink",
+    title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: csi1,
+    thumbnail: csi5,
   },
   {
-    title: "Softlink",
+    title: "Code-A-Thon",
     link: "https://renderwork.studio",
     thumbnail: csi3,
   },
   {
-    title: "Softlink",
+    title: "Code-A-Thon",
     link: "https://renderwork.studio",
     thumbnail: csi4,
   },
   {
-    title: "Softlink",
+    title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: csi1,
+    thumbnail: csi2,
   },
 ];
 
@@ -187,7 +187,7 @@ const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        {/* <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -195,7 +195,7 @@ const HeroParallax = ({ products }) => {
               key={product.title}
             />
           ))}
-        </motion.div> */}
+        </motion.div>
       </motion.div>
     </div>
   );
