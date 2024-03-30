@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Faqbutton.css"
+// import "./Faqbutton.css"
 const AccordionItem = ({ header, text }) => {
   const [active, setActive] = useState(false);
   return (
@@ -92,7 +92,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-2/3 flex flex-wrap m-auto mt-10 justify-evenly items-center">
+      {/* <div className="w-full sm:w-2/3 flex flex-wrap m-auto mt-10 justify-evenly items-center">
         <div className="text-2xl text-white">
         Here is the response to your raised queries regarding PS.
         </div>
@@ -106,7 +106,7 @@ const FAQ = () => {
           </button>
           </a>
         </div>
-      </div>
+      </div> */}
       {/* <div className="absolute top-0 right-0 z-[-1]">
           <svg
             width="1440"
