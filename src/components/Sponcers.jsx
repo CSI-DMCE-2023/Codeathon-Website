@@ -6,7 +6,7 @@ import job4u from "../assets/job4u.png";
 const data = [
   {
     name: "iste",
-    link: "https://www.isteonline.in/",
+    link: "http://www.isteonline.in/",
     img: "https://meghaengg.ac.in/wp-content/uploads/2022/01/Iste.png",
   },
   {
