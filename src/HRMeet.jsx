@@ -10,7 +10,7 @@ function HRMeet() {
   };
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <section className="h-screen pattern">
         <div className="container px-6 py-16 mx-auto text-center flex flex-col justify-center">
           <div className="max-w-5xl mx-auto my-auto">
@@ -125,6 +125,13 @@ function HRMeet() {
           </div>
         </div>
       </section>
+      <footer>
+        <div className="container flex flex-col items-center justify-center p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            © Copyright 2021. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
