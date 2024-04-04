@@ -2,6 +2,7 @@ import mtpo from "../assets/matpo.png";
 import sponcer2 from "../assets/sponcer2.jpeg";
 // import sponcer3 from "../assets/sponcer3.webp";
 import job4u from "../assets/job4u.png";
+import globalOutlook from "../assets/global-outlook.jpeg";
 
 const data = [
   {
@@ -24,6 +25,11 @@ const data = [
     link: "https://www.instagram.com/job4u_info/",
     img: job4u,
   },
+  {
+    name: "Global Outlook",
+    link: "https://global-outlook.in/index.html",
+    img: globalOutlook,
+  }
 ];
 
 const poweredby = [
