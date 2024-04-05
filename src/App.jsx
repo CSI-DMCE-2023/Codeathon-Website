@@ -28,6 +28,7 @@ import CalltoAction from "./components/CalltoAction.jsx";
 import About from "./components/About.jsx";
 import Sponcers from "./components/Sponcers.jsx";
 import Shortlisted from "./components/shortlisted/Shortlisted.jsx";
+import Blog from "./components/Blog.jsx";
 
 // import ReactGA from "react-ga4";
 
@@ -96,6 +97,7 @@ function App() {
       {/* <Sponcers /> */}
       <Sponcers />
       <FAQs />
+      <Blog />
       <GoToTopBtn />
       <Contact />
       <Footer />
