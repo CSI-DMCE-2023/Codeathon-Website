@@ -38,7 +38,7 @@ export default function TPOHRMeet() {
             <h4 className="text-sm md:text-base my-2 text-gray-300 uppercase tracking-widest">
               Organized by
             </h4>
-            <h1 className="text-2xl font-medium text-[#22D3EE] md:text-5xl tracking-widest uppercase">
+            <h1 className="text-2xl mt-8 font-medium text-[#22D3EE] md:text-3xl  uppercase" style={{ letterSpacing: "0.4cm" }}>
               Mr. Faisal A. Khan
             </h1>
             <h4 className="text-sm md:text-base mt-1 text-gray-300 uppercase tracking-widest">
