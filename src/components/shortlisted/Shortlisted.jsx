@@ -145,7 +145,7 @@ const shortlistedteams = [
 function Shortlisted() {
   const shuffledArray = shuffle(shortlistedteams);
   return (
-    <div className="mb-16">
+    <div id="shortlisted-teams" className="mb-16 pt-10">
       <h1 className="pb-10 text-3xl md:text-5xl text-white font-bold text-center z-[100]">
         ROUND 1 SHORTLISTED TEAMS
       </h1>
