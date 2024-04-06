@@ -1,7 +1,9 @@
 import React from "react";
-import logithon from "../assets/LOGITHON.png"
-import logistics from "../assets/logistics.webp"
-import aboutimg from "../assets/aboutimg.png"
+import logithon from "../assets/LOGITHON.png";
+import aboutimg from "../assets/aboutimg.png";
+import Instagram from "../assets/icons/instagram.png";
+import Wordpress from "../assets/icons/wordpress.png";
+
 const About = () => {
   return (
     <section>
@@ -20,10 +22,34 @@ const About = () => {
             optimization and last-mile delivery revolution, fostering an
             ecosystem where ideas flourish and partnerships thrive.
           </p>
+          <div className="flex gap-x-6">
+            <a href="https://www.instagram.com/logithon.ai/" target="_blank">
+              <img
+                src={Instagram}
+                alt="instagram"
+                className="size-8 sm:size-9"
+              />
+            </a>
+            <a href="https://logithon.wordpress.com/" target="_blank">
+              <img
+                src={Wordpress}
+                alt="wordpress"
+                className="size-8 sm:size-9"
+              />
+            </a>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
-            <img className="w-full rounded-lg" src={logithon} alt="office content 1" />
-            <img className="mt-4 w-full lg:mt-10 rounded-lg" src={aboutimg} alt="office content 2" />
+          <img
+            className="w-full rounded-lg"
+            src={logithon}
+            alt="office content 1"
+          />
+          <img
+            className="mt-4 w-full lg:mt-10 rounded-lg"
+            src={aboutimg}
+            alt="office content 2"
+          />
         </div>
       </div>
     </section>

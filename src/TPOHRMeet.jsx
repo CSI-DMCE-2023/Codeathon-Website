@@ -33,7 +33,7 @@ export default function TPOHRMeet() {
         <div className="container px-5 pt-4 pb-6 md:py-12 mx-auto text-center flex flex-col justify-center">
           <div className="max-w-5xl mx-auto my-auto">
             <h1 className="text-3xl font-semibold text-white md:text-6xl">
-              TPO & HR Meet
+              TPO - HR Meet
             </h1>
             <h4 className="text-sm md:text-base my-2 text-gray-300 uppercase">
               Organized by
@@ -61,8 +61,8 @@ export default function TPOHRMeet() {
               href="https://forms.gle/R5RMf2DagcZFUYFE8"
               target="_blank"
             >
-              <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#22D3EE] transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-              <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-[#101113] group-active:text-opacity-75">
+              <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#22D3EE] transition-transform group-hover:translate-x-0 group-hover:translate-y-0  rounded"></span>
+              <span className="relative inline-block border-2 border-[#22D3EE] px-8 py-3 text-sm font-bold uppercase tracking-widest text-white group-active:text-opacity-75">
                 Join Us
               </span>
             </a>
