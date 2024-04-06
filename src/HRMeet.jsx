@@ -25,6 +25,7 @@ function HRMeet() {
               to network with HR professionals and TPOs, and delve into the
               evolving landscape of tech-driven logistics solutions.
             </p>
+          <button class="tpohrbutton">Join Us</button>
           </div>
         </div>
       </section>
