@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Slider from "infinite-react-carousel";
 
 export default function Blog() {
   const [bloglist, setbloglist] = useState([]);
@@ -31,16 +30,7 @@ export default function Blog() {
             </h3>
           </div>
           {bloglist.length>0 && (
-            <Slider
-            dots
-            autoplay={true}
-            className=" w-full "
-            autoplayScroll={3}
-            autoplaySpeed={3000}
-            arrows={false}
-            slidesPerRow={width>600?2:1}
-            adaptiveHeight={true}
-          >
+             <div class="grid gap-8 lg:grid-cols-2">
             { bloglist.map((data) => (
                 <div className="">
                   <article class="p-6 bg-black rounded-lg border border-gray-200 shadow-md mx-3">
@@ -94,7 +84,7 @@ export default function Blog() {
                   </article>
                 </div>
               ))}
-          </Slider>
+          </div>
           )}
           
         </div>
