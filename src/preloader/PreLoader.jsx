@@ -105,15 +105,15 @@ const PreLoader = () => {
         <div className="bg-gray-500 w-44 h-44  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
         <div className="bg-gray-400 w-28 h-28 absolute animate-ping rounded-full shadow-xl"></div>
         <div className="bg-white w-20 h-20 absolute animate-pulse rounded-full shadow-xl"></div>
-      </section>
+      </section> */}
       <div>
-        <h2 className="text-center text-white text-xl font-semibold mt-32">
+        <h2 className="text-center text-white text-xl font-semibold mt-12">
           Loading...
         </h2>
         <p className="text-center text-white mt-2">
           This may take a few seconds, please don't close this page.
         </p>
-      </div> */}
+      </div>
     </div>
   );
 };
