@@ -89,7 +89,7 @@ function App() {
       <About />
       <Winner />
       <PS />
-      {/* <Shortlisted /> */}
+      <Shortlisted />
       <TimeLine />
       <Marketing />
       <CalltoAction />

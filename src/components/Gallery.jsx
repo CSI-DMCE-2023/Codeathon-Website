@@ -4,11 +4,11 @@ import post1 from "/soft1.jpg";
 import post2 from "/soft2.jpg";
 import post3 from "/soft3.jpg";
 import post4 from "/soft4.jpg";
-import csi1 from "../assets/csi1.jpg"
-import csi2 from "../assets/csi2.jpg"
-import csi3 from "../assets/csi3.jpg"
-import csi4 from "../assets/csi4.jpg"
-import csi5 from "../assets/csi5.jpg"
+import csi1 from "../assets/csi1.jpg";
+import csi2 from "../assets/csi2.jpg";
+import csi3 from "../assets/csi3.jpg";
+import csi4 from "../assets/csi4.jpg";
+import csi5 from "../assets/csi5.jpg";
 
 export const products = [
   {
@@ -121,7 +121,7 @@ const ProductCard = ({ product, translate }) => {
 const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
+  const thirdRow = products.slice(10, 15);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -188,12 +188,8 @@ const HeroParallax = ({ products }) => {
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
+          {thirdRow.map((product, index) => (
+            <ProductCard product={product} translate={translateX} key={index} />
           ))}
         </motion.div>
       </motion.div>

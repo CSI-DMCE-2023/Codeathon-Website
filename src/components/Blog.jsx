@@ -20,8 +20,8 @@ export default function Blog() {
   return (
     <div>
       <section>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
             <h1 className="py-6 sm:py-8 text-3xl md:text-5xl text-white font-semibold text-center mt-6 sm:mt-8">
               Our Blogs
             </h1>
@@ -36,7 +36,7 @@ export default function Blog() {
             autoplay={true}
             className=" w-full "
             autoplayScroll={3}
-            autoplaySpeed={10000}
+            autoplaySpeed={3000}
             arrows={false}
             slidesPerRow={width>600?2:1}
             adaptiveHeight={true}

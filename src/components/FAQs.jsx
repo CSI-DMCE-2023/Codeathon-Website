@@ -98,11 +98,11 @@ const FAQ = () => {
         </div>
         <div className="psqueriesbutton mt-5 sm:mt-0">
           <a target="_blank" href="https://docs.google.com/document/d/1G8GmAEO22sLCS_jFfOkBSHs_4IQw1kO7ei8d2EIx17Y/edit?usp=sharing">
-          <button class="learn-more">
-            <span aria-hidden="true" class="circle">
-              <span class="icon arrow"></span>
+          <button className="learn-more">
+            <span aria-hidden="true" className="circle">
+              <span className="icon arrow"></span>
             </span>
-            <span class="button-text">ps queries</span>
+            <span className="button-text">ps queries</span>
           </button>
           </a>
         </div>
