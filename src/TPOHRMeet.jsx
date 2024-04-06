@@ -42,7 +42,7 @@ export default function TPOHRMeet() {
               - Mr. Faisal Khan <br /> Director Training and Placement Cell@DMCE
               and NHITM
             </h4>
-            <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-3xl mx-auto">
+            <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-3xl mx-auto text-justify">
               Join us for our TPO & HR Meet, held in conjunction with LogiTHON,
               to network with TPOs and HRs, and delve into the evolving
               landscape of tech-driven logistics solutions. LogiTHON is a
@@ -68,7 +68,7 @@ export default function TPOHRMeet() {
         </div>
         <footer className="py-2">
           <p className="text-sm text-gray-300 text-center">
-            © Copyright 2021. All Rights Reserved.
+            © Copyright 2024. All Rights Reserved.
           </p>
         </footer>
       </section>
