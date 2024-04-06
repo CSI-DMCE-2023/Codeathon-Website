@@ -30,7 +30,7 @@ export default function Blog() {
             </h3>
           </div>
           {bloglist.length>0 && (
-             <div class="grid gap-8 lg:grid-cols-2">
+             <div class="grid gap-8 lg:grid-cols-3">
             { bloglist.map((data) => (
                 <div className="">
                   <article class="p-6 bg-black rounded-lg border border-gray-200 shadow-md mx-3">
