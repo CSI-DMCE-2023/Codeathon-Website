@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Navbar from "./Navbar/Navbar";
 
-function HRMeet() {
+export default function TPOHRMeet() {
   const [toggle, setToggle] = useState("HR");
   const data = {
     HR: [1, 2, 3, 4, 5],
@@ -15,21 +14,30 @@ function HRMeet() {
         <div className="container px-6 py-16 mx-auto text-center flex flex-col justify-center">
           <div className="max-w-5xl mx-auto my-auto">
             <h1 className="text-3xl font-semibold text-white md:text-6xl">
-              HR & TPO Meet
+              TPO & HR Meet
             </h1>
             <h1 className="text-2xl font-semibold text-[#22D3EE] md:text-5xl">
               Exploring Innovation and Collaboration
             </h1>
             <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-2xl mx-auto">
-              Join us for our HR & TPO Meet, held in conjunction with LogiTHON,
-              to network with HR professionals and TPOs, and delve into the
-              evolving landscape of tech-driven logistics solutions.
+              Join us for our TPO & HR Meet, held in conjunction with LogiTHON,
+              to network with TPOs and HRs, and delve into the evolving
+              landscape of tech-driven logistics solutions.
             </p>
-          <button class="tpohrbutton">Join Us</button>
+            <a
+              className="group relative inline-block focus:outline-none focus:ring mt-4 md:mt-8"
+              href="https://forms.gle/R5RMf2DagcZFUYFE8"
+              target="_blank"
+            >
+              <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#22D3EE] transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+              <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
+                Join Us
+              </span>
+            </a>
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="container px-6 py-10 mx-auto flex flex-col">
           <h1 className="text-3xl font-semibold text-center capitalize mb-6 md:text-5xl text-white">
             Our Esteemed Guests
@@ -125,16 +133,14 @@ function HRMeet() {
             ))}
           </div>
         </div>
-      </section>
-      <footer>
+      </section> */}
+      {/* <footer>
         <div className="container flex flex-col items-center justify-center p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
           <p className="text-sm text-gray-600 dark:text-gray-300">
             © Copyright 2021. All Rights Reserved.
           </p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
-
-export default HRMeet;
