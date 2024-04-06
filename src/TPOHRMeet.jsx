@@ -3,34 +3,34 @@ import "./App.css";
 import dmceLogo from "./assets/dmce.png";
 
 export default function TPOHRMeet() {
-  const [toggle, setToggle] = useState("HR");
-  const data = {
-    HR: [1, 2, 3, 4, 5],
-    TPO: [1, 2, 3, 4],
-  };
+  // const [toggle, setToggle] = useState("HR");
+  // const data = {
+  //   HR: [1, 2, 3, 4, 5],
+  //   TPO: [1, 2, 3, 4],
+  // };
   return (
     <div>
       <section className="min-h-screen pattern flex flex-col justify-between">
-        <nav className="w-full pt-4 md:pt-8">
-          <div className="flex flex-col items-center justify-center gap-x-2">
+        <nav className="py-4 md:pt-8 px-4 mx-auto">
+          <div className="flex items-center justify-center gap-x-3">
             <a href="https://www.dmce.ac.in/" target="_blank">
               <img
-                className="w-auto h-[3.5rem] sm:h-[5.5rem]"
+                className="w-auto h-[4rem] sm:h-[4.5rem]"
                 src={dmceLogo}
                 alt="dmce"
               />
             </a>
-            <div className="text-center">
+            <div className="text-left max-w-[13rem] sm:max-w-fit">
               <h1 className="text-lg font-bold text-white md:text-2xl">
                 Datta Meghe College of Engineering
               </h1>
-              <p className="mt-1.5 text-xs md:text-sm text-gray-300">
+              <p className="mt-0.5 md:mt-1.5 text-xs md:text-sm text-gray-300">
                 Nagar Yuwak Shikshan Sanstha, Airoli
               </p>
             </div>
           </div>
         </nav>
-        <div className="container px-5 py-4 md:py-12 mx-auto text-center flex flex-col justify-center">
+        <div className="container px-5 pt-4 pb-6 md:py-12 mx-auto text-center flex flex-col justify-center">
           <div className="max-w-5xl mx-auto my-auto">
             <h1 className="text-3xl font-semibold text-white md:text-6xl">
               TPO & HR Meet
@@ -39,7 +39,7 @@ export default function TPOHRMeet() {
               Exploring Innovation and Collaboration
             </h1>
             <h4 className="md:text-lg mt-2 font-semibold text-gray-300">
-              By Faisal Khan <br /> Director Training and Placement Cell@DMCE
+              - Mr. Faisal Khan <br /> Director Training and Placement Cell@DMCE
               and NHITM
             </h4>
             <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-3xl mx-auto">
