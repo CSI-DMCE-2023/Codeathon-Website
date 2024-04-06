@@ -35,12 +35,14 @@ export default function TPOHRMeet() {
             <h1 className="text-3xl font-semibold text-white md:text-6xl">
               TPO & HR Meet
             </h1>
+            <h4 className="text-sm md:text-base my-2 text-gray-300 uppercase">
+              Organized by
+            </h4>
             <h1 className="text-2xl font-semibold text-[#22D3EE] md:text-5xl">
-              Exploring Innovation and Collaboration
+              Mr. Faisal A. Khan
             </h1>
-            <h4 className="md:text-lg mt-2 font-semibold text-gray-300">
-              - Mr. Faisal Khan <br /> Director Training and Placement Cell@DMCE
-              and NHITM
+            <h4 className="md:text-lg mt-1 text-gray-300 uppercase">
+              Director <br /> Training and Placement Cell
             </h4>
             <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-3xl mx-auto text-justify">
               Join us for our TPO & HR Meet, held in conjunction with LogiTHON,
