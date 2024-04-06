@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import dmceLogo from "./assets/dmce.png";
 
 export default function TPOHRMeet() {
   const [toggle, setToggle] = useState("HR");
@@ -9,9 +10,27 @@ export default function TPOHRMeet() {
   };
   return (
     <div>
-      {/* <Navbar /> */}
-      <section className="h-screen pattern">
-        <div className="container px-6 py-16 mx-auto text-center flex flex-col justify-center">
+      <section className="min-h-screen pattern flex flex-col justify-between">
+        <nav className="w-full pt-4 md:pt-8">
+          <div className="flex flex-col items-center justify-center gap-x-2">
+            <a href="https://www.dmce.ac.in/" target="_blank">
+              <img
+                className="w-auto h-[3.5rem] sm:h-[5.5rem]"
+                src={dmceLogo}
+                alt="dmce"
+              />
+            </a>
+            <div className="text-center">
+              <h1 className="text-lg font-bold text-white md:text-2xl">
+                Datta Meghe College of Engineering
+              </h1>
+              <p className="mt-1.5 text-xs md:text-sm text-gray-300">
+                Nagar Yuwak Shikshan Sanstha, Airoli
+              </p>
+            </div>
+          </div>
+        </nav>
+        <div className="container px-5 py-4 md:py-12 mx-auto text-center flex flex-col justify-center">
           <div className="max-w-5xl mx-auto my-auto">
             <h1 className="text-3xl font-semibold text-white md:text-6xl">
               TPO & HR Meet
@@ -19,23 +38,39 @@ export default function TPOHRMeet() {
             <h1 className="text-2xl font-semibold text-[#22D3EE] md:text-5xl">
               Exploring Innovation and Collaboration
             </h1>
-            <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-2xl mx-auto">
+            <h4 className="md:text-lg mt-2 font-semibold text-gray-300">
+              By Faisal Khan <br /> Director Training and Placement Cell@DMCE
+              and NHITM
+            </h4>
+            <p className="mt-6 md:mt-10 text-gray-300 md:text-lg max-w-3xl mx-auto">
               Join us for our TPO & HR Meet, held in conjunction with LogiTHON,
               to network with TPOs and HRs, and delve into the evolving
-              landscape of tech-driven logistics solutions.
+              landscape of tech-driven logistics solutions. LogiTHON is a
+              leading national hackathon blending technology with logistics. It
+              brings together diverse participants to devise innovative
+              solutions for the industry's challenges, from optimizing supply
+              chains to transforming last-mile delivery. With a focus on
+              efficiency, sustainability, and social impact, LogiTHON serves as
+              a hub for innovation, fostering partnerships and reshaping the
+              future of logistics.
             </p>
             <a
-              className="group relative inline-block focus:outline-none focus:ring mt-4 md:mt-8"
+              className="group relative inline-block focus:outline-none mt-4 md:mt-8"
               href="https://forms.gle/R5RMf2DagcZFUYFE8"
               target="_blank"
             >
               <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#22D3EE] transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-              <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
+              <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-[#101113] group-active:text-opacity-75">
                 Join Us
               </span>
             </a>
           </div>
         </div>
+        <footer className="py-2">
+          <p className="text-sm text-gray-300 text-center">
+            © Copyright 2021. All Rights Reserved.
+          </p>
+        </footer>
       </section>
       {/* <section>
         <div className="container px-6 py-10 mx-auto flex flex-col">
@@ -136,7 +171,7 @@ export default function TPOHRMeet() {
       </section> */}
       {/* <footer>
         <div className="container flex flex-col items-center justify-center p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-          <p className="text-sm text-gray-600 dark:text-gray-300">
+          <p className="text-sm text-gray-300">
             © Copyright 2021. All Rights Reserved.
           </p>
         </div>
