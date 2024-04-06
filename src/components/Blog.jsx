@@ -25,8 +25,7 @@ export default function Blog() {
               Our Blogs
             </h1>
             <h3 className=" text-white font-bold sm:text-2xl text-lg">
-              Want some insider Info ? Be sure to check out this blogs. we
-              upload Daily!
+            Be sure to check out our daily-updated blogs on our website! We've got insider info waiting for you! 🌟
             </h3>
           </div>
           {bloglist.length > 0 && (
