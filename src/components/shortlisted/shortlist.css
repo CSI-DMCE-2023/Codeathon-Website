@@ -1,0 +1,15 @@
+.teamlead {
+    display: none !important; 
+  }
+  
+  .maincard:hover  .teamlead {
+    display: block !important; 
+  }
+  
+  .maincard:hover .teamname {
+    display: none !important; 
+  }
+
+  .maincard{
+    background-color: aqua ;
+  }

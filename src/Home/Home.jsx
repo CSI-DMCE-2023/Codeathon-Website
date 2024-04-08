@@ -28,7 +28,7 @@ export function Home({ setLogoLoader }) {
             onLoad={() => setLogoLoader(false)}
           />
           <a onClick={() => scrollToTimeline("shortlisted-teams")} className=" flex justify-center items-center absolute sm:left-[43%] left-[15%]  bottom-[20%] sm:bottom-[15%]">
-            <button className="btn w-auto">Round 1 Results are live </button>
+            <button className="btn w-auto">Round 2 Results are live </button>
           </a>
         </div>
       </div>
