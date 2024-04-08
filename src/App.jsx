@@ -29,6 +29,7 @@ import About from "./components/About.jsx";
 import Sponcers from "./components/Sponcers.jsx";
 import Shortlisted from "./components/shortlisted/Shortlisted.jsx";
 import Blog from "./components/Blog.jsx";
+import Teamshortsection from "./components/shortlisted/Teamshortsection.jsx";
 
 // import ReactGA from "react-ga4";
 
@@ -89,12 +90,14 @@ function App() {
       <About />
       <Winner />
       <PS />
-      <Shortlisted />
+      <Teamshortsection />
+      {/* <Shortlisted /> */}
       <TimeLine />
       <Marketing />
       <CalltoAction />
       <Gallery />
       {/* <Sponcers /> */}
+
       <Sponcers />
       <Blog />
       <FAQs />
