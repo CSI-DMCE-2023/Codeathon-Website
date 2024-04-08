@@ -83,7 +83,7 @@ const Navbar = () => {
               className=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
               onClick={() => scrollToTimeline("shortlisted-teams")}
             >
-              SHORTLISTED TEAMS
+              RESULT
             </button>
             <button
               className=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
@@ -93,9 +93,9 @@ const Navbar = () => {
             </button>
             <button
               className=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
-              onClick={() => scrollToTimeline("faqs")}
+              onClick={() => scrollToTimeline("blogs")}
             >
-              FAQS
+              BLOGS
             </button>
             <button
               className=" cursor-pointer inline-block rounded-lg px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"

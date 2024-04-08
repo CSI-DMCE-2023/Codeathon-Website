@@ -96,8 +96,8 @@ function App() {
       <Gallery />
       {/* <Sponcers /> */}
       <Sponcers />
-      <FAQs />
       <Blog />
+      <FAQs />
       <GoToTopBtn />
       <Contact />
       <Footer />
