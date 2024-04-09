@@ -80,7 +80,7 @@ export default function Teamshortsection() {
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
               <div class="mb-8">
-                <h3 class="text-2xl font-bold text-cyan-400  text-center mx-auto">
+                <h3 class="text-xl font-bold text-cyan-400  text-center mx-auto">
                   Problem Statement 1
                 </h3>
               </div>
@@ -92,7 +92,7 @@ export default function Teamshortsection() {
             </div>
             <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
               <div class="mb-8">
-                <h3 class="text-2xl font-bold text-cyan-400  text-center">
+                <h3 class="text-xl font-bold text-cyan-400  text-center">
                   Problem Statement 2
                 </h3>
               </div>
@@ -104,7 +104,7 @@ export default function Teamshortsection() {
             </div>
             <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
               <div class="mb-8">
-                <h3 class="text-2xl font-bold text-cyan-400  text-center">
+                <h3 class="text-xl font-bold text-cyan-400  text-center">
                   Problem Statement 3
                 </h3>
               </div>
@@ -116,7 +116,7 @@ export default function Teamshortsection() {
             </div>
             <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
               <div class="mb-8">
-                <h3 class="text-2xl font-bold text-cyan-400  text-center">
+                <h3 class="text-xl font-bold text-cyan-400  text-center">
                   Problem Statement 4
                 </h3>
               </div>
