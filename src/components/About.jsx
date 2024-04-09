@@ -1,6 +1,4 @@
 import React from "react";
-import logithon from "../assets/LOGITHON.png";
-import aboutimg from "../assets/aboutimg.png";
 import Instagram from "../assets/icons/instagram.png";
 import Wordpress from "../assets/icons/wordpress.png";
 
@@ -42,12 +40,12 @@ const About = () => {
         <div className="grid grid-cols-2 gap-4 mt-8">
           <img
             className="w-full rounded-lg"
-            src={logithon}
+            src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1712648594/hackathon/rwdnltlhujoxngho2gpi.png"}
             alt="office content 1"
           />
           <img
             className="mt-4 w-full lg:mt-10 rounded-lg"
-            src={aboutimg}
+            src={"https://res.cloudinary.com/dbeptj8fp/image/upload/v1712648594/hackathon/mc2l4s2jbmllcpdnfjsu.png"}
             alt="office content 2"
           />
         </div>
