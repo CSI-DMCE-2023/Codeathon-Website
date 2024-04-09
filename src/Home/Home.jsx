@@ -27,7 +27,7 @@ export function Home({ setLogoLoader }) {
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
             onLoad={() => setLogoLoader(false)}
           />
-          <a onClick={() => scrollToTimeline("shortlisted-teams")} className=" flex justify-center items-center absolute sm:left-[43%] left-[15%]  bottom-[20%] sm:bottom-[15%]">
+          <a href="#shortlisted-teams" className=" flex justify-center items-center absolute sm:left-[43%] left-[15%]  bottom-[20%] sm:bottom-[15%]">
             <button className="btn w-auto">Round 2 Results are live </button>
           </a>
         </div>

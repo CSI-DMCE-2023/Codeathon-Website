@@ -60,8 +60,9 @@ export default function Blog() {
                       href={data.URL}
                       className="inline-flex items-center font-medium text-white hover:underline"
                       target="_blank"
+                      aria-label={data.excerpt}
                     >
-                      Read more
+                      Read more a
                       <svg
                         className="ml-2 w-4 h-4"
                         fill="currentColor"
