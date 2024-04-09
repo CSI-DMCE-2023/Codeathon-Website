@@ -70,17 +70,17 @@ export default function Teamshortsection() {
   return (
     <div id="shortlisted-teams">
       <section >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
             <h1 className="pb-10 text-3xl md:text-5xl text-white font-semibold text-center z-[100]">
               ROUND 2 SHORTLISTED TEAMS
             </h1>
           </div>
 
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
-              <div class="mb-8">
-                <h3 class="text-xl font-bold text-cyan-400  text-center mx-auto">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-cyan-400  text-center mx-auto">
                   Problem Statement 1
                 </h3>
               </div>
@@ -90,9 +90,9 @@ export default function Teamshortsection() {
                 ))}
               </div>
             </div>
-            <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
-              <div class="mb-8">
-                <h3 class="text-xl font-bold text-cyan-400  text-center">
+            <div className=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-cyan-400  text-center">
                   Problem Statement 2
                 </h3>
               </div>
@@ -102,9 +102,9 @@ export default function Teamshortsection() {
                 ))}
               </div>
             </div>
-            <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
-              <div class="mb-8">
-                <h3 class="text-xl font-bold text-cyan-400  text-center">
+            <div className=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-cyan-400  text-center">
                   Problem Statement 3
                 </h3>
               </div>
@@ -114,9 +114,9 @@ export default function Teamshortsection() {
                 ))}
               </div>
             </div>
-            <div class=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
-              <div class="mb-8">
-                <h3 class="text-xl font-bold text-cyan-400  text-center">
+            <div className=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-cyan-400  text-center">
                   Problem Statement 4
                 </h3>
               </div>

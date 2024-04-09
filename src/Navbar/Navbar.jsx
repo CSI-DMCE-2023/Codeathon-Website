@@ -49,14 +49,14 @@ const Navbar = () => {
       <div className="px-4">
         <div className="flex items-center justify-between">
           <div className="flex shrink-0">
-            <a href="https://dmce.ac.in/" target="_blank">
+            <a href="https://dmce.ac.in/" target="_blank" aria-label="DMCE">
               <img
                 className="h-10 object-cover mx-4 sm:h-10 w-auto"
                 src={dmcelogo}
                 alt=""
               />
             </a>
-            <a href="https://softlinkglobal.com/" target="_blank">
+            <a href="https://softlinkglobal.com/" target="_blank" aria-label="SOFTLINK">
               <img
                 className="h-10 object-cover sm:h-10 sm:mx-4 w-auto"
                 src={softlink}

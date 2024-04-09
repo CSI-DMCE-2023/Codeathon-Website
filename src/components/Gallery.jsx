@@ -4,6 +4,11 @@ import post1 from "/soft1.jpg";
 import post2 from "/soft2.jpg";
 import post3 from "/soft3.jpg";
 import post4 from "/soft4.jpg";
+import csi1 from "../assets/csi1.jpg";
+import csi2 from "../assets/csi2.jpg";
+import csi3 from "../assets/csi3.jpg";
+import csi4 from "../assets/csi4.jpg";
+import csi5 from "../assets/csi5.jpg";
 
 export const products = [
   {
@@ -61,27 +66,27 @@ export const products = [
   {
     title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: "https://res.cloudinary.com/dbeptj8fp/image/upload/v1712648829/hackathon/qs8nsayhravsvk3snqkd.jpg",
+    thumbnail: csi2,
   },
   {
     title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: "https://console.cloudinary.com/pm/c-f3d1b27b18095fe905d8019667d96a/media-explorer/hackathon?assetId=bde61987b2cd8514dabbd689c6e8e18d",
+    thumbnail: csi5,
   },
   {
     title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: "https://res.cloudinary.com/dbeptj8fp/image/upload/v1712648829/hackathon/lqjxxbfkewksemkj05jp.jpg",
+    thumbnail: csi3,
   },
   {
     title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: "https://res.cloudinary.com/dbeptj8fp/image/upload/v1712648839/hackathon/mooxgjag2qulrfhqnuep.jpg",
+    thumbnail: csi4,
   },
   {
     title: "Code-A-Thon",
     link: "https://renderwork.studio",
-    thumbnail: "https://res.cloudinary.com/dbeptj8fp/image/upload/v1712648829/hackathon/qs8nsayhravsvk3snqkd.jpg",
+    thumbnail: csi2,
   },
 ];
 
