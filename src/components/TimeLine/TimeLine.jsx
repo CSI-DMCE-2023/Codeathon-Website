@@ -55,7 +55,7 @@ const experiences = [
   },
   {
     title: "Lunch 🍽️",
-    day: "19th April- 1:00 PM",
+    day: "19th April- 12:30 PM",
     detail:
       "Lunch break for participants, to recharge and refuel before diving back into their projects with renewed energy.",
   },
@@ -99,7 +99,7 @@ const experiences = [
     title: "First Judging Round",
     day: "20th April - 9:00 AM",
     detail:
-      "Evaluating projects based on the progress achieved up to the day prior, highlighting participants' accomplishments thus far in the hackathon.",
+      "Evaluating projects based on the progress achieved , highlighting participants' accomplishments thus far in the hackathon.",
   },
 
   {
@@ -113,7 +113,7 @@ const experiences = [
     title: "Final Juding Round - Offline Presentation",
     day: "20th April - 12:30 PM",
     detail:
-      "In the Final Judging Round, Projects are presented offline on Innovation, Execution, and Impact, Leading to Prize Distribution.",
+      "In the Final Judging Round, Participants will present their projects and will be evaluated on Innovation, Execution and Impact, Leading to Prize Distribution.",
   },
   {
     title: "Closure Ceremony 🎉",
