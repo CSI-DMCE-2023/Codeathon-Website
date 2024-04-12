@@ -61,13 +61,13 @@ const experiences = [
   },
   {
     title: "Mentoring Round",
-    day: "19th April - 4:00 PM",
+    day: "19th April - 3:00 PM",
     detail:
       "The mentoring round commences, providing participants with invaluable guidance and insights to elevate their projects.",
   },
   {
     title: "Evening Snacks 🍪",
-    day: "19th April - 7:00 PM",
+    day: "19th April - 5:00 PM",
     detail:
       "Participants will enjoy evening refreshments, providing an opportunity to unwind and mingle after a day of productive hacking.",
   },
@@ -79,7 +79,7 @@ const experiences = [
   },
   {
     title: "Jamming Session 🎸",
-    day: "19th April - 11:30 PM",
+    day: "19th April - 10:30 PM",
     detail:
       "Harmonious Break: Join the Jamming Session for a Relaxing and Creative Interlude!",
   },
@@ -90,32 +90,34 @@ const experiences = [
       "Midnight refreshments will be available, offering participants a chance to recharge and refuel during the late hours of the hackathon.",
   },
   {
-    title: "First Judging Round",
-    day: "20th April - 7:00 AM",
-    detail:
-      "Evaluating projects based on the progress achieved up to the day prior, highlighting participants' accomplishments thus far in the hackathon.",
-  },
-  {
     title: "Breakfast ☕",
-    day: "20th April - 9:00 AM",
+    day: "20th April - 8:00 AM",
     detail:
       "Breakfast will be served, fueling participants for another day of innovation and problem-solving.",
   },
   {
-    title: "Final Juding Round - Hackathon Concludes",
-    day: "20th April - 10:00 AM",
+    title: "First Judging Round",
+    day: "20th April - 9:00 AM",
     detail:
-      "In the Final Judging Round, Projects are Assessed for Innovation, Execution, and Impact, Leading to Prize Distribution.",
+      "Evaluating projects based on the progress achieved up to the day prior, highlighting participants' accomplishments thus far in the hackathon.",
   },
+
   {
     title: "Lunch",
     day: "20th April - 12:00 PM",
     detail:
       "Recharge and Refuel: Enjoy a Delectable Lunch Break for the Teams!",
   },
+   
+  {
+    title: "Final Juding Round - Offline Presentation",
+    day: "20th April - 12:30 PM",
+    detail:
+      "In the Final Judging Round, Projects are presented offline on Innovation, Execution, and Impact, Leading to Prize Distribution.",
+  },
   {
     title: "Closure Ceremony 🎉",
-    day: "20th April - 1:00 PM",
+    day: "20th April - 3:30 PM",
     detail:
       "Get Ready for the Exciting Announcement of Winners and the Distribution of Prizes, Recognizing the Outstanding Efforts of Participants!",
   },
