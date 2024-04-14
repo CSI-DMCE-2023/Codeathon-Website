@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import dmcelogo from "../assets/dmce.png";
-import csi from "../assets/logo.png";
 import softlink from "../assets/Softlink.png";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";

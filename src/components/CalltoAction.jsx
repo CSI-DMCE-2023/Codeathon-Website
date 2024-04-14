@@ -48,7 +48,7 @@ function CalltoAction() {
                 >
                   <img
                     src={Facebook}
-                    alt="discord"
+                    alt="facebook"
                     className="size-8 sm:size-9"
                   />
                 </a>
