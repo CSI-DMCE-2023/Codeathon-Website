@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .bot{
-    position: absolute;
-    bottom: -7.5rem!important;
-}
-
-.tbox:hover .bot{
-    bottom: -15rem!important;
-} */
-
 body {
   background-color: black;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./home.css";
-// import { StarsCanvas } from "../spline";
 import "./Button.css";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
@@ -14,7 +13,6 @@ export function Home({ setLogoLoader }) {
   return (
     <div id="vanta2" className="h-screen bg-black">
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden bg-black bg-grid-white/[0.2] relative ">
-        {/* <StarsCanvas /> */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex-col w-full h-full justify-center items-center z-50">
           <Spline

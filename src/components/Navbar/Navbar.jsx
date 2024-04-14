@@ -1,34 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import dmcelogo from "../assets/dmce.png";
-import softlink from "../assets/Softlink.png";
+import React from "react";
+import dmcelogo from "../../assets/dmce.png";
+import softlink from "../../assets/Softlink.png";
+import brochure from "../../assets/LogithonBrochure.pdf";
 import "./navbar.css";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import brochure from "../assets/LogithonBrochure.pdf";
+
 const Navbar = () => {
-  // const timeLine = () => {
-  //   const tl = gsap.timeline();
-  //   gsap.set(".sidebar button ", {
-  //     opacity: 0,
-  //     scale: 0,
-  //   });
-
-  //   tl.to(".sidebar button", {
-  //     opacity: 1,
-  //     scale: 1,
-  //     duration: 0.3,
-  //     stagger: 0.3,
-  //   });
-  // };
-
-  // const [side, setSide] = useState(true);
-
-  // const toggle = () => {
-  //   timeLine();
-  //   setSide((prevSide) => !prevSide);
-  //   console.log(side);
-  // };
   const scrollToTimeline = (e) => {
     const timelineSection = document.getElementById(e);
     if (timelineSection) {
@@ -55,7 +31,11 @@ const Navbar = () => {
                 alt=""
               />
             </a>
-            <a href="https://softlinkglobal.com/" target="_blank" aria-label="SOFTLINK">
+            <a
+              href="https://softlinkglobal.com/"
+              target="_blank"
+              aria-label="SOFTLINK"
+            >
               <img
                 className="h-10 object-cover sm:h-10 sm:mx-4 w-auto"
                 src={softlink}

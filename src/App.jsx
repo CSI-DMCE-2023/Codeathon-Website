@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import PS from "./components/ps/PS";
 import TimeLine from "./components/TimeLine/TimeLine";
@@ -6,30 +7,27 @@ import Gallery from "./components/Gallery";
 import FAQs from "./components/FAQs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar.jsx";
 
-import "./App.css";
 import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
 
 import { Home } from "./Home/Home";
 // import { Sponcers } from "./sponcers/Sponcers.jsx";
 
-import Navbar from "./Navbar/Navbar";
 
 import PreLoader from "./preloader/PreLoader.jsx";
 
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Winner from "./Winner/Winner.jsx";
-// import MainDomain from "./components/MainDomain.jsx";
 
-import { Analytics } from "@vercel/analytics/react";
-import Marketing from "./marketing/Marketing.jsx";
 import CalltoAction from "./components/Softlink.jsx";
 import About from "./components/About.jsx";
 import Sponcers from "./components/Sponcers.jsx";
 import Shortlisted from "./components/shortlisted/Shortlisted.jsx";
 import Blog from "./components/Blog.jsx";
 import Teamshortsection from "./components/shortlisted/Teamshortsection.jsx";
+import "./App.css";
 
 // import ReactGA from "react-ga4";
 
@@ -93,7 +91,6 @@ function App() {
       <Teamshortsection />
       {/* <Shortlisted /> */}
       <TimeLine />
-      <Marketing />
       <CalltoAction />
       <Gallery />
       {/* <Sponcers /> */}
