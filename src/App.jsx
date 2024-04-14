@@ -24,7 +24,7 @@ import Winner from "./Winner/Winner.jsx";
 
 import { Analytics } from "@vercel/analytics/react";
 import Marketing from "./marketing/Marketing.jsx";
-import CalltoAction from "./components/CalltoAction.jsx";
+import CalltoAction from "./components/Softlink.jsx";
 import About from "./components/About.jsx";
 import Sponcers from "./components/Sponcers.jsx";
 import Shortlisted from "./components/shortlisted/Shortlisted.jsx";

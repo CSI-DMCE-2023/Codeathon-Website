@@ -1,6 +1,5 @@
 import { cn } from "../../utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
 import { fadeIn } from "../../varients";
