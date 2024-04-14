@@ -1,7 +1,55 @@
-import React from "react";
+import React, { useState, useEffect, lazy } from "react";
 import "./home.css";
 import "./Button.css";
-const Spline = React.lazy(() => import("@splinetool/react-spline"));
+const Spline = lazy(() => import("@splinetool/react-spline"));
+
+const CountdownTimer = () => {
+  const calculateTimeLeft = () => {
+    const difference = +new Date("2024-04-18") - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        // seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  });
+
+  const timerComponents = [];
+
+  Object.keys(timeLeft).forEach((interval) => {
+    if (!timeLeft[interval]) {
+      return;
+    }
+
+    timerComponents.push(
+      <span key={interval}>
+        {timeLeft[interval]} {interval}{" "}
+      </span>
+    );
+  });
+
+  return (
+    <div className="text-white text-xl capitalize font-semibold">
+      {timerComponents.length ? timerComponents : <span></span>}
+    </div>
+  );
+};
 
 export default function Home({ setLogoLoader }) {
   return (
@@ -21,10 +69,13 @@ export default function Home({ setLogoLoader }) {
           />
           <a
             href="#shortlisted-teams"
-            className=" flex justify-center items-center absolute sm:left-[43%] left-[15%]  bottom-[20%] sm:bottom-[15%]"
+            className="flex justify-center items-center absolute sm:left-[43%] left-[15%] bottom-[20%] sm:bottom-[15%]"
           >
             <button className="btn w-auto">Final Results are live </button>
           </a>
+          <div className="flex justify-center items-center absolute sm:left-[43%] left-[15%] bottom-[11%] sm:bottom-[8%]">
+            <CountdownTimer />
+          </div>
         </div>
       </div>
     </div>
