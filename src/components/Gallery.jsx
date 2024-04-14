@@ -4,10 +4,10 @@ import post1 from "/soft1.jpg";
 import post2 from "/soft2.jpg";
 import post3 from "/soft3.jpg";
 import post4 from "/soft4.jpg";
-import csi2 from "../assets/csi2.jpg";
-import csi3 from "../assets/csi3.jpg";
-import csi4 from "../assets/csi4.jpg";
-import csi5 from "../assets/csi5.jpg";
+import csi2 from "../assets/gallery/csi2.jpg";
+import csi3 from "../assets/gallery/csi3.jpg";
+import csi4 from "../assets/gallery/csi4.jpg";
+import csi5 from "../assets/gallery/csi5.jpg";
 
 export const products = [
   {
