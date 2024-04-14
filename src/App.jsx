@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import Lenis from "@studio-freight/lenis";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 import PS from "./components/ps/PS";
 import TimeLine from "./components/TimeLine/TimeLine";
@@ -8,28 +10,18 @@ import FAQs from "./components/FAQs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar/Navbar.jsx";
-
-import GoToTopBtn from "./goToTopBtn/GoToTopBtn";
-
-import { Home } from "./Home/Home";
-// import { Sponcers } from "./sponcers/Sponcers.jsx";
-
-
-import PreLoader from "./preloader/PreLoader.jsx";
-
-import Lenis from "@studio-freight/lenis";
-import { motion, useScroll, useSpring } from "framer-motion";
-import Winner from "./Winner/Winner.jsx";
-
-import CalltoAction from "./components/Softlink.jsx";
+import Blog from "./components/Blog.jsx";
+import Softlink from "./components/Softlink.jsx";
 import About from "./components/About.jsx";
 import Sponcers from "./components/Sponcers.jsx";
+import GoToTopBtn from "./components/GoToTopBtn.jsx";
+import PreLoader from "./components/PreLoader.jsx";
+
+import { Home } from "./Home/Home";
+import Winner from "./Winner/Winner.jsx";
 import Shortlisted from "./components/shortlisted/Shortlisted.jsx";
-import Blog from "./components/Blog.jsx";
 import Teamshortsection from "./components/shortlisted/Teamshortsection.jsx";
 import "./App.css";
-
-// import ReactGA from "react-ga4";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -41,12 +33,9 @@ function App() {
 
   const [preLoader, setPreLoader] = useState(true);
   const [logoLoader, setLogoLoader] = useState(true);
-  // ReactGA.initialize("G-E0D9FS4JDP");
-  // ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
   useEffect(() => {
     const lenis = new Lenis();
-
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -54,7 +43,6 @@ function App() {
 
     requestAnimationFrame(raf);
 
-    // Simulate content loading delay
     const timer = setTimeout(() => {
       setPreLoader(false);
     }, 5000);
@@ -82,19 +70,14 @@ function App() {
       />
       <Navbar />
       <Home setLogoLoader={setLogoLoader} />
-      {/* <div className="w-full h-full bg-slate-900 flex flex-col justify-start items-center gap-4 ">
-            <About />
-          </div> */}
       <About />
       <Winner />
       <PS />
       <Teamshortsection />
       {/* <Shortlisted /> */}
       <TimeLine />
-      <CalltoAction />
+      <Softlink />
       <Gallery />
-      {/* <Sponcers /> */}
-
       <Sponcers />
       <Blog />
       <FAQs />

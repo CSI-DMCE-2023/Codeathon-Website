@@ -1,11 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { fadeIn } from "../varients";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./winner.css";
-import { LampContainer } from "../components/ui/lamp";
+import { LampContainer } from "../ui/lamp";
 import Winnercard from "./Winnercard";
+import "./winner.css";
+
 const Winner = () => {
   let triggered = false;
   useEffect(() => {
@@ -31,10 +32,6 @@ const Winner = () => {
       },
     });
     function updateValues() {
-      // if (
-      //   ScrollTrigger.isInViewport(element, 0.2, true)
-      // ) {
-      // console.log("letsss work");
       gsap.utils.toArray(".counts").forEach((element) => {
         let clean = (v) => (v + "").replace(/[^\d\.-]/gi, "");
         let num = clean(element.getAttribute("data-number"));
@@ -62,7 +59,6 @@ const Winner = () => {
           : s[0];
       }
     }
-    // }
   }, []);
   return (
     <div id="prizes" className="relative w-full max-h-screen sm:p-8 pb-8">
@@ -78,7 +74,6 @@ const Winner = () => {
             CASH PRIZE POOL
           </motion.h1>
         </div>
-        {/* <div className="w-full h-full grid grid-cols-1 my-4"> */}
         <motion.div
           variants={fadeIn("up", 0.2)}
           // initial="hidden"
@@ -115,7 +110,6 @@ const Winner = () => {
             />
           </div>
         </motion.div>
-        {/* </div> */}
       </LampContainer>
     </div>
   );
