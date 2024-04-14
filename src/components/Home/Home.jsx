@@ -3,13 +3,7 @@ import "./home.css";
 import "./Button.css";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
-export function Home({ setLogoLoader }) {
-  const scrollToTimeline = (e) => {
-    const timelineSection = document.getElementById(e);
-    if (timelineSection) {
-      timelineSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+export default function Home({ setLogoLoader }) {
   return (
     <div id="vanta2" className="h-screen bg-black">
       <div className="h-screen w-full flex items-center justify-center  overflow-hidden flex-col vanta overflow-x-hidden bg-black bg-grid-white/[0.2] relative ">
@@ -25,8 +19,11 @@ export function Home({ setLogoLoader }) {
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
             onLoad={() => setLogoLoader(false)}
           />
-          <a href="#shortlisted-teams" className=" flex justify-center items-center absolute sm:left-[43%] left-[15%]  bottom-[20%] sm:bottom-[15%]">
-            <button className="btn w-auto">Round 2 Results are live </button>
+          <a
+            href="#shortlisted-teams"
+            className=" flex justify-center items-center absolute sm:left-[43%] left-[15%]  bottom-[20%] sm:bottom-[15%]"
+          >
+            <button className="btn w-auto">Final Results are live </button>
           </a>
         </div>
       </div>

@@ -16,9 +16,9 @@ import About from "./components/About.jsx";
 import Sponcers from "./components/Sponcers.jsx";
 import GoToTopBtn from "./components/GoToTopBtn.jsx";
 import PreLoader from "./components/PreLoader.jsx";
+import Winner from "./components/Winner/Winner.jsx";
+import Home from "./components/Home/Home.jsx";
 
-import { Home } from "./Home/Home";
-import Winner from "./Winner/Winner.jsx";
 import Shortlisted from "./components/shortlisted/Shortlisted.jsx";
 import Teamshortsection from "./components/shortlisted/Teamshortsection.jsx";
 import "./App.css";

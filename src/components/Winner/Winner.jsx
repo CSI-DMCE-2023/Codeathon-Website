@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
-import { fadeIn } from "../varients";
+import { fadeIn } from "../../varients";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { LampContainer } from "../ui/lamp";
+import { LampContainer } from "../../ui/lamp";
 import Winnercard from "./Winnercard";
 import "./winner.css";
 

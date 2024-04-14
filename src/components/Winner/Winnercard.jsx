@@ -1,6 +1,7 @@
 import React from "react";
+import { CardBody, CardContainer, CardItem } from "../../ui/3d-card";
 import "./winner.css";
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+
 function Winnercard({ title, description, runner }) {
   return (
     <CardContainer className=" w-80 sm:w-96 sm:h-36 my-3 flex mx-5 border rounded-lg bg-[rgb(255 255 255 / 70%)] border-white/[0.2]">
