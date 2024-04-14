@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useSpring } from "framer-motion";
-
 import PS from "./components/ps/PS";
 import TimeLine from "./components/TimeLine/TimeLine";
 import Gallery from "./components/Gallery";
@@ -18,9 +17,7 @@ import GoToTopBtn from "./components/GoToTopBtn.jsx";
 import PreLoader from "./components/PreLoader.jsx";
 import Winner from "./components/Winner/Winner.jsx";
 import Home from "./components/Home/Home.jsx";
-
-import Shortlisted from "./components/shortlisted/Shortlisted.jsx";
-import Teamshortsection from "./components/shortlisted/Teamshortsection.jsx";
+import ShortlistedTeams from "./components/shortlisted/Teams.jsx";
 import "./App.css";
 
 function App() {
@@ -73,8 +70,7 @@ function App() {
       <About />
       <Winner />
       <PS />
-      <Teamshortsection />
-      {/* <Shortlisted /> */}
+      <ShortlistedTeams />
       <TimeLine />
       <Softlink />
       <Gallery />
