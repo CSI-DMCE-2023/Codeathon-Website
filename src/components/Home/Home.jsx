@@ -1,19 +1,24 @@
 import React, { useState, useEffect, lazy } from "react";
+import dayjs from "dayjs";
 import "./home.css";
 import "./Button.css";
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 const CountdownTimer = () => {
+  const targetDate = dayjs("2024-04-19T10:00:00");
+
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-04-18") - +new Date();
+    const now = dayjs();
+    const difference = targetDate.diff(now);
+
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        // seconds: Math.floor((difference / 1000) % 60),
+        days: targetDate.diff(now, "day"),
+        hours: targetDate.diff(now, "hour") % 24,
+        minutes: targetDate.diff(now, "minute") % 60,
+        // seconds: targetDate.diff(now, 'second') % 60
       };
     }
 
@@ -67,13 +72,12 @@ export default function Home({ setLogoLoader }) {
             scene="https://prod.spline.design/spV0nxuwKVr2DtBf/scene.splinecode"
             onLoad={() => setLogoLoader(false)}
           />
-          <a
-            href="#shortlisted-teams"
-            className="flex justify-center items-center absolute sm:left-[43%] left-[15%] bottom-[20%] sm:bottom-[15%]"
-          >
-            <button className="btn w-auto">Final Results are live </button>
-          </a>
-          <div className="flex justify-center items-center absolute sm:left-[43%] left-[15%] bottom-[11%] sm:bottom-[8%]">
+          <div className="flex justify-center items-center w-full absolute bottom-[20%] sm:bottom-[15%]">
+            <a href="#shortlisted-teams">
+              <button className="btn w-auto">Final Results are live </button>
+            </a>
+          </div>
+          <div className="flex justify-center items-center w-full absolute bottom-[11%] sm:bottom-[8%]">
             <CountdownTimer />
           </div>
         </div>
