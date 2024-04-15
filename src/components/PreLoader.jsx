@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-// import dmcelogo from "../assets/dmce.png";
-// import mainlogo from "../assets/mainlogo.png";
-// import softlink from "../assets/Softlink.png";
+
 const PreLoader = () => {
   useEffect(() => {
     const tl = gsap.timeline();
@@ -11,10 +9,6 @@ const PreLoader = () => {
       opacity: 0,
       scale: 0,
     });
-    // gsap.set("#loading", {
-    //   opacity: 0,
-    //   scale: 0,
-    // });
     gsap.set("#dmcelogo", {
       opacity: 1,
       scale: 1,
@@ -55,12 +49,6 @@ const PreLoader = () => {
         },
         "<"
       )
-      // .to("#loading", {
-      //   opacity: 1,
-      //   scale: 1,
-      //   duration: 1,
-      //   ease: "Power3.easeOut",
-      // },"<")
 
       .from(".preloader", {
         height: "100%",
@@ -95,17 +83,6 @@ const PreLoader = () => {
         }
         alt="logo"
       />
-      {/* <h1
-        id="loading"
-        className="text-white mx-auto text-4xl font-bold text-center max-md:text-2xl   "
-      >
-        DMCE X SOFTLINK LogiTHON
-      </h1> */}
-      {/* <section className="bg-blue-900 relative place-items-center grid w-full gap-4">
-        <div className="bg-gray-500 w-44 h-44  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
-        <div className="bg-gray-400 w-28 h-28 absolute animate-ping rounded-full shadow-xl"></div>
-        <div className="bg-white w-20 h-20 absolute animate-pulse rounded-full shadow-xl"></div>
-      </section> */}
       <div>
         <h2 className="text-center text-white text-xl font-semibold mt-12">
           Loading...

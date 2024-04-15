@@ -1,14 +1,10 @@
-import { useScroll, useTransform } from "framer-motion";
 import React from "react";
-import { GoogleGeminiEffect } from "../ui/google-gemini-effect";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../../styles";
 import { textVariant } from "../../utils/motion";
 
@@ -108,7 +104,7 @@ const experiences = [
     detail:
       "Recharge and Refuel: Enjoy a Delectable Lunch Break for the Teams!",
   },
-   
+
   {
     title: "Final Juding Round - Offline Presentation",
     day: "20th April - 12:30 PM",
@@ -144,18 +140,6 @@ const ExperienceCard = ({ experience }) => (
 );
 
 function TimeLine() {
-  const ref = React.useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1]);
-  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1]);
-  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1]);
-  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1]);
-  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
-
   return (
     <div className="relative" id="timeline">
       <div className="bg-black p-8 w-full z-50">
@@ -169,20 +153,6 @@ function TimeLine() {
             ))}
           </VerticalTimeline>
         </div>
-      </div>
-      <div
-        className="h-full  top-0 w-full dark:border dark:border-white/[0.1] absolute overflow-clip "
-        ref={ref}
-      >
-        {/* <GoogleGeminiEffect
-          pathLengths={[
-            pathLengthFirst,
-            pathLengthSecond,
-            pathLengthThird,
-            pathLengthFourth,
-            pathLengthFifth,
-          ]}
-        /> */}
       </div>
     </div>
   );

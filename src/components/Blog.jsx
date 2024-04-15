@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function Blog() {
   const [bloglist, setbloglist] = useState([]);
-  const { innerWidth: width, innerHeight: height } = window;
+
   useEffect(() => {
     const getblogdata = async () => {
       const { data } = await axios.get(
@@ -13,6 +13,7 @@ export default function Blog() {
     };
     getblogdata();
   }, []);
+
   return (
     <div id="blogs">
       <section>
@@ -22,13 +23,17 @@ export default function Blog() {
               Our Blogs
             </h1>
             <h3 className=" text-white font-bold sm:text-2xl text-lg">
-            Be sure to check out our daily-updated blogs on our website! We've got insider info waiting for you! 🌟
+              Be sure to check out our daily-updated blogs on our website! We've
+              got insider info waiting for you! 🌟
             </h3>
           </div>
           {bloglist.length > 0 && (
             <div className="grid gap-8 lg:grid-cols-3">
               {bloglist.slice(0, 3).map((data, index) => (
-                <article key={index} className="p-6 bg-black rounded-lg border border-gray-200 shadow-md mx-3">
+                <article
+                  key={index}
+                  className="p-6 bg-black rounded-lg border border-gray-200 shadow-md mx-3"
+                >
                   <div className="flex justify-between items-center mb-5 text-gray-500">
                     <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                       <svg

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "../../utils/cn.js";
+import { cn } from "../utils/cn.js";
 
 export function LampDemo() {
   return (
@@ -22,13 +22,7 @@ export function LampDemo() {
   );
 }
 
-export const LampContainer = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
+export const LampContainer = ({ children, className }) => {
   return (
     <div
       className={cn(

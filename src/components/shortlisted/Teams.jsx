@@ -6,16 +6,17 @@ export default function Teamshortsection() {
     { teamname: "Code Geass", teamlead: "Ishaan Parsone" },
     { teamname: "Syn'ax", teamlead: "Anushka Pandit" },
     { teamname: "whocares", teamlead: "Taher Ariwala" },
-    { teamname: "ALGORTHIM AVENGERS", teamlead: "Uthkrushta Mathur" },
+    // { teamname: "ALGORTHIM AVENGERS", teamlead: "Uthkrushta Mathur" },
     { teamname: "Brocode", teamlead: "Ali Malik" },
     { teamname: "Byte coders", teamlead: "Soham Patil" },
     { teamname: "Cybergirlism", teamlead: "Roshni Sahoo" },
     { teamname: "DeepRest", teamlead: "Mukund Iyer" },
     { teamname: "flutterFlies", teamlead: "Manthan Parsekar" },
     { teamname: "LANICODERS", teamlead: "Rahul Kamble" },
-    { teamname: "Maqsad1", teamlead: "MOHAMMED ARAFAT SHAIKH" },
     { teamname: "Mid-Max", teamlead: "Kasam Mapara" },
     { teamname: "The Innovation Incubators", teamlead: "Ashish Jadhav" },
+    { teamname: "BETA", teamlead: "Aden Ansari" },
+    { teamname: "CyberTitans", teamlead: "Sumeet Gupta" },
   ];
   const problemstatement2 = [
     { teamname: "ASAP Coders", teamlead: "PAARTH BARADIA" },
@@ -24,16 +25,14 @@ export default function Teamshortsection() {
     { teamname: "BlockBusters", teamlead: "Mihir Pandit" },
     { teamname: "CodeJourney", teamlead: "Rudraksh Raut" },
     { teamname: "HackBreakers", teamlead: "Disha Honmane" },
-    { teamname: "InnovisionSquad", teamlead: "Shubham Pitekar" },
     { teamname: "L(ETH)AL", teamlead: "Shaurya S" },
     { teamname: "Nexus Coders", teamlead: "Chaitanya Shivade" },
     { teamname: "QuatXplorers", teamlead: "Soham More" },
     { teamname: "Team Vulcan", teamlead: "LAKSH JAIN" },
-    { teamname: "Tech Army", teamlead: "Mandvi Shukla" },
+    // { teamname: "Tech Army", teamlead: "Mandvi Shukla" },
     { teamname: "The Recursives", teamlead: "Vishesh Gatha" },
     { teamname: "web3galaxy", teamlead: "Vedant Jha" },
     { teamname: "InnovateXcel", teamlead: "Durgesh Firake" },
-    { teamname: "Snowflake", teamlead: "Viraaj Gupta" },
   ];
   const problemstatement3 = [
     { teamname: "NorthStar 3.O", teamlead: "Omkar Kale" },
@@ -46,7 +45,6 @@ export default function Teamshortsection() {
     { teamname: "LazyMakers", teamlead: "Sarthak Shitole" },
     { teamname: "No Direction", teamlead: "Parth Mahakal" },
     { teamname: "Pollux", teamlead: "Saksha Gotad" },
-    { teamname: "Spark Syndicate", teamlead: "RAJAS DESHPANDE" },
     { teamname: "HashBytes", teamlead: "Shriraj Patil" },
     { teamname: "Virtual Voyagers", teamlead: "Sai Patil" },
   ];
@@ -54,29 +52,26 @@ export default function Teamshortsection() {
     { teamname: "DataMiners", teamlead: "Janhavi Chaudhari" },
     { teamname: "Astrea", teamlead: "Devanshu Mahapatra" },
     { teamname: "Team Confluence", teamlead: "Mahesh Sathe" },
-    { teamname: "Group of engineers", teamlead: "Hari Haran" },
     { teamname: "hackHEMISPHERE", teamlead: "akshita bhasin" },
-    { teamname: "Jobless", teamlead: "Vedant Mankar" },
     { teamname: "LionsOfVit", teamlead: "PRAKASHCHAND CHOUDHARY" },
     { teamname: "NekoX", teamlead: "Devyani Chavan" },
-    { teamname: "#Coders", teamlead: "Saurabh Kuche" },
     { teamname: "argentavious", teamlead: "Trushank Vashikar" },
-    { teamname: "EyeQ", teamlead: "Yash Ahirrao" },
-    { teamname: "Proto", teamlead: "shubham Varma" },
     { teamname: "SAARTHI", teamlead: "Shaswat mishra" },
-    { teamname: "Team Swift", teamlead: "Karan Patel" },
+    // { teamname: "Proto", teamlead: "shubham Varma" },
+    // { teamname: "Team Swift", teamlead: "Karan Patel" },
+    { teamname: "Dev Dynasty", teamlead: "Huda Alam" },
+    { teamname: "/dev/null", teamlead: "Sumit Patel" },
   ];
 
   return (
     <div id="shortlisted-teams">
-      <section >
+      <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="pb-10 text-3xl md:text-5xl text-white font-semibold text-center z-[100]">
-              ROUND 2 SHORTLISTED TEAMS
+              FINAL SHORTLISTED TEAMS
             </h1>
           </div>
-
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className=" rounded-lg shadow-lg p-6 transform  transition duration-300 border border-white/[0.2]">
               <div className="mb-8">

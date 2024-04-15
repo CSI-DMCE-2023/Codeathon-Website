@@ -1,7 +1,8 @@
 import LinkedIn from "../assets/icons/linkedin.png";
 import Instagram from "../assets/icons/instagram.png";
 import Facebook from "../assets/icons/facebook.png";
-function CalltoAction() {
+
+function Softlink() {
   return (
     <div className="text-white">
       <div className="mx-auto  sm:px-6 lg:px-8">
@@ -48,7 +49,7 @@ function CalltoAction() {
                 >
                   <img
                     src={Facebook}
-                    alt="discord"
+                    alt="facebook"
                     className="size-8 sm:size-9"
                   />
                 </a>
@@ -102,4 +103,4 @@ function CalltoAction() {
   );
 }
 
-export default CalltoAction;
+export default Softlink;
