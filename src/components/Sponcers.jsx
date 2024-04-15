@@ -69,9 +69,9 @@ function Sponcers() {
         </p>
         <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
           {poweredby.map((item, index) => (
-            <a key={index} href={item.link} className="bg-white" target="_blank" title={item.name}>
+            <a key={index} href={item.link}  target="_blank" title={item.name}>
               <img
-                className="size-28 bg-white sm:size-36 object-contain rounded-lg"
+                className="size-28 sm:size-36 object-contain rounded-lg"
                 src={item.img}
                 alt="image"
               />
