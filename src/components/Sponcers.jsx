@@ -3,7 +3,7 @@ import sponcer2 from "../assets/pathners/sponcer2.jpeg";
 // import sponcer3 from "../assets/pathners/sponcer3.webp";
 import job4u from "../assets/pathners/job4u.png";
 import globalOutlook from "../assets/pathners/global-outlook.jpeg";
-
+import imfs from "../assets/pathners/imfs.jpg"
 const data = [
   {
     name: "iste",
@@ -29,6 +29,11 @@ const data = [
     name: "Global Outlook",
     link: "https://global-outlook.in/index.html",
     img: globalOutlook,
+  },
+  {
+    name: "IMFS",
+    link: "https://www.instagram.com/imfskpsinghoffl?igsh=aHkyc2Rna25ya24z",
+    img: imfs,
   },
 ];
 
@@ -64,9 +69,9 @@ function Sponcers() {
         </p>
         <div className="flex justify-center w-full items-center mt-12 gap-x-8 md:gap-x16">
           {poweredby.map((item, index) => (
-            <a key={index} href={item.link} target="_blank" title={item.name}>
+            <a key={index} href={item.link} className="bg-white" target="_blank" title={item.name}>
               <img
-                className="size-28 sm:size-36 object-contain rounded-lg"
+                className="size-28 bg-white sm:size-36 object-contain rounded-lg"
                 src={item.img}
                 alt="image"
               />
