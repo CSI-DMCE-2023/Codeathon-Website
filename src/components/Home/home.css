@@ -62,7 +62,6 @@
   }
 }
 
-
 .sparkle-button {
   --active: 0;
 
@@ -330,4 +329,19 @@
   100% {
     width: 100%;
   }
+}
+
+.timelinebutton {
+  /** TEXT GRADIENT */
+  color: #dddddd;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #dddddd 0%,
+    #ffffff 72%,
+    #abb2bf 86%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }

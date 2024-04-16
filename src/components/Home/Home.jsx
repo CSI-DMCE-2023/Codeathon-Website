@@ -50,7 +50,7 @@ const CountdownTimer = () => {
   });
 
   return (
-    <div className="text-white text-xl capitalize font-semibold">
+    <div className="max-w-lg sm:text-3xl text-md font-extrabold leading-normal timelinebutton mt-6 capitalize text-white">
       {timerComponents.length ? timerComponents : <span></span>}
     </div>
   );
