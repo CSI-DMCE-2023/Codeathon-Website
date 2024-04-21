@@ -56,26 +56,26 @@ function OfflineWinners() {
   ];
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center" id="shortlisted-teams">
         <h1 className=" text-3xl md:text-5xl text-white font-semibold text-center z-[100]">
           Winners
         </h1>
       </div>
       {winnersdata.map((data) => (
         <div className="mt-5">
-          <h1 className=" border-l-4 border-cyan-400 text-white text-4xl p-4 mb-5  sm:ml-28 sm:mb-10">
+          <h1 className=" border-l-4 border-cyan-400 text-white  text-2xl sm:text-4xl p-4 mb-5  sm:ml-28 sm:mb-10">
             {data.problem}
           </h1>
           <div className=" flex flex-wrap gap-10 sm:gap-0  justify-evenly items-center">
-            <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-xl">
+            <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm sm:max-w-xl ">
               <img
                 src={data.winnerimg}
                 alt="University of Southern California"
-                class="absolute inset-0 h-full w-full object-cover"
+                class="absolute inset-0 h-full p-5 sm:p-0 rounded-md  w-full object-cover"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
               <h3 class="z-10 mt-10 text-3xl font-bold text-white">Winner</h3>
-              <div class="z-10 gap-y-1 overflow-hidden text-md leading-6 text-gray-300">
+              <div class="z-10 gap-y-1 overflow-hidden text-md leading-6 text-gray-300 ">
                 {data.winnerteamtext}
               </div>
             </article>
@@ -83,7 +83,7 @@ function OfflineWinners() {
               <img
                 src={data.runnerimg}
                 alt="University of Southern California"
-                class="absolute inset-0 h-full w-full object-cover"
+                class="absolute inset-0 h-full w-full object-cover p-5 sm:p-0"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
               <h3 class="z-10 mt-10 text-3xl font-bold text-white">
