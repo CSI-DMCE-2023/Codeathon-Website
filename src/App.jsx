@@ -19,6 +19,7 @@ import Winner from "./components/Winner/Winner.jsx";
 import Home from "./components/Home/Home.jsx";
 import ShortlistedTeams from "./components/shortlisted/Teams.jsx";
 import "./App.css";
+import OfflineWinners from "./components/OfflineWinners/OfflineWinners.jsx";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -70,7 +71,8 @@ function App() {
       <About />
       <Winner />
       <PS />
-      <ShortlistedTeams />
+        <OfflineWinners />
+      {/* <ShortlistedTeams /> */}
       <TimeLine />
       <Softlink />
       <Gallery />
